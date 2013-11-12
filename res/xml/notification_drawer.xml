@@ -45,6 +45,18 @@
         android:entryValues="@array/smart_pulldown_values"
         android:persistent="false" />
 
+    <PreferenceScreen
+             android:key="temasek_notification_shortcuts"
+             android:fragment="com.android.settings.temasek.dslv.ButtonsListViewSettings"
+             android:summary="@string/notification_shortcuts_settings_summary"
+             android:title="@string/notification_shortcuts_settings_title">
+         <extra android:name="buttonMode" android:value="5" />
+         <extra android:name="maxAllowedButtons" android:value="16" />
+         <extra android:name="disableLongpress" android:value="true" />
+         <extra android:name="useAppPickerOnly" android:value="true" />
+         <extra android:name="fragment" android:value="com.android.settings.temasek.fragments.NotificationsShortcutFragment" />
+     </PreferenceScreen>
+
     <PreferenceCategory
         android:title="@string/category_quick_access" >
 

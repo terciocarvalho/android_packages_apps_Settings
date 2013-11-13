@@ -786,4 +786,8 @@
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Minimum vibration duration</string>
 
+    <!--Lockscreen See Through-->
+     <string name="see_through_title">See through</string>
+     <string name="see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
+
 </resources>

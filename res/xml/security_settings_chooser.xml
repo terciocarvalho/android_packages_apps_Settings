@@ -26,6 +26,11 @@
             android:summary="@string/unlock_set_unlock_mode_none"
             android:persistent="false"/>
 
+        <PreferenceScreen
+            android:key="keyguard_style"
+            android:fragment="com.android.settings.temasek.LockscreenStyle"
+            android:title="@string/lockscreen_style_title"/>
+
         <CheckBoxPreference
             android:key="battery_around_lockscreen_ring"
             android:title="@string/battery_around_lockscreen_ring"

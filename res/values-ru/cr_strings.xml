@@ -657,6 +657,7 @@
     <string name="title_tile_battery">Батарея</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Яркость</string>
+    <string name="title_tile_custom">Пользовательская</string>
     <string name="title_tile_sleep">Сон</string>
     <string name="title_tile_location">GPS</string>
     <string name="title_tile_torch">Фонарик</string>
@@ -673,6 +674,7 @@
     <string name="title_tile_networkmode">Режим сети</string>
     <string name="title_tile_nfc">NFC</string>
     <string name="title_tile_screen_timeout">Таймаут экрана</string>
+    <string name="title_tile_quick_record">Быстрая запись</string>
     <string name="title_tile_quiet_hours">Тихие часы</string>
     <string name="title_tile_volume">Громкость</string>
     <string name="title_tile_expanded_desktop">Расширенный экран</string>
@@ -687,7 +689,14 @@
     <string name="disable_qs">Быстрые настройки отключены</string>
     <string name="disable_qs_message">Все плитки были удалены. Панель быстрых настройек отключена.\n\nДля включения панели добавьте плитку.</string>
     <string name="help_qs_message">Чтобы добавить плитку в панель быстрых настроек, нажмите кнопку Добавить и выберите нужную вам плитку. Для пермещения плиток, нажмите и удерживайте плитку и перетащите в нужное вам место. Для удаления плитки, перетащите её на кнопку Удалить, которая появляется при перемещении плитки.\n\nДля удаления панели быстрых настроек, удалите все плитки.</string>
-
+    <string name="custom_tile_dialog_text">Каждое действие добавляет новое состояние для плитки. Каждое нажатие меняет текущее состояние плитки на следующее. Нажмите и удерживайте плитку для добавления действия по долгому нажатию. Если действие по нажатию на плитку не назначено, то значком для плитки будет использоваться действие, назначенное для долгого нажатия. Это позволяет вам менять состояние при нажатии на плитку и запускать действие при долгом нажатии.</string>
+    <string name="custom_tile_dialog_title">Дествие пользовательской плитки</string>
+    <string name="custom_toggle_extras">Дополнительное действие плитки</string>
+    <string name="custom_toggle_collapse_check">Свернуть список уведомлений</string>
+    <string name="custom_toggle_match_state_check">Действие по нажатию соответствует значку</string>
+    <string name="custom_tile_long_press">Долгое нажатие:</string>
+    <string name="custom_tile_null_warning">Действие должно быть назначено первым</string>
+	
     <!-- QuickSettings style options -->
     <string name="quicksettings_tiles_style">Стиль быстрых настроек</string>
     <string name="summary_quicksettings_tiles_style">Просмотр, выбор или изменение вида панели быстрых настроек</string>
@@ -730,9 +739,9 @@
     <string name="show_activity_indicators_on_status_bar_summary">Показывать индикатор сетевой активности в строке сосояния на значках сети или WiFi</string>
 
     <!-- Lockscreen Lid Settings -->
-    <string name="smart_cover_category_title">Smart cover</string>
-    <string name="smart_cover_wake_title">Smart cover wake</string>
-    <string name="smart_cover_wake_summary">Wakeup device when smart cover opens</string>
+    <string name="smart_cover_category_title">Умная обложка</string>
+    <string name="smart_cover_wake_title">Пробуждение умной обложкой</string>
+    <string name="smart_cover_wake_summary">Пробуждение устройства при открытии умной обложки</string>
 
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Дополнительные параметры</string>

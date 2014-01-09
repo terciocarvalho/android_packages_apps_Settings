@@ -783,4 +783,7 @@
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Set encryption password</string>
 
+    <!-- Minimum Vibration Duration -->
+    <string name="minimum_vibration_duration">Minimum vibration duration</string>
+
 </resources>

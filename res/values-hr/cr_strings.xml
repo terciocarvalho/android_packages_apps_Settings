@@ -657,6 +657,7 @@
     <string name="title_tile_battery">Baterija</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Svjetlina</string>
+    <string name="title_tile_contact">Kontakt</string>
     <string name="title_tile_custom">Prilagođeno</string>
     <string name="title_tile_sleep">Spavanje</string>
     <string name="title_tile_location">Lokacija</string>

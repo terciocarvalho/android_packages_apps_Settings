@@ -73,6 +73,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String KEY_DEVICE_ADMIN_CATEGORY = "device_admin_category";
     private static final String KEY_LOCK_AFTER_TIMEOUT = "lock_after_timeout";
     private static final String KEY_OWNER_INFO_SETTINGS = "owner_info_settings";
+    private static final String KEY_ALWAYS_BATTERY_PREF = "lockscreen_battery_status";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
     private static final String KEY_INTERFACE_SETTINGS = "lock_screen_settings";
     private static final String KEY_TARGET_SETTINGS = "lockscreen_targets";
@@ -134,6 +135,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mLockBeforeUnlock;
     private CheckBoxPreference mSeeThrough;
     private SeekBarPreference mBlurRadius;
+
+    private CheckBoxPreference mBatteryStatus;
 
     private Preference mNotificationAccess;
 
@@ -452,6 +455,8 @@ public class SecuritySettings extends RestrictedSettingsFragment
                 }
             }
 
+            mBatteryStatus = (CheckBoxPreference) root.findPreference(KEY_ALWAYS_BATTERY_PREF);
+
             // Show password
             mShowPassword = (CheckBoxPreference) root.findPreference(KEY_SHOW_PASSWORD);
             mResetCredentials = root.findPreference(KEY_RESET_CREDENTIALS);
@@ -765,6 +770,13 @@ public class SecuritySettings extends RestrictedSettingsFragment
             }
         }
 
+        if (mBatteryStatus != null) {
+            mBatteryStatus.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ALWAYS_SHOW_BATTERY, 0,
+                    UserHandle.USER_CURRENT) != 0);
+            mBatteryStatus.setOnPreferenceChangeListener(this);
+        }
+
     }
 
     @Override
@@ -911,6 +923,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
         } else if (preference == mBlurRadius) {
             Settings.System.putInt(getContentResolver(), 
                     Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer)value);
+        } else if (preference == mBatteryStatus) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.LOCKSCREEN_ALWAYS_SHOW_BATTERY,
+                    ((Boolean) value) ? 1 : 0, UserHandle.USER_CURRENT);
         }
         return true;
     }

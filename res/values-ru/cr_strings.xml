@@ -657,6 +657,7 @@
     <string name="title_tile_battery">Батарея</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Яркость</string>
+    <string name="title_tile_contact">Контакт</string>
     <string name="title_tile_custom">Пользовательская</string>
     <string name="title_tile_sleep">Сон</string>
     <string name="title_tile_location">GPS</string>

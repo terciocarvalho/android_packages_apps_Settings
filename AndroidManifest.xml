@@ -1828,7 +1828,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                android:value="com.android.settings.slim.quicksettings.QuickSettingsTiles" />
+                android:value="com.android.settings.temasek.quicksettings.QuickSettingsTiles" />
         </activity>
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to battery icon settings -->

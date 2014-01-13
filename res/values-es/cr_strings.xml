@@ -657,6 +657,8 @@
     <string name="title_tile_battery">Batería</string>
     <string name="title_tile_bluetooth">Bluetooth</string>
     <string name="title_tile_brightness">Brillo</string>
+    <string name="title_tile_contact">Contacto</string>
+    <string name="title_tile_custom">Personalizado</string>
     <string name="title_tile_sleep">Ir a dormir</string>
     <string name="title_tile_location">Ubicación</string>
     <string name="title_tile_torch">Linterna</string>
@@ -688,9 +690,16 @@
     <string name="disable_qs">Ajustes rápidos está deshabilitado</string>
     <string name="disable_qs_message">Todos los azulejos fueron removidos. Ajustes rápidos está deshabilitado.\n\nAñada un azulejo para habilitarlo.</string>
     <string name="help_qs_message">Para añadir un azulejo a Ajustes rápidos, presione el botón Añadir y elija un azulejo. Para reordenar los azulejos, mantenga presionado el azulejo y muévalo a la posición que desee. Si desea eliminar un azulejo, arrástrelo al botón Eliminar que aparece mientras se mueve el azulejo.\n\nPara configurar azulejos dinámicos presione el ícono respectivo en la parte superior derecha de la pantalla\n\nPara deshabilitar Ajustes rápidos, remueva todos los azulejos.</string>
+    <string name="custom_tile_dialog_text">Cada acción añadirá un nuevo estado al azulejo. Cada click cambia al siguiente estado. Presione prolongadamente para añadir acción de presión prolongada. Si no existe una acción de click se usará la acción para presión prolongada. Esto permite cambiar estados haciendo click y lanzar acciones con presionando prolongadamente.</string>
+    <string name="custom_tile_dialog_title">Acción de azulejo personalizada</string>
+    <string name="custom_toggle_extras">Custom tile extras</string>
+    <string name="custom_toggle_collapse_check">Collapse notification shade</string>
+    <string name="custom_toggle_match_state_check">Click action matches icon</string>
+    <string name="custom_tile_long_press">Presión prolongada:</string>
+    <string name="custom_tile_null_warning">Primero debe asignar una acción</string>
 
     <!-- QuickSettings style options -->
-    <string name="quicksettings_tiles_style">Estlo</string>
+    <string name="quicksettings_tiles_style">Estilo</string>
     <string name="summary_quicksettings_tiles_style">Ver o cambiar las opciones de estilo de Ajustes rápidos</string>
     <string name="quicksettings_tiles_style_additional_options">Opciones adicionales</string>
     <string name="tiles_per_row_title">Azulejos por fila</string>

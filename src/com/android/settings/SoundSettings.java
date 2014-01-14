@@ -224,12 +224,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         int userMillis = Settings.System.getInt(resolver,
                 Settings.System.MINIMUM_VIBRATION_DURATION, 0);
         mVibrationDuration = (SeekBarPreference) findPreference(KEY_VIBRATION_DURATION);
-        mVibrationDuration.setInitValue(userMillis);
         mVibrationDuration.setInterval(1);
-        mVibrationDuration.displaySameValue(true);
-        mVibrationDuration.zeroDefault(true);
+        mVibrationDuration.setDefault(0);
         mVibrationDuration.isMilliseconds(true);
-        mVibrationDuration.setProperty(Settings.System.MINIMUM_VIBRATION_DURATION);
+        mVibrationDuration.setInitValue(userMillis);
         mVibrationDuration.setOnPreferenceChangeListener(this);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
@@ -293,7 +291,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mPowerSoundsVibrate = (CheckBoxPreference) findPreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
         mPowerSoundsVibrate.setChecked(Settings.Global.getInt(resolver,
                 Settings.Global.POWER_NOTIFICATIONS_VIBRATE, 0) != 0);
-        if (vibrator == null || !vibrator.hasVibrator()) {
+        if (mVib == null || !mVib.hasVibrator()) {
             removePreference(KEY_POWER_NOTIFICATIONS_VIBRATE);
         }
 

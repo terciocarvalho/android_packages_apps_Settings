@@ -767,7 +767,11 @@
 	
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Расширенные</string>
-
+	
+    <!-- QuickSettings: Quick Collapse -->
+    <string name="title_collapse_panel">Быстрое закрытие</string>
+    <string name="summary_collapse_panel">Закрыть панель уведомлений после переключения</string>
+	
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Тайная комната</string>
     <string name="chamber_toast">Тайная комната открыта</string>
@@ -779,5 +783,8 @@
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Установить пароль шифрования</string>
+	
+    <!-- Minimum Vibration Duration -->
+    <string name="minimum_vibration_duration">Минимальная продолжительность вибрации</string>
 	
 </resources>

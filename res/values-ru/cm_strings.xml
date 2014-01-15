@@ -724,4 +724,6 @@
 
     <string name="volume_adjust_sounds_enable_title">Звук при регулировке громкости</string>
     <string name="volume_adjust_sounds_enable_summary">Воспроизводить звук при регулировке уровня громкости кнопками управления</string>
+    <string name="accessibility_home_button_answers_call_prerefence_title">Ответ на входящий вызов кнопкой "Домой"</string>
+	
 </resources>

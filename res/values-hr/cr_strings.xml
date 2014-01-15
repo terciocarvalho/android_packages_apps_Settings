@@ -764,6 +764,10 @@
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Napredno</string>
 
+    <!-- QuickSettings: Quick Collapse -->
+    <string name="title_collapse_panel">Brze postavke</string>
+    <string name="summary_collapse_panel">Zatvori ploču s obavijestima nakon izmjene</string>
+
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Spremište zaporki</string>
     <string name="chamber_toast">Spremište zaporki otvoreno</string>
@@ -775,5 +779,8 @@
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Postavi zaporku enkripcije</string>
+
+    <!-- Minimum Vibration Duration -->
+    <string name="minimum_vibration_duration">Minimalno trajanje vibracije</string>
 
 </resources>

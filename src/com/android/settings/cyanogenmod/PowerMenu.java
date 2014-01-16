@@ -18,12 +18,17 @@ package com.android.settings.cyanogenmod;
 
 import android.content.ContentResolver;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+
+private static final String KEY_SCREENRECORD = "power_menu_screenrecord";
+
+private CheckBoxPreference mScreenrecordPref;
 
 public class PowerMenu extends SettingsPreferenceFragment {
     @Override
@@ -34,17 +39,37 @@ public class PowerMenu extends SettingsPreferenceFragment {
 
         final ContentResolver resolver = getContentResolver();
 
+        mScreenrecordPref = (CheckBoxPreference) findPreference(KEY_SCREENRECORD);
+        mScreenrecordPref.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.POWER_MENU_SCREENRECORD_ENABLED, 0) == 1));
+
         // Only enable expanded desktop item if expanded desktop support is also enabled
 //        findPreference(Settings.System.POWER_MENU_EXPANDED_DESKTOP_ENABLED).setEnabled(
 //                Settings.System.getInt(resolver, Settings.System.EXPANDED_DESKTOP_STYLE, 0) != 0);
 
         // Only enable profiles item if System Profiles are also enabled
-//        findPreference(Settings.System.POWER_MENU_PROFILES_ENABLED).setEnabled(
-//                Settings.System.getInt(resolver, Settings.System.SYSTEM_PROFILES_ENABLED, 1) != 0);
+        findPreference(Settings.System.POWER_MENU_PROFILES_ENABLED).setEnabled(
+                Settings.System.getInt(resolver, Settings.System.SYSTEM_PROFILES_ENABLED, 1) != 0);
 
         if (!UserHandle.MU_ENABLED || !UserManager.supportsMultipleUsers()) {
             getPreferenceScreen().removePreference(
                     findPreference(Settings.System.POWER_MENU_USER_ENABLED));
         }
+    }
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        boolean value;
+
+        if (preference == mScreenrecordPref) {
+            value = mScreenrecordPref.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.POWER_MENU_SCREENRECORD_ENABLED,
+                    value ? 1 : 0);
+        } else {
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
+        }
+
+        return true;
     }
 }

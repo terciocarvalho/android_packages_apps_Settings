@@ -66,7 +66,13 @@
     <string name="clock_date_style_uppercase">Заглавные буквы</string>
     <string name="clock_date_format_custom">Пользовательский java формат</string>
     <string name="status_bar_clock_style_reset_message">Сбросить цвет часов?</string>
-
+    <string name="clock_font_style_title">Шрифт</string>
+    <string name="clock_font_bold">Жирный</string>
+    <string name="clock_font_condensed">Сжатый</string>
+    <string name="clock_font_light">Тонкий</string>
+    <string name="clock_font_light_italic">Тонкий курсив</string>
+    <string name="clock_font_normal">Нормальный</string>
+	
     <!-- Advanced low battery indicator options -->  
     <string name="lights_and_warnings_title">Индикация и предупреждения</string>
     <string name="lights_and_warnings_style_title">Параметры индикации и предупреждений</string>
@@ -364,6 +370,7 @@
 
     <!-- Power menu -->
     <string name="power_menu_style_summary">Изменение цвета значков в меню кнопки питания</string>
+    <string name="power_menu_screenrecord_title">Запись с экрана</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Строка использования ОЗУ</string>
@@ -786,5 +793,65 @@
 	
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Минимальная продолжительность вибрации</string>
-	
+
+    <!--Lockscreen See Through-->
+     <string name="see_through_title">Вид насквозь</string>
+     <string name="see_through_summary">Показывает содержимое позади экрана блокировки, ваши данные могут быть видны для окружающих</string>
+
+    <!--Lockscreen blur-->
+    <string name="blur_behind_title">Размытие фона</string>
+    <string name="blur_behind_summary">Добавляет красивый эффект размытия фона экрана блокировки</string>
+    <string name="blur_radius_title">Радиус размытия</string>
+    <string name="blur_radius_summary">Установите размер радиуса размытия для эффекта размытия</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">Основные</string>
+    <string name="layout">Расположение</string>
+    <string name="privacy">Приватность</string>
+    <string name="lockscreen_notifications">Уведомления на экране</string>
+    <string name="lockscreen_notifications_summary">Показывать ожидающие уведомления на экране блокировки</string>
+    <string name="pocket_mode">Режим "В кармане"</string>
+    <string name="pocket_mode_summary">Включает экран и отображает все уведомления, когда устройство достали из кармана. Отключает экран, когда устройство кладут обратно в карман.</string>
+    <string name="show_always">Показывать всегда</string>
+    <string name="show_always_summary">Всегда включать экран, когда устройство достается из кармана, даже при отсутствии ожидающих уведомлений.</string>
+    <string name="hide_low_priority">Скрыть низкий приоритет</string>
+    <string name="hide_low_priority_summary">Скрыь уведомления с низким приоритетом, такие как уведомления о погоде от Google Now.</string>
+    <string name="hide_non_clearable">Скрыть неудаляемые</string>
+    <string name="hide_non_clearable_summary">Скрыть все неудаляемые уведомления</string>
+    <string name="dismiss_all">Разрешить отключение всех уведомлений</string>
+    <string name="dismiss_all_summary">Разрешить отключение даже неудаляемых уведомлений. Конечно, они просто скрываются на экране блокировки, а не на панели уведомлений..</string>
+    <string name="expanded_view">Расширенный вид уведомления</string>
+    <string name="expanded_view_summary">Добавить возможность переключения между режимами обычный и расширенный вид по долгому нажатию на уведомление. Расширенный вид иногда показывает больше личной информации, поэтому вы можете отключить его.</string>
+    <string name="force_expanded_view">Форсировать расширенный вид</string>
+    <string name="force_expanded_view_summary">Показать уведомления в расширенном виде по умолчанию. Вы по-прежнему можете переключаться между расширенным и обычным видами.</string>
+    <string name="wake_on_notification">Пробуждение при уведомлении</string>
+    <string name="wake_on_notification_summary">Будить устройство при получении новых уведомлений</string>
+    <string name="notifications_height">Количество уведомлений</string>
+    <string name="notifications_height_summary">Количество уведомлений, отображаемых одновременно на экране</string>
+    <string name="offset_top">Смещение от верхней части экрана:</string>
+    <string name="privacy_mode">Приватный режим</string>
+    <string name="privacy_mode_summary">Отключает просмотр уведомлений на экране блокировки. Таким образом, вы просто видите иконки ваших уведомлений.</string>
+    <string name="excluded_apps_title">Исключённые приложения</string>
+    <string name="excluded_apps_summary">Уведомления от исключённых приложений не будут отображаться на экране блокировки</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Запись с экрана</string>
+    <string name="screen_recorder_summary">Настройка параметров записи с экрана</string>
+    <string name="screen_recorder_video_dimensions_title">Размер видео</string>
+    <string name="screen_recorder_video_bitrate_title">Битрейт</string>
+    <string name="screen_recorder_record_audio_title">Запись звука</string>
+    <string name="screen_recorder_record_audio_summary">Записывать звук с микрофона</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 КБ/с</string>
+    <string name="screen_recorder_bitrate_title_250000">250 КБ/с</string>
+    <string name="screen_recorder_bitrate_title_500000">500 КБ/с</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 МБ/с</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 МБ/с</string>
 </resources>

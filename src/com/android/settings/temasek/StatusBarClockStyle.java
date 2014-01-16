@@ -35,9 +35,11 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
 
     private static final String STATUS_BAR_CLOCK_STYLE = "status_bar_clock";
     private static final String STATUS_BAR_AM_PM = "status_bar_am_pm";
+    private static final String PREF_FONT_STYLE = "font_style";
 
     private ListPreference mStatusBarClock;
     private ListPreference mStatusBarAmPm;
+    private ListPreference mFontStyle;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -65,6 +67,13 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntry());
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
+
+        mFontStyle = (ListPreference) findPreference(PREF_FONT_STYLE);
+        mFontStyle.setOnPreferenceChangeListener(this);
+        mFontStyle.setValue(Integer.toString(Settings.System.getInt(getActivity()
+                .getContentResolver(), Settings.System.STATUSBAR_CLOCK_FONT_STYLE,
+                0)));
+        mFontStyle.setSummary(mFontStyle.getEntry());
     }
 
     @Override
@@ -95,6 +104,13 @@ public class StatusBarClockStyle extends SettingsPreferenceFragment
             Settings.System.putInt(
                     resolver, STATUS_BAR_AM_PM, statusBarAmPm);
             mStatusBarAmPm.setSummary(mStatusBarAmPm.getEntries()[index]);
+            return true;
+        } else if (preference == mFontStyle) {
+            int val = Integer.parseInt((String) newValue);
+            int index = mFontStyle.findIndexOfValue((String) newValue);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.STATUSBAR_CLOCK_FONT_STYLE, val);
+            mFontStyle.setSummary(mFontStyle.getEntries()[index]);
             return true;
         }
         return false;

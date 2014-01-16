@@ -37,6 +37,7 @@ import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
+import android.preference.SeekBarPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceGroup;
@@ -79,6 +80,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
     private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
     private static final String KEY_SEE_TRHOUGH = "see_through";
+    private static final String KEY_BLUR_RADIUS = "blur_radius";
 
     private static final int SET_OR_CHANGE_LOCK_METHOD_REQUEST = 123;
     private static final int CONFIRM_EXISTING_FOR_BIOMETRIC_WEAK_IMPROVE_REQUEST = 124;
@@ -133,6 +135,7 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private ListPreference mLockNumpadRandom;
     private CheckBoxPreference mLockBeforeUnlock;
     private CheckBoxPreference mSeeThrough;
+    private SeekBarPreference mBlurRadius;
 
     private Preference mNotificationAccess;
 
@@ -152,6 +155,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
     private CheckBoxPreference mLockRingBattery;
     private CheckBoxPreference mLockScreenPowerMenu;
 
+    private Activity mActivity;
+    private ContentResolver mResolver;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -166,6 +172,13 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
     private PreferenceScreen createPreferenceHierarchy() {
         PreferenceScreen root = getPreferenceScreen();
+
+        mContext = getActivity();
+        mActivity = getActivity();
+        mResolver = mActivity.getContentResolver();
+
+        PreferenceScreen prefs = getPreferenceScreen();
+
         if (root != null) {
             root.removeAll();
         }
@@ -323,6 +336,10 @@ public class SecuritySettings extends RestrictedSettingsFragment
 
         // lockscreen see through
         mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_TRHOUGH);
+        mBlurRadius = (SeekBarPreference) prefs.findPreference(KEY_BLUR_RADIUS);
+        mBlurRadius.setProgress(Settings.System.getInt(resolver, 
+            Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
+        mBlurRadius.setOnPreferenceChangeListener(this);
 
         // biometric weak liveliness
         mBiometricWeakLiveliness =
@@ -899,6 +916,9 @@ public class SecuritySettings extends RestrictedSettingsFragment
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.LOCK_BEFORE_UNLOCK,
                     ((Boolean) value) ? 1 : 0);
+        } else if (preference == mBlurRadius) {
+            Settings.System.putInt(getContentResolver(), 
+                    Settings.System.LOCKSCREEN_BLUR_RADIUS, (Integer)value);
         }
         return true;
     }

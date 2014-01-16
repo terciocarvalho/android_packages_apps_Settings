@@ -17,6 +17,7 @@
 package com.android.settings.temasek.quicksettings;
 
 import static com.android.internal.util.temasek.QSConstants.TILE_CUSTOM;
+import static com.android.internal.util.temasek.QSConstants.TILE_CUSTOM_DELIMITER;
 import static com.android.internal.util.temasek.QSConstants.TILE_CONTACT;
 import static com.android.internal.util.temasek.QSConstants.TILE_CUSTOM_KEY;
 import static com.android.internal.util.temasek.QSConstants.TILE_DELIMITER;
@@ -55,6 +56,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -117,16 +119,9 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
     private IconPicker mIconPicker;
     private File mTemporaryImage;
 
-    private ImageButton mDialogIconOne;
-    private ImageButton mDialogIconTwo;
-    private ImageButton mDialogIconThree;
-    private ImageButton mDialogIconFour;
-    private ImageButton mDialogIconFive;
-    private Button mDialogLabelOne;
-    private Button mDialogLabelTwo;
-    private Button mDialogLabelThree;
-    private Button mDialogLabelFour;
-    private Button mDialogLabelFive;
+    private ImageButton[] mDialogIcon = new ImageButton[NUMBER_ACTIONS];
+    private Button[] mDialogLabel = new Button[NUMBER_ACTIONS];
+    private ImageButton mExtraImageButton;
 
     private Drawable mEmptyIcon;
     private String mEmptyLabel;
@@ -135,7 +130,7 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
 
     private boolean mShortPress = true;
 
-    private int mCurrentAction = 0;
+    private int mCurrentAction = -1;
 
     private int mTileTextSize;
     private int mTileTextPadding;
@@ -442,90 +437,60 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
         return isLandscape;
     }
 
-    private String returnCustomTile(String tile) {
-        String[] split = tile.split(TILE_CUSTOM_KEY);
-        return split[0];
-    }
-
     private String findCustomKey(String tile) {
         String[] split = tile.split(TILE_CUSTOM_KEY);
         return split[1];
     }
 
     private View customTileDialogView(String tileKey) {
-        mCurrentCustomTile = tileKey;
         View view = View.inflate(getActivity(), R.layout.custom_tile_dialog, null);
 
-        mDialogIconOne = (ImageButton) view.findViewById(R.id.icon);
-        mDialogLabelOne = (Button) view.findViewById(R.id.action);
-        mDialogIconTwo = (ImageButton) view.findViewById(R.id.icon_two);
-        mDialogLabelTwo = (Button) view.findViewById(R.id.action_two);
-        mDialogIconThree = (ImageButton) view.findViewById(R.id.icon_three);
-        mDialogLabelThree = (Button) view.findViewById(R.id.action_three);
-        mDialogIconFour = (ImageButton) view.findViewById(R.id.icon_four);
-        mDialogLabelFour = (Button) view.findViewById(R.id.action_four);
-        mDialogIconFive = (ImageButton) view.findViewById(R.id.icon_five);
-        mDialogLabelFive = (Button) view.findViewById(R.id.action_five);
+        mCurrentCustomTile = tileKey;
+
+        mDialogIcon[0] = (ImageButton) view.findViewById(R.id.icon);
+        mDialogLabel[0] = (Button) view.findViewById(R.id.action);
+        mDialogIcon[1] = (ImageButton) view.findViewById(R.id.icon_two);
+        mDialogLabel[1] = (Button) view.findViewById(R.id.action_two);
+        mDialogIcon[2] = (ImageButton) view.findViewById(R.id.icon_three);
+        mDialogLabel[2] = (Button) view.findViewById(R.id.action_three);
+        mDialogIcon[3] = (ImageButton) view.findViewById(R.id.icon_four);
+        mDialogLabel[3] = (Button) view.findViewById(R.id.action_four);
+        mDialogIcon[4] = (ImageButton) view.findViewById(R.id.icon_five);
+        mDialogLabel[4] = (Button) view.findViewById(R.id.action_five);
         ImageButton reset = (ImageButton) view.findViewById(R.id.reset);
         ImageButton resetTwo = (ImageButton) view.findViewById(R.id.reset_two);
         ImageButton resetThree = (ImageButton) view.findViewById(R.id.reset_three);
         ImageButton resetFour = (ImageButton) view.findViewById(R.id.reset_four);
         ImageButton resetFive = (ImageButton) view.findViewById(R.id.reset_five);
 
-        setDialogIconsAndText(0);
-        setDialogIconsAndText(1);
-        setDialogIconsAndText(2);
-        setDialogIconsAndText(3);
-        setDialogIconsAndText(4);
+        for (int i = 0; i < NUMBER_ACTIONS; i++) {
+            setDialogIconsAndText(i);
+            mDialogIcon[i].setOnClickListener(QuickSettingsTiles.this);
+            mDialogLabel[i].setOnClickListener(QuickSettingsTiles.this);
+            mDialogLabel[i].setOnLongClickListener(QuickSettingsTiles.this);
+        }
 
-        mDialogIconOne.setOnClickListener(QuickSettingsTiles.this);
-        mDialogLabelOne.setOnClickListener(QuickSettingsTiles.this);
-        mDialogIconTwo.setOnClickListener(QuickSettingsTiles.this);
-        mDialogLabelTwo.setOnClickListener(QuickSettingsTiles.this);
-        mDialogIconThree.setOnClickListener(QuickSettingsTiles.this);
-        mDialogLabelThree.setOnClickListener(QuickSettingsTiles.this);
-        mDialogIconFour.setOnClickListener(QuickSettingsTiles.this);
-        mDialogLabelFour.setOnClickListener(QuickSettingsTiles.this);
-        mDialogIconFive.setOnClickListener(QuickSettingsTiles.this);
-        mDialogLabelFive.setOnClickListener(QuickSettingsTiles.this);
         reset.setOnClickListener(QuickSettingsTiles.this);
         resetTwo.setOnClickListener(QuickSettingsTiles.this);
         resetThree.setOnClickListener(QuickSettingsTiles.this);
         resetFour.setOnClickListener(QuickSettingsTiles.this);
         resetFive.setOnClickListener(QuickSettingsTiles.this);
 
-        mDialogLabelOne.setOnLongClickListener(QuickSettingsTiles.this);
-        mDialogLabelTwo.setOnLongClickListener(QuickSettingsTiles.this);
-        mDialogLabelThree.setOnLongClickListener(QuickSettingsTiles.this);
-        mDialogLabelFour.setOnLongClickListener(QuickSettingsTiles.this);
-        mDialogLabelFive.setOnLongClickListener(QuickSettingsTiles.this);
+        return view;
+    }
 
+    private View customTileExtrasView(String tileKey) {
+        View view = View.inflate(getActivity(), R.layout.custom_tile_extras_dialog, null);
+        mCurrentCustomTile = tileKey;
+        mExtraImageButton = (ImageButton) view.findViewById(R.id.icon_extra);
+        mExtraImageButton.setOnClickListener(QuickSettingsTiles.this);
+        setResolvedImage();
         return view;
     }
 
     private void setDialogIconsAndText(int index) {
-        switch (index) {
-            case 0:
-                mDialogLabelOne.setText(returnFriendlyName(0));
-                mDialogIconOne.setImageDrawable(returnPackageDrawable(0));
-                break;
-            case 1:
-                mDialogLabelTwo.setText(returnFriendlyName(1));
-                mDialogIconTwo.setImageDrawable(returnPackageDrawable(1));
-                break;
-            case 2:
-                mDialogLabelThree.setText(returnFriendlyName(2));
-                mDialogIconThree.setImageDrawable(returnPackageDrawable(2));
-                break;
-            case 3:
-                mDialogLabelFour.setText(returnFriendlyName(3));
-                mDialogIconFour.setImageDrawable(returnPackageDrawable(3));
-                break;
-            case 4:
-                mDialogLabelFive.setText(returnFriendlyName(4));
-                mDialogIconFive.setImageDrawable(returnPackageDrawable(4));
-                break;
-        }
+        mDialogLabel[index].setText(returnFriendlyName(index));
+        mDialogIcon[index].setImageDrawable(returnPackageDrawable(index));
     }
 
     private String returnFriendlyName(int index) {
@@ -550,6 +515,26 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                     + " "+ AppHelper.getShortcutPreferred(
                     getActivity(), getActivity().getPackageManager(), longpressUri);
         }
+    }
+
+    private void setResolvedImage() {
+        String settings = QuickSettingsUtil.getCustomExtras(getActivity(),
+                Settings.System.CUSTOM_TOGGLE_EXTRAS, mCurrentCustomTile);
+        String[] settingSplit = settings.split(TILE_CUSTOM_DELIMITER);
+        if (settingSplit.length < 2) {
+            mExtraImageButton.setImageDrawable(mEmptyIcon);
+            return;
+        }
+        Drawable icon = null;
+        if (settingSplit[1] != null && !settingSplit.equals(" ")
+                && settingSplit[1].length() > 0) {
+            File f = new File(Uri.parse(settingSplit[1]).getPath());
+            if (f.exists()) {
+                icon = new BitmapDrawable(
+                        getResources(), f.getAbsolutePath());
+            }
+        }
+        mExtraImageButton.setImageDrawable(icon != null ? icon : mEmptyIcon);
     }
 
     private Drawable returnPackageDrawable(int index) {
@@ -614,9 +599,8 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                         if (cursor.moveToFirst()) {
                             String lookupKey = cursor.getString(cursor
                                     .getColumnIndex(ContactsContract.Contacts.LOOKUP_KEY));
-                            QuickSettingsUtil.saveCustomExtras(getActivity(),
-                                    lookupKey, mCurrentCustomTile,
-                                    Settings.System.TILE_CONTACT_ACTIONS);
+                            QuickSettingsUtil.saveExtras(getActivity(), lookupKey,
+                                    mCurrentCustomTile, Settings.System.TILE_CONTACT_ACTIONS);
                         }
                     } finally {
                         cursor.close();
@@ -629,7 +613,7 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
     @Override
     public void iconPicked(int requestCode, int resultCode, Intent intent) {
         if (requestCode == IconPicker.REQUEST_PICK_GALLERY) {
-            if (resultCode == Activity.RESULT_OK) {
+            if (resultCode == Activity.RESULT_OK && mCurrentAction != -1) {
                 if (mTemporaryImage.length() == 0 || !mTemporaryImage.exists()) {
                     Toast.makeText(getActivity(),
                             getResources().getString(R.string.shortcut_image_not_valid),
@@ -643,11 +627,17 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                 mTemporaryImage.renameTo(imageFile);
                 imageFile.setReadable(true, false);
 
-                deleteCustomIcon();  // Delete current icon if it exists before saving new.
-                QuickSettingsUtil.saveCustomActions(getActivity(), mCurrentAction, 2,
-                        path, mCurrentCustomTile);
+                if (mCurrentAction == 5) {
+                    QuickSettingsUtil.saveCustomExtras(getActivity(), mCurrentCustomTile,
+                            null, path, null, null, null, null);
+                    setResolvedImage();
+                } else {
+                    deleteCustomIcon();  // Delete current icon if it exists before saving new.
+                    QuickSettingsUtil.saveCustomActions(getActivity(), mCurrentAction, 2,
+                            path, mCurrentCustomTile);
 
-                setDialogIconsAndText(mCurrentAction);
+                    setDialogIconsAndText(mCurrentAction);
+                }
             } else {
                 if (mTemporaryImage.exists()) {
                     mTemporaryImage.delete();
@@ -658,23 +648,19 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
 
     @Override
     public void shortcutPicked(String uri, String friendlyName, boolean isApplication) {
-        if (uri == null) {
+        if (uri == null || mCurrentAction == -1) {
             return;
         }
 
         Drawable icon = null;
-        try {
-            Intent intent = Intent.parseUri(uri, 0);
-            icon = LockscreenTargetUtils.getDrawableFromIntent(getActivity(), intent);
-        } catch (URISyntaxException e) {
-            Log.wtf(TAG, "Invalid uri: " + uri);
-        }
 
         boolean changeIcon = false;
         int setting = 0;
 
         if (mShortPress) {
             changeIcon = true;
+            QuickSettingsUtil.saveCustomExtras(getActivity(), mCurrentCustomTile,
+                    null, null, null, null, " ", null);
         } else {
             changeIcon = QuickSettingsUtil.getActionsAtIndex(getActivity(),
                     mCurrentAction, 0, mCurrentCustomTile) == null;
@@ -724,19 +710,19 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                 prepareCustomIcon(4);
                 break;
             case R.id.action:
-                prepareCustomAction(0);
+                prepareCustomAction(0, true);
                 break;
             case R.id.action_two:
-                prepareCustomAction(1);
+                prepareCustomAction(1, true);
                 break;
             case R.id.action_three:
-                prepareCustomAction(2);
+                prepareCustomAction(2, true);
                 break;
             case R.id.action_four:
-                prepareCustomAction(3);
+                prepareCustomAction(3, true);
                 break;
             case R.id.action_five:
-                prepareCustomAction(4);
+                prepareCustomAction(4, true);
                 break;
             case R.id.reset:
                 deleteAction(0);
@@ -753,7 +739,33 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
             case R.id.reset_five:
                 deleteAction(4);
                 break;
+            case R.id.icon_extra:
+                mCurrentAction = 5;
+                beginImagePick();
+                break;
         }
+    }
+
+    @Override
+    public boolean onLongClick(View v) {
+        switch(v.getId()) {
+            case R.id.action:
+                prepareCustomAction(0, false);
+                break;
+            case R.id.action_two:
+                prepareCustomAction(1, false);
+                break;
+            case R.id.action_three:
+                prepareCustomAction(2, false);
+                break;
+            case R.id.action_four:
+                prepareCustomAction(3, false);
+                break;
+            case R.id.action_five:
+                prepareCustomAction(4, false);
+                break;
+        }
+        return true;
     }
 
     private void prepareCustomIcon(int action) {
@@ -768,24 +780,28 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
         }
 
         if (uri != null) {
-            try {
-                mTemporaryImage.createNewFile();
-                mTemporaryImage.setWritable(true, false);
-                // Layout will scale down for us
-                mIconPicker.pickGalleryWithSize(
-                    getId(), mTemporaryImage, 360);
-            } catch (IOException e) {
-                Log.d(TAG, "Could not create temporary icon", e);
-            }
+            beginImagePick();
         } else {
             Toast.makeText(getActivity(), R.string.custom_tile_null_warning,
                     Toast.LENGTH_LONG).show();
         }
     }
 
-    private void prepareCustomAction(int action) {
+    private void beginImagePick() {
+        try {
+            mTemporaryImage.createNewFile();
+            mTemporaryImage.setWritable(true, false);
+            // Layout will scale down for us
+            mIconPicker.pickGalleryWithSize(
+                getId(), mTemporaryImage, 360);
+        } catch (IOException e) {
+            Log.d(TAG, "Could not create temporary icon", e);
+        }
+    }
+
+    private void prepareCustomAction(int action, boolean shortpress) {
         mCurrentAction = action;
-        mShortPress = true;
+        mShortPress = shortpress;
         mPicker.pickShortcut(getId());
     }
 
@@ -796,36 +812,9 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
         setDialogIconsAndText(mCurrentAction);
     }
 
-    @Override
-    public boolean onLongClick(View v) {
-        switch(v.getId()) {
-            case R.id.action:
-                prepareCustomLongAction(0);
-                break;
-            case R.id.action_two:
-                prepareCustomLongAction(1);
-                break;
-            case R.id.action_three:
-                prepareCustomLongAction(2);
-                break;
-            case R.id.action_four:
-                prepareCustomLongAction(3);
-                break;
-            case R.id.action_five:
-                prepareCustomLongAction(4);
-                break;
-        }
-        return true;
-    }
-
-    private void prepareCustomLongAction(int action) {
-        mCurrentAction = action;
-        mShortPress = false;
-        mPicker.pickShortcut(getId());
-    }
-
     private void showDialogInner(int id) {
-        DialogFragment newFragment = MyAlertDialogFragment.newInstance(id, mCurrentCustomTile);
+        DialogFragment newFragment =
+                MyAlertDialogFragment.newInstance(id, mCurrentCustomTile);
         newFragment.setTargetFragment(this, 0);
         newFragment.show(getFragmentManager(), "dialog " + id);
     }
@@ -1147,12 +1136,18 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                     .setPositiveButton(R.string.dlg_ok,
                         new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
-                            if (QuickSettingsUtil.getCustomExtras(getActivity(),
+                            String extras = QuickSettingsUtil.getCustomExtras(getActivity(),
                                     Settings.System.CUSTOM_TOGGLE_EXTRAS,
-                                    tileKey) == null) {
-                                QuickSettingsUtil.saveCustomExtras(getActivity(),
-                                        Integer.toString(1), tileKey,
-                                        Settings.System.CUSTOM_TOGGLE_EXTRAS);
+                                    tileKey);
+                            if (extras == null) {
+                                QuickSettingsUtil.saveCustomExtras(getActivity(), tileKey,
+                                        Integer.toString(0), null, null, null, null, null);
+                            } else {
+                                String[] collapseMatch = extras.split(TILE_CUSTOM_DELIMITER);
+                                if (collapseMatch[0].equals(" ")) {
+                                    QuickSettingsUtil.saveCustomExtras(getActivity(), tileKey,
+                                            Integer.toString(0), null, null, null, null, null);
+                                }
                             }
                             getOwner().showDialogInner(DLG_CUSTOM_TILE_EXTRAS);
                         }
@@ -1160,57 +1155,114 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                     .create();
                 case DLG_CUSTOM_TILE_EXTRAS:
                     int actions = 0;
+                    int advActions = 0;
+                    int type = 0;
                     boolean matchIncluded = false;
+                    String advSetting = null;
                     String checkClick = null;
-                    for (int i = 0; i < 5; i++) {
+                    String className = null;
+                    Intent intent = null;
+                    String values = "";
+                    for (int i = 0; i < getOwner().NUMBER_ACTIONS; i++) {
+                        className = null;
+                        intent = null;
                         checkClick = QuickSettingsUtil.getActionsAtIndex(getActivity(),
                                 i, 0, tileKey);
                         if (checkClick != null) {
                             actions++;
+                            try {
+                                intent = Intent.parseUri(checkClick, 0);
+                                String intentClass = intent.getComponent().getClassName();
+                                className = intentClass.substring(intentClass.lastIndexOf(".") + 1);
+                            } catch (URISyntaxException e) {
+                                // Tricky user
+                            }
+                            if (className != null
+                                    && className.equals("ChamberOfSecrets")
+                                    && intent != null) {
+                                type = intent.getIntExtra("type", 0);
+                                String settingHolder = intent.getStringExtra("setting");
+                                if (advSetting == null) {
+                                    advSetting = settingHolder;
+                                }
+                                String array = intent.getStringExtra("array");
+                                if (array != null && advSetting != null && settingHolder != null) {
+                                    String[] strArray = array.split(",");
+                                    if (strArray.length == 1 && advSetting.equals(settingHolder)) {
+                                        advActions++;
+                                        values = values + strArray[0] + ",";
+                                    } else {
+                                        values = " ";
+                                        advActions = 0;
+                                        advSetting = " ";
+                                    }
+                                }
+                            } else {
+                                values = " ";
+                                advActions = 0;
+                                advSetting = " ";
+                            }
                         }
                     }
                     // User selected multiple click actions
+                    // Tile isn't advanced
                     // Only now is this preference relevant
-                    if (actions > 1) {
+                    if (actions > 1 && advActions == 0) {
                         matchIncluded = true;
                     }
 
-                    String setting = QuickSettingsUtil.getCustomExtras(getActivity(),
+                    final String typeSaved = Integer.toString(type);
+                    // Location mode is google's evil step child.
+                    // Use location_tile's work-a-round.
+                    if (advSetting == null) {
+                        advSetting = " ";
+                    }
+                    final String resolverSaved = !advSetting.equals("location_mode")
+                            ? advSetting : "location_last_mode";
+                    final String valuesSaved = values;
+
+                    String[] checks = QuickSettingsUtil.getCustomExtras(getActivity(),
                             Settings.System.CUSTOM_TOGGLE_EXTRAS,
-                            tileKey);
+                            tileKey).split(TILE_CUSTOM_DELIMITER);
+                    int checksSaved = checks[0] == null ? 0 : Integer.parseInt(checks[0]);
+                    // No longer allow match state to be selected
+                    // if tile is advanced
+                    if (advActions > 0) {
+                        if (checksSaved == 2) {
+                            checksSaved = 0;
+                        } else if (checksSaved == 3) {
+                            checksSaved = 1;
+                        }
+                        QuickSettingsUtil.saveCustomExtras(getActivity(), tileKey,
+                                Integer.toString(checksSaved), null, null, null, null, null);
+                    }
+
                     final boolean[] checkBox = new boolean[matchIncluded ? 2 : 1];
-                    if (setting != null) {
-                        switch (Integer.parseInt(setting)) {
-                            case 0:
-                                checkBox[0] = false;
-                                if (matchIncluded) {
-                                    checkBox[1] = false;
-                                }
-                                break;
-                            case 1:
-                                checkBox[0] = true;
-                                if (matchIncluded) {
-                                    checkBox[1] = false;
-                                }
-                                break;
-                            case 2:
-                                checkBox[0] = false;
-                                if (matchIncluded) {
-                                    checkBox[1] = true;
-                                }
-                                break;
-                            case 3:
-                                checkBox[0] = true;
-                                if (matchIncluded) {
-                                    checkBox[1] = true;
-                                }
-                                break;
-                        }
-                    } else {
-                        checkBox[0] = false;
-                        if (matchIncluded) {
-                            checkBox[1] = false;
-                        }
+                    switch (checksSaved) {
+                        case 0:
+                            checkBox[0] = false;
+                            if (matchIncluded) {
+                                checkBox[1] = false;
+                            }
+                            break;
+                        case 1:
+                            checkBox[0] = true;
+                            if (matchIncluded) {
+                                checkBox[1] = false;
+                            }
+                            break;
+                        case 2:
+                            checkBox[0] = false;
+                            if (matchIncluded) {
+                                checkBox[1] = true;
+                            }
+                            break;
+                        case 3:
+                            checkBox[0] = true;
+                            if (matchIncluded) {
+                                checkBox[1] = true;
+                            }
+                            break;
                     }
 
                     final String[] entry = new String[matchIncluded ? 2 : 1];
@@ -1221,9 +1273,22 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                         entry[1] = getResources().getString(
                                 R.string.custom_toggle_match_state_check);
                     }
+                    AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
+                    View view = getOwner().customTileExtrasView(tileKey);
+                    final EditText name = (EditText) view.findViewById(R.id.action_label);
+                    final String defaultText =
+                            getActivity().getResources().getString(
+                            R.string.custom_tile_resolve_name);
+                    name.append(checks.length > 1 && !checks[2].equals(" ")
+                            ? checks[2] : defaultText);
+                    // User is using the Chamber of Secrets with one setting and
+                    // one value per state with multiple state. We'll implement
+                    // a listener so the tile can change states by itself.
+                    if (advActions > 0) {
+                        alert.setView(view);
+                    }
 
-                    return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.custom_toggle_extras)
+                    return alert.setTitle(R.string.custom_toggle_extras)
                     .setNegativeButton(R.string.cancel, null)
                     .setMultiChoiceItems(entry, checkBox,
                         new  DialogInterface.OnMultiChoiceClickListener() {
@@ -1251,9 +1316,10 @@ public class QuickSettingsTiles extends Fragment implements View.OnClickListener
                                         break;
                                 }
                             }
-                            QuickSettingsUtil.saveCustomExtras(getActivity(),
-                                    Integer.toString(userValue), tileKey,
-                                    Settings.System.CUSTOM_TOGGLE_EXTRAS);
+
+                            QuickSettingsUtil.saveCustomExtras(getActivity(), tileKey,
+                                    Integer.toString(userValue), null, name.getText().toString(),
+                                    valuesSaved, resolverSaved, typeSaved);
                         }
                     })
                     .create();

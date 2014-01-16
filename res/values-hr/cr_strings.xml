@@ -67,6 +67,12 @@
     <string name="clock_date_style_uppercase">velikim slovima</string>
     <string name="clock_date_format_custom">Prilagođeni java oblik</string>
     <string name="status_bar_clock_style_reset_message">Početna postava boje sata?</string>
+    <string name="clock_font_style_title">Slova</string>
+    <string name="clock_font_bold">Masna</string>
+    <string name="clock_font_condensed">Stisnuta</string>
+    <string name="clock_font_light">Tanka</string>
+    <string name="clock_font_light_italic">Tanka kurzivna</string>
+    <string name="clock_font_normal">Normalna</string>
 
     <!-- Advanced low battery indicator options -->
     <string name="lights_and_warnings_title">Svjetla i upozorenja</string>
@@ -251,10 +257,16 @@
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_qs_title">Traka s obavijestima i brze postavke</string>
     <string name="notification_drawer_title">Traka s obavijestima</string>
-    <string name="notification_hide_carrier_title">Sakrij oznaku operatera</string>
-    <string name="notification_hide_carrier_summary">Sakrij oznaku operatera i bezžične mreže u traci s obavijestima</string>
     <string name="notification_shortcuts_settings_title">Prečaci</string>
     <string name="notification_shortcuts_settings_summary">Prikaži prečace u traci s obavijestima</string>
+
+    <!-- Notification hide labels -->
+    <string name="notification_hide_labels_title">Sakrij oznaku obavijesti</string>
+    <string name="notification_hide_labels_disable">Prikaži sve oznake</string>
+    <string name="notification_hide_labels_carrier">Sakrij oznaku operatera</string>
+    <string name="notification_hide_labels_wifi">Sakrij WiFi oznaku</string>
+    <string name="notification_hide_labels_all">Sakrij sve oznake</string>
+    <string name="notification_hide_labels_text">u ploči s obavijestima</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Ikona baterije</string>
@@ -365,6 +377,7 @@
 
     <!-- Power menu -->
     <string name="power_menu_style_summary">Promjeni boje glavnog izbornika</string>
+    <string name="power_menu_screenrecord_title">Snimač zaslona</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">RAM traka sa nedavnim aplikacijama</string>
@@ -782,5 +795,86 @@
 
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Minimalno trajanje vibracije</string>
+
+    <!--Lockscreen See Through-->
+     <string name="see_through_title">Prozirno</string>
+     <string name="see_through_summary">Prikazuje sadržaj iza zaslona zaključavanja, vaši podaci tada mogu biti vidljivi osobama oko vas</string>
+
+    <!--Lockscreen blur-->
+    <string name="blur_behind_title">Zamućena pozadina zaslona zaključavanja</string>
+    <string name="blur_behind_summary">Dodaje zgodan efekt zamućenja pozadine</string>
+    <string name="blur_radius_title">Opseg zamućenja</string>
+    <string name="blur_radius_summary">Postavlja opseg zamućenja</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">Općenito</string>
+    <string name="layout">Raspored</string>
+    <string name="privacy">Privatnost</string>
+    <string name="lockscreen_notifications">Obavijesti zaslona zaključavanja</string>
+    <string name="lockscreen_notifications_summary">Prikazuje tekuće obavijesti na zaslonu zaključavanja</string>
+    <string name="pocket_mode">Džepni način</string>
+    <string name="pocket_mode_summary">Pali zaslon i prikazuje sve obavijesti pri vađenju uređaja iz džepa. Gasi zaslon kad se uređaj vraća u džep.</string>
+    <string name="show_always">Uvijek prikaži</string>
+    <string name="show_always_summary">Uvijek pali zaslon pri vađenju uređaja iz džepa, čak i kada nema tekućih obavijesti</string>
+    <string name="hide_low_priority">Sakrij obavijesti niske važnosti</string>
+    <string name="hide_low_priority_summary">Skriva obavijesti niske važnosti poput Google Now obavijesti o vremenu</string>
+    <string name="hide_non_clearable">Sakrij nebrisive obavijesti</string>
+    <string name="hide_non_clearable_summary">Skriva sve nebrisive obavijesti</string>
+    <string name="dismiss_all">Dozvoli brisanje svih obavijesti</string>
+    <string name="dismiss_all_summary">Dozvoljava brisanje čak i nebrisivih obavijesti. Naravno, samo su skrivene sa zaslona zaključavanja, ne i sa ploče s obavijestima.</string>
+    <string name="expanded_view">Prošireni pregled obavijesti</string>
+    <string name="expanded_view_summary">Dodaje mogućnost prebacivanja između normalnog i proširenog pregleda dugim držanjem. Prošireni pregled može prikazati više osobnih podataka pa ga možda ne bi trebali omogućiti.</string>
+    <string name="force_expanded_view">Prisilni prošireni pregled</string>
+    <string name="force_expanded_view_summary">Uvijek prikazuje proširene obavijesti. I dalje imate mogućnost prebacivanja između normalnog i proširenog pregleda.</string>
+    <string name="wake_on_notification">Buđenje pri obavijesti</string>
+    <string name="wake_on_notification_summary">Probudi uređaj pri primitku obavijesti</string>
+    <string name="notifications_height">Broj obavijesti</string>
+    <string name="notifications_height_summary">Broj obavijesti koje će biti prikazane odjednom</string>
+    <string name="offset_top">Odmak od vrha zaslona:</string>
+    <string name="privacy_mode">Način privatnosti</string>
+    <string name="privacy_mode_summary">Onemogućuje prikaz i skrivanje obavijesti. U ovom načinu vidite samo ikone obavijesti.</string>
+    <string name="excluded_apps_title">Isključene aplikacije</string>
+    <string name="excluded_apps_summary">Aplikacije isključene iz prikaza obavijesti na zaslonu zaključavanja</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Snimač zaslona</string>
+    <string name="screen_recorder_summary">Podesi postavke snimača zaslona</string>
+    <string name="screen_recorder_video_dimensions_title">Veličina videa</string>
+    <string name="screen_recorder_video_bitrate_title">Brzina prijenosa</string>
+    <string name="screen_recorder_record_audio_title">Snimanje zvuka</string>
+    <string name="screen_recorder_record_audio_summary">Snimi zvuk s mikrofona</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
 
 </resources>

@@ -331,13 +331,6 @@ public class SecuritySettings extends RestrictedSettingsFragment
             }
         }
 
-        // lockscreen see through
-        mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_TRHOUGH);
-        mBlurRadius = (SeekBarPreference) prefs.findPreference(KEY_BLUR_RADIUS);
-        mBlurRadius.setProgress(Settings.System.getInt(resolver, 
-            Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
-        mBlurRadius.setOnPreferenceChangeListener(this);
-
         // biometric weak liveliness
         mBiometricWeakLiveliness =
                 (CheckBoxPreference) root.findPreference(KEY_BIOMETRIC_WEAK_LIVELINESS);
@@ -407,6 +400,18 @@ public class SecuritySettings extends RestrictedSettingsFragment
                     Settings.Secure.LOCK_SCREEN_POWER_MENU, 1) == 1);
             mLockScreenPowerMenu.setOnPreferenceChangeListener(this);
         }
+
+        // lockscreen see through
+        mSeeThrough = (CheckBoxPreference) root.findPreference(KEY_SEE_TRHOUGH);
+        if (mSeeThrough != null) {
+            mSeeThrough.setChecked(Settings.System.getInt(getContentResolver(),
+                    Settings.System.LOCKSCREEN_SEE_THROUGH, 0) == 1);
+            mSeeThrough.setOnPreferenceChangeListener(this);
+        }
+        mBlurRadius = (SeekBarPreference) prefs.findPreference(KEY_BLUR_RADIUS);
+        mBlurRadius.setProgress(Settings.System.getInt(resolver, 
+            Settings.System.LOCKSCREEN_BLUR_RADIUS, 12));
+        mBlurRadius.setOnPreferenceChangeListener(this);
 
         // Link to widget settings showing summary about the actual status
         // and remove them on low memory devices

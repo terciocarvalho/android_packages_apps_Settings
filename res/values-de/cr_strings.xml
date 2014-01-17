@@ -44,7 +44,7 @@
     <string name="status_bar_clock_style_reset">Farbe zurücksetzen</string>
     <string name="status_bar_show_clock_title">Zeige Uhrzeit und Datum</string>
     <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">24-Uhr ist eingeschaltet</string>
+    <string name="status_bar_am_pm_info">24h-Uhr ist eingeschaltet</string>
     <string name="enable_clock_weekday">Wochentag</string>
     <string name="enable_clock_weekday_summary">Abkürzung Wochentag vor der Uhrzeit</string>
     <string name="right_clock">Uhrzeit rechts</string>
@@ -268,6 +268,19 @@
     <string name="notification_hide_carrier_summary">Verstecke Netzbetreiber und Wi-Fi Namen im Benachrichtigungsfeld.</string>
     <string name="notification_shortcuts_settings_title">Verknüpfungen</string>
     <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen im Benachrichtigungsfeld an.</string>
+    
+    <string name="notification_carrier_label_title">Netzbetreiber Label</string>
+    <string name="notification_custom_carrier_label_title">Eigenes Netzbetreiber Label</string>
+    <string name="notification_custom_carrier_label_explain">Bitte neues Label eingeben. Um das Standard Label wiederherzustellen muss ein leeres Label eingegeben werden.</string>
+    <string name="notification_custom_carrier_label_notset">Eigenes Label zur Zeit nicht gesetzt</string>
+    
+     <!-- Notification hide labels -->
+    <string name="notification_hide_labels_title">Verstecke Benachrichtigungs-Labels</string>
+    <string name="notification_hide_labels_disable">Zeige alle Labels</string>
+    <string name="notification_hide_labels_carrier">Verstecke Betreiber Label</string>
+    <string name="notification_hide_labels_wifi">Verstecke WiFi Label</string>
+    <string name="notification_hide_labels_all">Verstecke alle Labels</string>
+    <string name="notification_hide_labels_text">im Benachrichtigunsfeld</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Batterie Symbol</string>
@@ -797,10 +810,10 @@
 
     <!--Lockscreen See Through-->
      <string name="see_through_title">Durchsichtig</string>
-     <string name="see_through_summary">Zeigt den Inhalt hinter dem Entsperrbildschirm, persönliche Daten sind möglicherweise für umstehende Personen sichtbar.</string>
+     <string name="see_through_summary">Zeigt den Inhalt hinter dem Sperrbildschirm, persönliche Daten sind möglicherweise für umstehende Personen sichtbar.</string>
 
     <!--Lockscreen blur-->
-    <string name="blur_behind_title">Verwischter Entsperrbildschirm-Hintergrund</string>
+    <string name="blur_behind_title">Verwischter Sperrbildschirm-Hintergrund</string>
     <string name="blur_behind_summary">Fügt dem Hintergrund einen netten Verwisch-Effekt hinzu.</string>
     <string name="blur_radius_title">Verwisch-Radius</string>
     <string name="blur_radius_summary">Legt den Radius des Verwisch-Effektes fest.</string>
@@ -808,9 +821,9 @@
     <!-- Lockscreen Notifications -->
     <string name="general">Allgemein</string>
     <string name="layout">Layout</string>
-    <string name="privacy">Ruhe</string>
-    <string name="lockscreen_notifications">Entsperrbildschirm-Benachrichtigungen</string>
-    <string name="lockscreen_notifications_summary">Zeigt anstehende Benachrichtigungen auf dem Entsperrbildschirm.</string>
+    <string name="privacy">Privatspäre</string>
+    <string name="lockscreen_notifications">Sperrbildschirm-Benachrichtigungen</string>
+    <string name="lockscreen_notifications_summary">Zeigt anstehende Benachrichtigungen auf dem Sperrbildschirm.</string>
     <string name="pocket_mode">Hosentaschen Modus</string>
     <string name="pocket_mode_summary">Schaltet den Bildschirm an und zeigt alle Benachrichtigungen an, wenn das Gerät aus der Hosentasche genommen wird. Schaltet den Bildschirm wieder aus wenn das Gerät wieder eingesteckt wird.</string>
     <string name="show_always">Immer anzeigen</string>
@@ -819,10 +832,10 @@
     <string name="hide_low_priority_summary">Verstecke Benachrichtigungen mit niedriger Priorität, wie z.B. Google Now Wetter Benachrichtigungen.</string>
     <string name="hide_non_clearable">Verstecke nicht löschbare</string>
     <string name="hide_non_clearable_summary">Verstecke alle nicht ignorierbaren Benachrichtigungen.</string>
-    <string name="dismiss_all">Erlaubt verwerfen von allen Benachrichtigungen</string>
-    <string name="dismiss_all_summary">Erlaubt auch das verwerfen von nicht ignorierbaren Benachrichtigungen. Natürlich werden sie nur vom Entsperrbildschirm versteckt und nicht vom Benachrichtigungsfeld.</string>
-    <string name="expanded_view">Erweiterte Ansicht Benachrichtigung</string>
-    <string name="expanded_view_summary">Ermöglicht das umschalten zwischen normaler und erweiterter Ansicht mittels langem drücken. Die erweiterte Ansicht zeigt manchmal mehr private Informationen, weshalb man es evtl. deaktivieren möchte.</string>
+    <string name="dismiss_all">Verwerfen aller Benachrichtigungen</string>
+    <string name="dismiss_all_summary">Erlaubt auch das verwerfen von nicht ignorierbaren Benachrichtigungen. Natürlich werden sie nur vom Sperrbildschirm versteckt und nicht vom Benachrichtigungsfeld.</string>
+    <string name="expanded_view">Erweiterte Ansicht</string>
+    <string name="expanded_view_summary">Ermöglicht das umschalten zwischen normaler und erweiterter Ansicht mittels langem drücken. Die erweiterte Ansicht zeigt manchmal mehr private Informationen, weshalb man sie evtl. deaktivieren möchte.</string>
     <string name="force_expanded_view">Erzwinge erweiterte Ansicht</string>
     <string name="force_expanded_view_summary">Zeigt Benachrichtigungen standardmäßig erweitert an. Man hat immer noch die Möglichkeit zwischen normaler und erweiterter Ansicht umzuschalten.</string>
     <string name="wake_on_notification">Aufwachen bei Benachrichtigung</string>
@@ -833,7 +846,7 @@
     <string name="privacy_mode">Privater Modus</string>
     <string name="privacy_mode_summary">Deaktiviert die Möglichkeit der Benachrichtigungen angezeigt und ignoriert zu werden. Auf diese Weise sieht man nur das Benachrichtigungs-Icon der Benachrichtigungen.</string>
     <string name="excluded_apps_title">Ausgeschlossene Apps</string>
-    <string name="excluded_apps_summary">Ausgeschlossene Applikationen werden nicht als Entsperrbildschirm-Benachrichtigung angezeigt.</string>
+    <string name="excluded_apps_summary">Ausgeschlossene Applikationen werden nicht als Sperrbildschirm-Benachrichtigung angezeigt.</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Bildschirmaufnahme</string>

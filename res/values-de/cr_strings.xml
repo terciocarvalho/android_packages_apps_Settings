@@ -11,6 +11,11 @@
     <string name="attention">Achtung</string>
     <string name="disabled">Ausgeschaltet</string>
     <string name="default_string">Standard</string>
+    <string name="additional_options_title">Zusätzliche Optionen</string>
+    <string name="reset_message">Alle Einträge auf Standard zurücksetzen?</string>
+    <string name="style_title">Aussehen</string>
+    <string name="add">Hinzufügen</string>
+    <string name="title_general">Allgemein</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek Erweiterungen</string>
@@ -62,6 +67,12 @@
     <string name="clock_date_style_uppercase">Großbuchstaben</string>
     <string name="clock_date_format_custom">Eigenes Java Format</string>
     <string name="status_bar_clock_style_reset_message">Aussehen der Uhr zurücksetzen?</string>
+    <string name="clock_font_style_title">Schriftart</string>
+    <string name="clock_font_bold">Fett</string>
+    <string name="clock_font_condensed">Gestaucht</string>
+    <string name="clock_font_light">Schwach</string>
+    <string name="clock_font_light_italic">Schwach Kursiv</string>
+    <string name="clock_font_normal">Normal</string>
 
     <!-- Advanced low battery indicator options -->
     <string name="lights_and_warnings_title">LED und Warnungen</string>
@@ -781,7 +792,89 @@
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Setze Verschlüsslungs-Passwort</string>
 
+<!-- Minimum Vibration Duration -->
+    <string name="minimum_vibration_duration">Minimale Vibrationsdauer</string>
 
+    <!--Lockscreen See Through-->
+     <string name="see_through_title">Durchsichtig</string>
+     <string name="see_through_summary">Zeigt den Inhalt hinter dem Entsperrbildschirm, persönliche Daten sind möglicherweise für umstehende Personen sichtbar.</string>
+
+    <!--Lockscreen blur-->
+    <string name="blur_behind_title">Verwischter Entsperrbildschirm-Hintergrund</string>
+    <string name="blur_behind_summary">Fügt dem Hintergrund einen netten Verwisch-Effekt hinzu.</string>
+    <string name="blur_radius_title">Verwisch-Radius</string>
+    <string name="blur_radius_summary">Legt den Radius des Verwisch-Effektes fest.</string>
+
+    <!-- Lockscreen Notifications -->
+    <string name="general">Allgemein</string>
+    <string name="layout">Layout</string>
+    <string name="privacy">Ruhe</string>
+    <string name="lockscreen_notifications">Entsperrbildschirm-Benachrichtigungen</string>
+    <string name="lockscreen_notifications_summary">Zeigt anstehende Benachrichtigungen auf dem Entsperrbildschirm.</string>
+    <string name="pocket_mode">Hosentaschen Modus</string>
+    <string name="pocket_mode_summary">Schaltet den Bildschirm an und zeigt alle Benachrichtigungen an, wenn das Gerät aus der Hosentasche genommen wird. Schaltet den Bildschirm wieder aus wenn das Gerät wieder eingesteckt wird.</string>
+    <string name="show_always">Immer anzeigen</string>
+    <string name="show_always_summary">Schaltet den Bildschirm immer ein, wenn das Gerät aus der Hosentasche genommen wird, auch wenn keine Benachrichtigungen anstehen.</string>
+    <string name="hide_low_priority">Verstecke niedrige Priorität</string>
+    <string name="hide_low_priority_summary">Verstecke Benachrichtigungen mit niedriger Priorität, wie z.B. Google Now Wetter Benachrichtigungen.</string>
+    <string name="hide_non_clearable">Verstecke nicht löschbare</string>
+    <string name="hide_non_clearable_summary">Verstecke alle nicht ignorierbaren Benachrichtigungen.</string>
+    <string name="dismiss_all">Erlaubt verwerfen von allen Benachrichtigungen</string>
+    <string name="dismiss_all_summary">Erlaubt auch das verwerfen von nicht ignorierbaren Benachrichtigungen. Natürlich werden sie nur vom Entsperrbildschirm versteckt und nicht vom Benachrichtigungsfeld.</string>
+    <string name="expanded_view">Erweiterte Ansicht Benachrichtigung</string>
+    <string name="expanded_view_summary">Ermöglicht das umschalten zwischen normaler und erweiterter Ansicht mittels langem drücken. Die erweiterte Ansicht zeigt manchmal mehr private Informationen, weshalb man es evtl. deaktivieren möchte.</string>
+    <string name="force_expanded_view">Erzwinge erweiterte Ansicht</string>
+    <string name="force_expanded_view_summary">Zeigt Benachrichtigungen standardmäßig erweitert an. Man hat immer noch die Möglichkeit zwischen normaler und erweiterter Ansicht umzuschalten.</string>
+    <string name="wake_on_notification">Aufwachen bei Benachrichtigung</string>
+    <string name="wake_on_notification_summary">Weckt das Gerät auf wenn eine neue Benachrichtigung empfangen wird.</string>
+    <string name="notifications_height">Benachrichtigungs-Zähler</string>
+    <string name="notifications_height_summary">Die Anzahl der Benachrichtigungen wird zusammengefasst angezeigt.</string>
+    <string name="offset_top">Abstand vom oberen Bildschirmrand:</string>
+    <string name="privacy_mode">Privater Modus</string>
+    <string name="privacy_mode_summary">Deaktiviert die Möglichkeit der Benachrichtigungen angezeigt und ignoriert zu werden. Auf diese Weise sieht man nur das Benachrichtigungs-Icon der Benachrichtigungen.</string>
+    <string name="excluded_apps_title">Ausgeschlossene Apps</string>
+    <string name="excluded_apps_summary">Ausgeschlossene Applikationen werden nicht als Entsperrbildschirm-Benachrichtigung angezeigt.</string>
+
+    <!-- Screen recorder -->
+    <string name="screen_recorder_title">Bildschirmaufnahme</string>
+    <string name="screen_recorder_summary">Passt die Einstellungen der Bildschirmaufnahme an.</string>
+    <string name="screen_recorder_video_dimensions_title">Videogröße</string>
+    <string name="screen_recorder_video_bitrate_title">Bitrate</string>
+    <string name="screen_recorder_record_audio_title">Ton Aufnahme</string>
+    <string name="screen_recorder_record_audio_summary">Nimmt den Ton vom Mikrofon auf.</string>
+    <!-- video sizes -->
+    <string name="screen_recorder_size_240x400">240x400</string>
+    <string name="screen_recorder_size_360x640">360x640</string>
+    <string name="screen_recorder_size_480x800">480x800</string>
+    <string name="screen_recorder_size_480x854">480x854</string>
+    <string name="screen_recorder_size_540x960">540x960</string>
+    <string name="screen_recorder_size_600x1024">600x1024</string>
+    <string name="screen_recorder_size_720x1280">720x1280</string>
+    <!-- frame rates -->
+    <string name="screen_recorder_bitrate_title_100000">100 kB/s</string>
+    <string name="screen_recorder_bitrate_title_250000">250 kB/s</string>
+    <string name="screen_recorder_bitrate_title_500000">500 kB/s</string>
+    <string name="screen_recorder_bitrate_title_1000000">1 MB/s</string>
+    <string name="screen_recorder_bitrate_title_2000000">2 MB/s</string>
+    <string name="screen_recorder_bitrate_title_3000000">3 MB/s</string>
+    <string name="screen_recorder_bitrate_title_4000000">4 MB/s</string>
+    <string name="screen_recorder_bitrate_title_5000000">5 MB/s</string>
+    <string name="screen_recorder_bitrate_title_10000000">10 MB/s</string>
+    <string name="screen_recorder_bitrate_title_20000000">20 MB/s</string>
+    <string name="screen_recorder_bitrate_title_50000000">50 MB/s</string>
+    <string name="screen_recorder_bitrate_title_100000000">100 MB/s</string>
+    <string name="screen_recorder_bitrate_100000">100000</string>
+    <string name="screen_recorder_bitrate_250000">250000</string>
+    <string name="screen_recorder_bitrate_500000">500000</string>
+    <string name="screen_recorder_bitrate_1000000">1000000</string>
+    <string name="screen_recorder_bitrate_2000000">2000000</string>
+    <string name="screen_recorder_bitrate_3000000">3000000</string>
+    <string name="screen_recorder_bitrate_4000000">4000000</string>
+    <string name="screen_recorder_bitrate_5000000">5000000</string>
+    <string name="screen_recorder_bitrate_10000000">10000000</string>
+    <string name="screen_recorder_bitrate_20000000">20000000</string>
+    <string name="screen_recorder_bitrate_50000000">50000000</string>
+    <string name="screen_recorder_bitrate_100000000">100000000</string>
 
 
 

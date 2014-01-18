@@ -384,6 +384,7 @@
 
     <!-- Power menu -->
     <string name="power_menu_style_summary">Change global menu colors</string>
+    <string name="power_menu_screenrecord_title">Screen record</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM bar</string>

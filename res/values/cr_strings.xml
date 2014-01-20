@@ -4,7 +4,7 @@
 
     <!-- About phone screen, crDroid version -->
     <string name="crdroid_version_title">crDroid Simple version</string>
-    <string name="crdroid_version_default">Build 7</string>
+    <string name="crdroid_version_default">Build 1</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>

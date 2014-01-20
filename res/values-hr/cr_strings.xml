@@ -260,6 +260,11 @@
     <string name="notification_shortcuts_settings_title">Prečaci</string>
     <string name="notification_shortcuts_settings_summary">Prikaži prečace u traci s obavijestima</string>
 
+    <string name="notification_carrier_label_title">Oznaka operatera</string>
+    <string name="notification_custom_carrier_label_title">Prilagođena oznaka operatera</string>
+    <string name="notification_custom_carrier_label_explain">Unesite novu oznaku. Unesite praznu oznaku za povratak na početnu vrijednost.</string>
+    <string name="notification_custom_carrier_label_notset">Prilagođena oznaka nije postavljena</string>
+
     <!-- Notification hide labels -->
     <string name="notification_hide_labels_title">Sakrij oznaku obavijesti</string>
     <string name="notification_hide_labels_disable">Prikaži sve oznake</string>
@@ -418,6 +423,8 @@
     <string name="lockscreen_eight_targets_summary">Omogući osam prilagođenih ciljeva zaslona zaključavanja.</string>
     <string name="lockscreen_enable_eight_targets_dialog">Mjenjanje ove mogućnosti vraća početne postavke ciljeva zaslona zaključavanja.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nNe možete istovremeno koristiti prečace zaslona zaključavanja sa omogućenih osam ciljeva.</string>
+    <string name="lockscreen_glowpad_torch_title">LED svjetiljka</string>
+    <string name="lockscreen_glowpad_torch_summary">Dvaput dotaknite i držite klizač da bi upalili LED svjetiljku</string>
     <string name="lockscreen_target_reset">Vraćanje ciljeva zaslona zaključavanja na početne postavke</string>
     <string name="lockscreen_target_reset_message">Brisanje korisničkih ciljeva zaslona zaključavanja i vraćanje na početne postavke?</string>
     <string name="lockscreen_target_empty">Nijedno</string>
@@ -777,6 +784,13 @@
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Napredno</string>
 
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Pametno spuštanje</string>
+    <string name="smart_pulldown_summary">Otvara brze postavke kad nema nijednu %1$s prisutnu obavijest</string>
+    <string name="smart_pulldown_off">Isključeno</string>
+    <string name="smart_pulldown_dismissable">Obustavljivo</string>
+    <string name="smart_pulldown_persistent">Stalno</string>
+
     <!-- QuickSettings: Quick Collapse -->
     <string name="title_collapse_panel">Brze postavke</string>
     <string name="summary_collapse_panel">Zatvori ploču s obavijestima nakon izmjene</string>
@@ -876,5 +890,18 @@
     <string name="screen_recorder_bitrate_20000000">20000000</string>
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
+
+    <!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Disajne obavijesti</string>
+    <string name="sms_breath_title">Disajni SMS</string>
+    <string name="sms_breath_summary">Daje vašim SMS obavijestima disajni efekt u statusnoj traci</string>
+    <string name="missed_call_breath_title">Disajni propušteni pozivi</string>
+    <string name="missed_call_breath_summary">Daje vašim obavijestima o propuštenim pozivima disajni efekt u statusnoj traci</string>
+    <string name="voicemail_breath_title">Disajna glasovna pošta</string>
+    <string name="voicemail_breath_summary">Daje vašim upozorenjima o glasovnoj pošti disajni efekt u statusnoj traci</string>
+
+    <!-- Keyguard always show battery -->
+    <string name="lockscreen_battery_status_title">Stanje baterije</string>
+    <string name="lockscreen_battery_status_summary">Uvjek prikazuje stanje baterije na zaslonu zaključavanja</string>
 
 </resources>

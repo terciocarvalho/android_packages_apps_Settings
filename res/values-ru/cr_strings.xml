@@ -467,6 +467,8 @@
     <string name="halo_behavior_title">Окружение HALO</string>
     <string name="halo_hide_title">Скрыть HALO после активности</string>
     <string name="halo_hide_summary">HALO будет появляться для входящих задач и исчезать спустя некоторое время</string>
+    <string name="halo_reversed_title">Отразить HALO</string>
+    <string name="halo_reversed_summary">Применяется для переключения задач и жестов</string>
     <string name="halo_state_title">Политика HALO</string>
     <string name="halo_state_summary">Включает чёрный и белый списки уведомлений</string>
     <string name="halo_state_black">Чёрный список</string>
@@ -495,6 +497,11 @@
     <string name="halo_notification_count_total">Всего</string>
     <string name="halo_notification_count_individual">По приложениям</string>
     <string name="halo_notification_count_both">Оба</string>
+
+    <string name="halo_msgbox_animation_title">Анимация окна сообщения</string>
+    <string name="halo_msgbox_animation_summary">Анимация окна сообщения HALO для входящих уведомлений</string>
+    <string name="halo_msgbox_animation_none">Нет</string>
+    <string name="halo_msgbox_animation_flip">Переворот</string>
 
     <string name="halo_enabled_title">Включение HALO</string>
     <string name="halo_enabled_summary">Полностью включает или отключает HALO</string>

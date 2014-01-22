@@ -53,6 +53,12 @@
          <extra android:name="fragment" android:value="com.android.settings.temasek.fragments.NotificationsShortcutFragment" />
      </PreferenceScreen>
 
+     <CheckBoxPreference
+        android:key="full_swipe_to_switch_detection"
+        android:title="@string/title_full_screen_swipe"
+        android:summary="@string/summary_full_screen_swipe"
+        android:defaultValue="false" />
+
     <PreferenceCategory
         android:title="@string/quick_settings_title" />
 

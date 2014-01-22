@@ -54,12 +54,15 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
             "quicksettings_tiles_style";
     private static final String PREF_TILE_PICKER =
             "tile_picker";
+    private static final String PRE_SWIPE_TO_SWITCH_SCREEN_DETECTION =
+            "full_swipe_to_switch_detection";
 
     ListPreference mHideLabels;
     SeekBarPreference mNotificationAlpha;
     ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
     CheckBoxPreference mCollapsePanel;
+    CheckBoxPreference mFullScreenDetection;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -126,6 +129,11 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
                 Settings.System.QS_COLLAPSE_PANEL, 0) == 1);
         mCollapsePanel.setOnPreferenceChangeListener(this);
 
+        mFullScreenDetection = (CheckBoxPreference) findPreference(PRE_SWIPE_TO_SWITCH_SCREEN_DETECTION);
+        mFullScreenDetection.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.SWIPE_TO_SWITCH_SCREEN_DETECTION, 0) == 1);
+        mFullScreenDetection.setOnPreferenceChangeListener(this);
+
         updateQuickSettingsOptions();
     }
 
@@ -180,6 +188,11 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
         } else if (preference == mCollapsePanel) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.QS_COLLAPSE_PANEL,
+                    (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mFullScreenDetection) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.SWIPE_TO_SWITCH_SCREEN_DETECTION,
                     (Boolean) newValue ? 1 : 0);
             return true;
         }

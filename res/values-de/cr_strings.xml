@@ -793,6 +793,13 @@
     <!-- Advanced, Device specific (DeviceParts) settings -->
     <string name="advanced_settings_title">Erweitert</string>
     
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Intelligentes Herunterziehen</string>
+    <string name="smart_pulldown_summary">Öffnet Schnelleinstellungen wenn mehr als %1$s Benachrichtigungen anstehen.</string>
+    <string name="smart_pulldown_off">Aus</string>
+    <string name="smart_pulldown_dismissable">Abweisbar</string>
+    <string name="smart_pulldown_persistent">Ständig</string>
+    
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Geheimkammer</string>
     <string name="chamber_toast">Die geheime Kammer wurde geöffnet.</string>
@@ -842,7 +849,7 @@
     <string name="wake_on_notification_summary">Weckt das Gerät auf wenn eine neue Benachrichtigung empfangen wird.</string>
     <string name="notifications_height">Benachrichtigungs-Zähler</string>
     <string name="notifications_height_summary">Die Anzahl der Benachrichtigungen wird zusammengefasst angezeigt.</string>
-    <string name="offset_top">Abstand vom oberen Bildschirmrand:</string>
+    <string name="offset_top">Abstand oberer Bildschirmrand:</string>
     <string name="privacy_mode">Privater Modus</string>
     <string name="privacy_mode_summary">Deaktiviert die Möglichkeit der Benachrichtigungen angezeigt und ignoriert zu werden. Auf diese Weise sieht man nur das Benachrichtigungs-Icon der Benachrichtigungen.</string>
     <string name="excluded_apps_title">Ausgeschlossene Apps</string>
@@ -889,6 +896,17 @@
     <string name="screen_recorder_bitrate_50000000">50000000</string>
     <string name="screen_recorder_bitrate_100000000">100000000</string>
 
+<!-- Breathing Notifications -->
+    <string name="breathing_notifications_title">Pulsierende Benachrichtigung</string>
+    <string name="sms_breath_title">Pulsierende SMS</string>
+    <string name="sms_breath_summary">Versieht die - SMS-Anzeige - in der Statusleiste mit einem pulsierenden Effekt.</string>
+    <string name="missed_call_breath_title">Pulsierender verpasster Anruf</string>
+    <string name="missed_call_breath_summary">Versieht die - Verpasster-Anruf-Anzeige - in der Statusleiste mit einem pulsierenden Effekt.</string>
+    <string name="voicemail_breath_title">Pulsierende Sprachnachricht</string>
+    <string name="voicemail_breath_summary">Versieht die - Sprachnachricht-Anzeige - in der Statusleiste mit einem pulsierenden Effekt.</string>
 
+    <!-- Keyguard always show battery -->
+    <string name="lockscreen_battery_status_title">Batteriestatus</string>
+    <string name="lockscreen_battery_status_summary">Zeigt immer den Batteriestatus im Tastensperr-Bildschirm an.</string>
 
 </resources>

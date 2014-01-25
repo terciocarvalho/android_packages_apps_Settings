@@ -280,7 +280,7 @@
     <string name="notification_hide_labels_carrier">Verstecke Betreiber Label</string>
     <string name="notification_hide_labels_wifi">Verstecke WiFi Label</string>
     <string name="notification_hide_labels_all">Verstecke alle Labels</string>
-    <string name="notification_hide_labels_text">im Benachrichtigunsfeld</string>
+    <string name="notification_hide_labels_text">im Benachrichtigungsfeld.</string>
 
     <!-- StatusBar Battery Settings -->
     <string name="battery_icon_title">Batterie Symbol</string>
@@ -828,7 +828,7 @@
     <!-- Lockscreen Notifications -->
     <string name="general">Allgemein</string>
     <string name="layout">Layout</string>
-    <string name="privacy">Privatspäre</string>
+    <string name="privacy">Privatspäreneinstellungen</string>
     <string name="lockscreen_notifications">Sperrbildschirm-Benachrichtigungen</string>
     <string name="lockscreen_notifications_summary">Zeigt anstehende Benachrichtigungen auf dem Sperrbildschirm.</string>
     <string name="pocket_mode">Hosentaschen Modus</string>
@@ -837,9 +837,9 @@
     <string name="show_always_summary">Schaltet den Bildschirm immer ein, wenn das Gerät aus der Hosentasche genommen wird, auch wenn keine Benachrichtigungen anstehen.</string>
     <string name="hide_low_priority">Verstecke niedrige Priorität</string>
     <string name="hide_low_priority_summary">Verstecke Benachrichtigungen mit niedriger Priorität, wie z.B. Google Now Wetter Benachrichtigungen.</string>
-    <string name="hide_non_clearable">Verstecke nicht löschbare</string>
+    <string name="hide_non_clearable">Verstecke nicht ignorierbare</string>
     <string name="hide_non_clearable_summary">Verstecke alle nicht ignorierbaren Benachrichtigungen.</string>
-    <string name="dismiss_all">Verwerfen aller Benachrichtigungen</string>
+    <string name="dismiss_all">Verwerfe alle Benachrichtigungen</string>
     <string name="dismiss_all_summary">Erlaubt auch das verwerfen von nicht ignorierbaren Benachrichtigungen. Natürlich werden sie nur vom Sperrbildschirm versteckt und nicht vom Benachrichtigungsfeld.</string>
     <string name="expanded_view">Erweiterte Ansicht</string>
     <string name="expanded_view_summary">Ermöglicht das umschalten zwischen normaler und erweiterter Ansicht mittels langem drücken. Die erweiterte Ansicht zeigt manchmal mehr private Informationen, weshalb man sie evtl. deaktivieren möchte.</string>
@@ -908,5 +908,10 @@
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">Batteriestatus</string>
     <string name="lockscreen_battery_status_summary">Zeigt immer den Batteriestatus im Tastensperr-Bildschirm an.</string>
+
+ <!-- Notification Drawer - Swipe to Switch full screen detection-->
+    <string name="title_full_screen_swipe">Swipe-to-Switch Erkennung</string>
+    <string name="summary_full_screen_swipe">Verwendet Vollbild-Erkennung für - Swipe-To-Switch - Funktion. Nicht nur die untere Leiste wird verwendet.</string>
+
 
 </resources>

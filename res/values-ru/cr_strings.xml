@@ -134,9 +134,6 @@
     <string name="status_bar_toggle_brightness_summary">Регулировка яркости горизонтальным движением по строке состояния</string>
     <string name="status_bar_toggle_info">Автоматическая регулировка яркости включена</string>
 
-    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Темная тема (TRDS)</string>
-
     <!-- Restart SystemUI -->
     <string name="restart_systemui">Перезагрузка SystemUI</string>
 
@@ -157,6 +154,7 @@
     <string name="shortcut_action_ime">Выбор способа ввода</string>
     <string name="shortcut_action_kill">Закрыть приложение</string>
     <string name="shortcut_action_power">Отключить экран</string>
+    <string name="shortcut_action_theme_switch">Переключатель тем</string>
     <string name="shortcut_action_notifications">Уведомления</string>
     <string name="shortcut_action_menu_big">Меню</string>
     <string name="shortcut_action_qs">Панель быстрых настроек</string>
@@ -701,6 +699,7 @@
     <string name="title_tile_expanded_desktop">Расширенный экран</string>
     <string name="title_tile_music">Музыка</string>
     <string name="title_tile_reboot">Перезагузка</string>
+    <string name="title_tile_theme">Переключатель тем</string>
     <string name="dynamic_tile_ime_switcher">Способ ввода</string>
     <string name="dynamic_tile_usb_tether">USB</string>
     <string name="dynamic_tile_alarm">Будильник</string>
@@ -887,5 +886,17 @@
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">Состояние батареи</string>
     <string name="lockscreen_battery_status_summary">Всегда показывать состояние батареи на экране блокировки</string>
-	
+
+    <!-- Notification Drawer - Swipe to Switch full screen detection-->
+    <string name="title_full_screen_swipe">Обнаружение свайпа для переключения</string>
+    <string name="summary_full_screen_swipe">Использовать весь экран для обнаружения переключения с помощью свайпа, а не только нижнюю строку</string>
+
+    <!-- Themes -->
+    <string name="theme_settings_title">Тёмная тема (TRDS)</string>
+    <string name="theme_auto_mode_title">Переключатель тем</string>
+    <string name="theme_auto_mode_off">Вручную</string>
+    <string name="theme_auto_mode_lightsensor">При изменении освещенности</string>
+    <string name="theme_auto_mode_twilight">В дневное время</string>
+    <string name="theme_auto_switch_mode_error">Включен режим автоматической смены темы при изменении освещенности. Ручное переключение невозможно.</string>
+
 </resources>

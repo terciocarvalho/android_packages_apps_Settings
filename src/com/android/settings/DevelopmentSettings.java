@@ -152,7 +152,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String SHOW_ALL_ANRS_KEY = "show_all_anrs";
 
-    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+    //private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
 
     private static final String TAG_CONFIRM_ENFORCE = "confirm_enforce";
 
@@ -224,7 +224,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
     private ListPreference mAppProcessLimit;
 
     private CheckBoxPreference mShowAllANRs;
-    private CheckBoxPreference mKillAppLongpressBack;
+    //private CheckBoxPreference mKillAppLongpressBack;
 
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
@@ -358,7 +358,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mAllPrefs.add(mShowAllANRs);
         mResetCbPrefs.add(mShowAllANRs);
 
-        mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
+        //mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
 
         Preference selectRuntime = findPreference(SELECT_RUNTIME_KEY);
         if (selectRuntime != null) {
@@ -541,7 +541,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             setPrefsEnabledState(mLastEnabledState);
         }
 
-        updateKillAppLongpressBackOptions();
+        //updateKillAppLongpressBackOptions();
     }
 
     void updateCheckBox(CheckBoxPreference checkBox, boolean value) {
@@ -793,6 +793,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         }
     }
 
+/*
     private void writeKillAppLongpressBackOptions() {
         Settings.Secure.putInt(getActivity().getContentResolver(),
                 Settings.Secure.KILL_APP_LONGPRESS_BACK,
@@ -803,6 +804,7 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
         mKillAppLongpressBack.setChecked(Settings.Secure.getInt(
             getActivity().getContentResolver(), Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
     }
+*/
 
     private void updatePasswordSummary() {
         try {
@@ -1499,8 +1501,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             writeWifiDisplayCertificationOptions();
         } else if (preference == mAdvancedReboot) {
             writeAdvancedRebootOptions();
-        } else if (preference == mKillAppLongpressBack) {
-            writeKillAppLongpressBackOptions();
+        //} else if (preference == mKillAppLongpressBack) {
+        //    writeKillAppLongpressBackOptions();
 	} else if (preference == mDevelopmentShortcut) {
             writeDevelopmentShortcutOptions();
         } else if (preference == mChamber) {

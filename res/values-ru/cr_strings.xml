@@ -144,22 +144,24 @@
     <string name="shortcut_action_reboot">Перезагрузка</string>
     <string name="shortcut_action_sound">Звуковая панель</string>
     <string name="shortcut_action_app">Пользовательское приложение</string>
-    <string name="shortcut_action_home">"Домой"</string>
-    <string name="shortcut_action_back">"Назад"</string>
+    <string name="shortcut_action_home">\"Домой\"</string>
+    <string name="shortcut_action_back">\"Назад\"</string>
     <string name="shortcut_action_recent">Недавние приложения</string>
     <string name="shortcut_action_lastapp">Последнее приложение</string>
-    <string name="shortcut_action_search">Поиск</string>
+    <string name="shortcut_action_assist">Поиск</string>
+    <string name="shortcut_action_search">Поиск в приложениях</string>
+    <string name="shortcut_action_voice_search">Голосовой поиск</string>
     <string name="shortcut_action_screenshot">Скриншот</string>
-    <string name="shortcut_action_menu">Меню</string>
+    <string name="shortcut_action_menu">\"Меню\"</string>
     <string name="shortcut_action_ime">Выбор способа ввода</string>
     <string name="shortcut_action_kill">Закрыть приложение</string>
     <string name="shortcut_action_power">Отключить экран</string>
     <string name="shortcut_action_theme_switch">Переключатель тем</string>
     <string name="shortcut_action_notifications">Уведомления</string>
-    <string name="shortcut_action_menu_big">Меню</string>
+    <string name="shortcut_action_menu_big">\"Меню\"</string>
     <string name="shortcut_action_qs">Панель быстрых настроек</string>
     <string name="shortcut_action_none">Ничего</string>
-    <string name="shortcut_action_power_menu">Меню питания</string>
+    <string name="shortcut_action_power_menu">Меню кнопки питания</string>
     <string name="shortcut_action_torch">Фонарик</string>
     <string name="shortcut_action_longpress">Долгое нажатие:</string>
     <string name="shortcut_action_select_action_longpress">Выберите действие для долгого нажатия:</string>
@@ -339,10 +341,10 @@
     <string name="navigation_menu_always_show">Всегда показывать</string>
     <string name="navigation_bar">Строка навигации</string>
     <string name="navbar_button_cat">Кнопки строки навигации</string>
-    <string name="title_pref_menu_location">Расположение кнопки меню</string>
-    <string name="summary_pref_menu_location">Выберите, где будет отображаться кнопка меню</string>
-    <string name="title_pref_menu_display">Видимость кнопки меню</string>
-    <string name="summary_pref_menu_display">Выберите, как и когда будет отображаться кнопка меню</string>
+    <string name="title_pref_menu_location">Расположение кнопки \"Меню\"</string>
+    <string name="summary_pref_menu_location">Выберите, где будет отображаться кнопка \"Меню\"</string>
+    <string name="title_pref_menu_display">Видимость кнопки \"Меню\"</string>
+    <string name="summary_pref_menu_display">Выберите, как и когда будет отображаться кнопка \"Меню\"</string>
     <string name="navbar_enable_bar">Включить строку навигации</string>
     <string name="navbar_enable_bar_summary">Включение отображения строки навигации</string>
     <string name="navigation_bar_height_title">Высота строки навигации</string>
@@ -367,9 +369,9 @@
 
     <!-- Ability to disable hardware keys via nav bar settings -->
     <string name="hw_keys_title">Аппаратные кнопки</string>
-    <string name="key_menu_enabled">Кнопка "Меню" включена</string>
-    <string name="key_back_enabled">Кнопка "Назад" включена</string>
-    <string name="key_home_enabled">Кнопка "Домой" включена</string>
+    <string name="key_menu_enabled">Кнопка \"Меню\" включена</string>
+    <string name="key_back_enabled">Кнопка \"Назад\" включена</string>
+    <string name="key_home_enabled">Кнопка \"Домой\" включена</string>
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Сканирование медиафайлов при загрузке</string>
@@ -751,8 +753,8 @@
     <string name="quick_pulldown_right">Правый</string>
 
     <!-- security settings menu unlock -->
-    <string name="unlock_menu_unlock_title">Разблокировка кнопкой "Меню"</string>
-    <string name="unlock_menu_unlock_summary">Нажатие на кнопку "Меню" разблокирует устройство.</string>
+    <string name="unlock_menu_unlock_title">Разблокировка кнопкой \"Меню\"</string>
+    <string name="unlock_menu_unlock_summary">Нажатие кнопки \"Меню\" разблокирует устройство.</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Индикатор сетевой активности</string>
@@ -809,12 +811,37 @@
 
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Установить пароль шифрования</string>
-	
+
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Аппаратные кнопки</string>
+    <string name="keys_bindings_title">Действия кнопок</string>
+    <string name="keys_enable_custom_title">Включить пользовательские действия</string>
+    <string name="keys_enable_custom_summary">Включить пользовательские действия для аппаратных кнопок</string>
+    <string name="keys_back_press_title">Кнопка \"Назад\"</string>
+    <string name="keys_back_long_press_title">Кнопка \"Назад\" (долгое нажатие)</string>
+    <string name="keys_back_double_tap_title">Кнопка \"Назад\" (двойное нажатие)</string>
+    <string name="keys_home_press_title">Кнопка \"Домой\"</string>
+    <string name="keys_home_long_press_title">Кнопка \"Домой\" (долгое нажатие)</string>
+    <string name="keys_home_double_tap_title">Кнопка \"Домой\" (двойное нажатие)</string>
+    <string name="keys_menu_press_title">Кнопка \"Меню\"</string>
+    <string name="keys_menu_long_press_title">Кнопка \"Меню\" (долгое нажатие)</string>
+    <string name="keys_menu_double_tap_title">Кнопка \"Меню\" (двойное нажатие)</string>
+    <string name="keys_assist_press_title">Кнопка \"Поиск\"</string>
+    <string name="keys_assist_long_press_title">Кнопка \"Поиск\" (долгое нажатие)</string>
+    <string name="keys_assist_double_tap_title">Кнопка \"Поиск\" (двойное нажатие)</string>
+    <string name="keys_app_switch_press_title">Переключатель приложений</string>
+    <string name="keys_app_switch_long_press_title">Переключатель приложений (долгое нажатие)</string>
+    <string name="keys_app_switch_double_tap_title">Переключатель приложений(двойное нажатие)</string>
+    <string name="keys_action_normal">Обычное нажатие</string>
+    <string name="keys_action_long">Долгое нажатие</string>
+    <string name="keys_action_double">Двойное нажатие</string>
+    <string name="no_home_key">У вас не назначено действие для кнопки \"Домой\"!\n\nЭто может сделать ваше устройство непригодным для использования!</string>
+
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Минимальная продолжительность вибрации</string>
 
     <!--Lockscreen See Through-->
-     <string name="see_through_title">Вид насквозь</string>
+     <string name="see_through_title">Вид \"насквозь\"</string>
      <string name="see_through_summary">Показывает содержимое позади экрана блокировки, ваши данные могут быть видны для окружающих</string>
 
     <!--Lockscreen blur-->
@@ -829,7 +856,7 @@
     <string name="privacy">Приватность</string>
     <string name="lockscreen_notifications">Уведомления на экране</string>
     <string name="lockscreen_notifications_summary">Показывать ожидающие уведомления на экране блокировки</string>
-    <string name="pocket_mode">Режим "В кармане"</string>
+    <string name="pocket_mode">Режим \"В кармане\"</string>
     <string name="pocket_mode_summary">Включает экран и отображает все уведомления, когда устройство достали из кармана. Отключает экран, когда устройство кладут обратно в карман.</string>
     <string name="show_always">Показывать всегда</string>
     <string name="show_always_summary">Всегда включать экран, когда устройство достается из кармана, даже при отсутствии ожидающих уведомлений.</string>

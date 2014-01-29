@@ -7,6 +7,7 @@
     <string name="crdroid_version_default">Build 7</string>
 
     <!-- General strings -->
+    <string name="default_string">Default</string>
     <string name="recents_panel_settings_title" >Recents panel settings</string>
     <string name="reset">Reset</string>
 
@@ -98,12 +99,19 @@
     <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
 
     <!-- QuickSettings style options -->
+    <string name="quick_tiles_bg_no_title">NOTE</string>
+    <string name="quick_tiles_bg_summary">All changes in colors and background alpha will reflect directly in QS ribbons</string>
     <string name="quicksettings_tiles_style">Quick Settings style</string>
     <string name="summary_quicksettings_tiles_style">Show or change Quick Settings style options</string>
     <string name="quicksettings_tiles_style_additional_options">Additional options</string>
     <string name="tiles_per_row_title">Tiles per row</string>
     <string name="tiles_per_row_duplicate_landscape_title">Scale landscape quantity</string>
     <string name="tiles_per_row_duplicate_landscape_summary">Landscape view doubles tiles per row quantity</string>
+    <string name="quick_tiles_bg_color_title">Tiles background color</string>
+    <string name="quick_tiles_bg_pressed_color_title">Tiles pressed background color</string>
+    <string name="quick_tiles_text_color_title">Tiles text color</string>
+    <string name="quick_tiles_alpha_title">Tiles background transparency</string>
+    <string name="qs_style_reset_message">Reset all colors to default?</string>
 
     <!--  Recents clear all -->
     <string name="recents_clear_all_button">Recents clear all button</string>

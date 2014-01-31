@@ -135,9 +135,6 @@
     <string name="status_bar_toggle_brightness_summary">Prilagodi svjetlinu prikaza klizačem u statusnoj traci</string>
     <string name="status_bar_toggle_info">Odabrana automatska svjetlina</string>
 
-    <!-- TRDS Settings -->
-    <string name="trds_settings_title">Dark UI (TRDS)</string>
-
     <!-- Restart SystemUI -->
     <string name="restart_systemui">Ponovno pokreni SystemUI</string>
 
@@ -152,12 +149,15 @@
     <string name="shortcut_action_back">Natrag</string>
     <string name="shortcut_action_recent">Nedavno</string>
     <string name="shortcut_action_lastapp">Posljednja aplikacija</string>
-    <string name="shortcut_action_search">Traži</string>
+    <string name="shortcut_action_assist">Pretraga</string>
+    <string name="shortcut_action_search">Pretraga unutar aplikacije</string>
+    <string name="shortcut_action_voice_search">Glasovna pretraga</string>
     <string name="shortcut_action_screenshot">Slika ekrana</string>
     <string name="shortcut_action_menu">Izbornik</string>
     <string name="shortcut_action_ime">Otvori IME Prekidač</string>
     <string name="shortcut_action_kill">Prisilno zatvori aplikaciju</string>
     <string name="shortcut_action_power">Ugasi ekran</string>
+    <string name="shortcut_action_theme_switch">Odabir teme</string>
     <string name="shortcut_action_notifications">Obavijesti</string>
     <string name="shortcut_action_menu_big">Izbornik</string>
     <string name="shortcut_action_qs">Ploča s brzim postavkama</string>
@@ -701,6 +701,7 @@
     <string name="title_tile_expanded_desktop">Prošireni prikaz</string>
     <string name="title_tile_music">Glazba</string>
     <string name="title_tile_reboot">Ponovno pokretanje</string>
+    <string name="title_tile_theme">Odabir teme</string>
     <string name="dynamic_tile_ime_switcher">IME promjena</string>
     <string name="dynamic_tile_usb_tether">USB povezivanje</string>
     <string name="dynamic_tile_alarm">Alarm</string>
@@ -807,6 +808,31 @@
     <!-- Header on first screen of choose encryption password [CHAR LIMIT=30] -->
     <string name="encryptionpassword_choose_your_password_header">Postavi zaporku enkripcije</string>
 
+    <!-- Hardware keys -->
+    <string name="button_keys_title">Fizičke tipke</string>
+    <string name="keys_bindings_title">Radnje tipaka</string>
+    <string name="keys_enable_custom_title">Omogući prilagođene radnje</string>
+    <string name="keys_enable_custom_summary">Omogući prilagođene radnje fizičkih tipaka</string>
+    <string name="keys_back_press_title">Tipka za povratak</string>
+    <string name="keys_back_long_press_title">Tipka za povratak (dugi dodir)</string>
+    <string name="keys_back_double_tap_title">Tipka za povratak (dvostruki dodir)</string>
+    <string name="keys_home_press_title">Tipka za početak</string>
+    <string name="keys_home_long_press_title">Tipka za početak (dugi dodir)</string>
+    <string name="keys_home_double_tap_title">Tipka za početak (dvostruki dodir)</string>
+    <string name="keys_menu_press_title">Tipka izbornika</string>
+    <string name="keys_menu_long_press_title">Tipka izbornika (dugi dodir)</string>
+    <string name="keys_menu_double_tap_title">Tipka izbornika (dvostruki dodir)</string>
+    <string name="keys_assist_press_title">Tipka pretraživanja</string>
+    <string name="keys_assist_long_press_title">Tipka pretraživanja (dugi dodir)</string>
+    <string name="keys_assist_double_tap_title">Tipka pretraživanja (dvostruki dodir)</string>
+    <string name="keys_app_switch_press_title">Tipka prebacivanja aplikacija</string>
+    <string name="keys_app_switch_long_press_title">Tipka prebacivanja aplikacija (dugi dodir)</string>
+    <string name="keys_app_switch_double_tap_title">Tipka prebacivanja aplikacija (dvostruki dodir)</string>
+    <string name="keys_action_normal">Normalan dodir</string>
+    <string name="keys_action_long">Dugi dodir</string>
+    <string name="keys_action_double">Dvostruki dodir</string>
+    <string name="no_home_key">Nijedna tipka nije dodjeljena za radnju \"Početak\"!!\n\nOvo može činiti vaš uređaj neupotrebljivim!</string>
+
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Minimalno trajanje vibracije</string>
 
@@ -903,5 +929,17 @@
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">Stanje baterije</string>
     <string name="lockscreen_battery_status_summary">Uvjek prikazuje stanje baterije na zaslonu zaključavanja</string>
+
+    <!-- Notification Drawer - Swipe to Switch full screen detection-->
+    <string name="title_full_screen_swipe">Otkrivanje klizanja za prebacivanje</string>
+    <string name="summary_full_screen_swipe">Koristi otkrivanje preko cijelog ekrana za klizanje za prebacivanje, ne samo donju traku</string>
+
+    <!-- Themes -->
+    <string name="theme_settings_title">Dark UI (TRDS)</string>
+    <string name="theme_auto_mode_title">Odabir teme</string>
+    <string name="theme_auto_mode_off">Uputstva</string>
+    <string name="theme_auto_mode_lightsensor">Stanje promjene pri umjetnoj svjetlosti</string>
+    <string name="theme_auto_mode_twilight">Pri dnevnoj svjetlosti</string>
+    <string name="theme_auto_switch_mode_error">Omogućen način automatskog prebacivanja na osnovu svjetlosnih uvjeta. Ručno prebacivanje nije moguće.</string>
 
 </resources>

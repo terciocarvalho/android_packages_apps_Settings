@@ -36,9 +36,7 @@ import com.android.settings.Utils;
 public class LockscreenInterface extends SettingsPreferenceFragment {
 
     private static final String LOCKSCREEN_WIDGETS_CATEGORY = "lockscreen_widgets_category";
-    private static final String LOCKSCREEN_GENERAL_CATEGORY = "lockscreen_general_category";
     private static final String KEY_ENABLE_WIDGETS = "keyguard_enable_widgets";
-    private static final String KEY_LOCKSCREEN_BUTTONS = "lockscreen_buttons";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
 
     private CheckBoxPreference mEnableKeyguardWidgets;
@@ -57,8 +55,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
         mDPM = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
 
         // Find categories
-        PreferenceCategory generalCategory = (PreferenceCategory)
-                findPreference(LOCKSCREEN_GENERAL_CATEGORY);
         PreferenceCategory widgetsCategory = (PreferenceCategory)
                 findPreference(LOCKSCREEN_WIDGETS_CATEGORY);
 
@@ -106,14 +102,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
-    }
-
-    /**
-     * Checks if the device has hardware buttons.
-     * @return has Buttons
-     */
-    public boolean hasButtons() {
-        return !getResources().getBoolean(com.android.internal.R.bool.config_showNavigationBar);
     }
 
     /**

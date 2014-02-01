@@ -61,11 +61,6 @@ public class LockscreenInterface extends SettingsPreferenceFragment {
         // Find preferences
         mEnableKeyguardWidgets = (CheckBoxPreference) findPreference(KEY_ENABLE_WIDGETS);
 
-        // Remove lockscreen button actions if device doesn't have hardware keys
-        if (!hasButtons()) {
-            generalCategory.removePreference(findPreference(KEY_LOCKSCREEN_BUTTONS));
-        }
-
         // Enable or disable lockscreen widgets based on policy
         checkDisabledByPolicy(mEnableKeyguardWidgets,
                 DevicePolicyManager.KEYGUARD_DISABLE_WIDGETS_ALL);

@@ -125,8 +125,8 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
         }
 
         mCollapsePanel = (CheckBoxPreference) findPreference(PRE_COLLAPSE_PANEL);
-        mCollapsePanel.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.QS_COLLAPSE_PANEL, 0) == 1);
+        mCollapsePanel.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.QS_COLLAPSE_PANEL, 0, UserHandle.USER_CURRENT) == 1);
         mCollapsePanel.setOnPreferenceChangeListener(this);
 
         mFullScreenDetection = (CheckBoxPreference) findPreference(PRE_SWIPE_TO_SWITCH_SCREEN_DETECTION);
@@ -186,9 +186,9 @@ public class NotificationDrawerQsSettings extends SettingsPreferenceFragment
             updateSmartPulldownSummary(smartPulldown);
             return true;
         } else if (preference == mCollapsePanel) {
-            Settings.System.putInt(getContentResolver(),
+            Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.QS_COLLAPSE_PANEL,
-                    (Boolean) newValue ? 1 : 0);
+                    (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
             return true;
         } else if (preference == mFullScreenDetection) {
             Settings.System.putInt(getContentResolver(),

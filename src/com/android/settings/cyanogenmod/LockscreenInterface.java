@@ -50,12 +50,14 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String KEY_ENABLE_CAMERA = "keyguard_enable_camera";
     private static final String KEY_SEE_THROUGH = "see_through";
     private static final String KEY_BLUR_RADIUS = "lockscreen_blur_radius";
+    private static final String LOCK_BEFORE_UNLOCK = "lock_before_unlock";
 
     private ListPreference mBatteryStatus;
     private CheckBoxPreference mEnableKeyguardWidgets;
     private CheckBoxPreference mEnableCameraWidget;
     private CheckBoxPreference mSeeThrough;
     private SeekBarPreferenceCHOS mBlurRadius;
+    private CheckBoxPreference mLockBeforeUnlock;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
     private LockPatternUtils mLockUtils;
@@ -94,6 +96,9 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         checkDisabledByPolicy(mEnableKeyguardWidgets,
                 DevicePolicyManager.KEYGUARD_DISABLE_WIDGETS_ALL);
 
+	// Lock before Unlock
+        mLockBeforeUnlock = (CheckBoxPreference) findPreference(LOCK_BEFORE_UNLOCK);
+        
         // Lockscreen Blur
         mSeeThrough = (CheckBoxPreference) findPreference(KEY_SEE_THROUGH);
 
@@ -162,6 +167,9 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
 	} else if (preference == mSeeThrough) {
             Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_SEE_THROUGH,
                     mSeeThrough.isChecked() ? 1 : 0);
+        } else if (preference == mLockBeforeUnlock) {
+            Settings.Secure.putInt(getContentResolver(), Settings.Secure.LOCK_BEFORE_UNLOCK,
+                    mLockBeforeUnlock.isChecked() ? 1 : 0);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);

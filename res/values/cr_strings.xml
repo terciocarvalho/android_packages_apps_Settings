@@ -4,7 +4,7 @@
 
     <!-- About phone screen, crDroid version -->
     <string name="crdroid_version_title">crDroid Simple version</string>
-    <string name="crdroid_version_default">Build 2</string>
+    <string name="crdroid_version_default">Build 7</string>
 
     <!-- General strings -->
     <string name="reset">Reset</string>
@@ -91,5 +91,9 @@
     <string name="lock_numpad_random_off">Disabled</string>
     <string name="lock_numpad_random_always">Always</string>
     <string name="lock_numpad_random_on_request">On request</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Show slider before secure unlock</string>
+    <string name="lock_before_unlock_summary">Show slider lockscreen before secure unlock mechanism</string>
 
 </resources>

@@ -939,7 +939,7 @@
     <string name="theme_settings_title">UI oscura (TRDS)</string>
     <string name="theme_auto_mode_title">Seleccionar el tema</string>
     <string name="theme_auto_mode_off">Manual</string>
-    <string name="theme_auto_mode_lightsensor">En cambio de condición de luz <string>
+    <string name="theme_auto_mode_lightsensor">En cambio de condición de luz </string>
     <string name="theme_auto_mode_twilight">En el día</string>
     <string name="theme_auto_switch_mode_error">Cambio de la condición de luz modo automático está activado. Conmutación manual no es posible.</string>
  

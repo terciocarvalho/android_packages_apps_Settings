@@ -101,6 +101,11 @@
             android:summary="@string/notification_vibrate_during_calls_summary"
             android:defaultValue="false" />
 
+    <!-- Audio Theme -->
+    <PreferenceCategory
+            android:key="audio_theme_title"
+            android:title="@string/audio_theme_title"/>
+
     <PreferenceScreen
             android:key="sound_packages"
             android:fragment="com.android.settings.temasek.SoundPackageSettings"

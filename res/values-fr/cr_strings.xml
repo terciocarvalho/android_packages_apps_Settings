@@ -526,7 +526,7 @@
     <string name="listview_translate_right">Transposer (vers la droite)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">Interpolation de la liste d'animations</string>
+    <string name="listview_interpolator_title">Interpolation de la liste d\'animations</string>
     <string name="listview_accelerate_interpolator">accélérer interpolation</string>
     <string name="listview_decelerate_interpolator">décélérer interpolation</string>
     <string name="listview_accelerate_decelerate_interpolator">accélérer décélérer interpolation</string>
@@ -711,7 +711,7 @@
     <string name="disable_qs">Désactiver les paramètres rapides</string>
     <string name="disable_qs_message">Toutes les tuiles ont été effacées. Les paramètres rapides sont maintenant désactivés.\n\nPour les réactiver, veuillez ajouter une tuile.</string>
     <string name="help_qs_message">Pour ajouter une tuile de paramètres rapides, veuillez appuyer sur le bouton Ajouter et choisissez quelle tuile vous voulez utiliser. Pour réarranger les tuiles, veuillez appuyer longuement sur la tuile et la faire glisser jusqu\'à la position que vous souhaitez. Si vous voulez effacer une tuile, faites la glisser sur le bouton Effacer qui apparait lorsque vous faites glisser la tuile.\n\nPour désactiver les paramètres rapides, veuillez effacer toutes les tuiles.</string>
-    <string name="custom_tile_dialog_text">Chaque action va ajouter un nouvel état à la tuile. Chaque clic change à l\état suivant. Appui long pour des actions appui long. Si aucune action existe l\'appui long sera utilisé pour lancer l'action de la tuile. Cela permet de modifier les états en cliquant et de lancer les actions en appuyant longuement sur la tuile.</string>
+    <string name="custom_tile_dialog_text">Chaque action va ajouter un nouvel état à la tuile. Chaque clic change à l\état suivant. Appui long pour des actions appui long. Si aucune action existe l\'appui long sera utilisé pour lancer l\'action de la tuile. Cela permet de modifier les états en cliquant et de lancer les actions en appuyant longuement sur la tuile.</string>
     <string name="custom_tile_dialog_title">Action de tuile personnalisée</string>
     <string name="custom_tile_dialog_extra_text">Tuile avancée détecté. Votre tuile va maintenant changer d\'état après un ajustement de n\'importe où. Vous pouvez optionnellement mettre une icône et un nom pour la tuile, au cas où, lors du changement d\'état elle ne reconnait pas son état.</string>
     <string name="custom_toggle_extras">Tuile personnalisée extras</string>
@@ -833,7 +833,7 @@
     <string name="keys_action_normal">Simple clic</string>
     <string name="keys_action_long">Appui long</string>
     <string name="keys_action_double">Double clic</string>
-    <string name="no_home_key">Vous n\'avez plus de bouton assigné à l'action \"Home\"!\n\nCeci peut rendre votre téléphone inutilisable!</string>
+    <string name="no_home_key">Vous n\'avez plus de bouton assigné à l\'action \"Home\"!\n\nCeci peut rendre votre téléphone inutilisable!</string>
 
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Durée de vibration minimum </string>

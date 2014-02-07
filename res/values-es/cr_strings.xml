@@ -67,7 +67,7 @@
     <string name="clock_date_style_uppercase">Mayúsculas</string>
     <string name="clock_date_format_custom">Formato personalizado</string>
     <string name="status_bar_clock_style_reset_message">¿Restaurar color del reloj?</string>
-	<string name="clock_font_style_title">Fuente</string>
+    <string name="clock_font_style_title">Fuente</string>
     <string name="clock_font_bold">Fuerte</string>
     <string name="clock_font_condensed">Condensada</string>
     <string name="clock_font_light">Liviana</string>
@@ -178,9 +178,9 @@
     <string name="shortcut_image_not_valid">La aplicación elegida no posee un ícono válido o no admite recorte de imagen. Seleccione otra aplicación</string>
     <string name="shortcut_duplicate_entry">La acción seleccionada no puede añadirse dos veces</string>
     
-    <string name="shortcut_action_help_shortcut">acceso directo</string>
-    <string name="shortcut_action_help_button">botón</string>
-    <string name="shortcut_action_help_icon">,mientras selecciona el ícono, aparecerán opciones de personalización</string>
+    <string name="shortcut_action_help_shortcut">Acceso directo</string>
+    <string name="shortcut_action_help_button">Botón</string>
+    <string name="shortcut_action_help_icon">,Mientras selecciona el ícono, aparecerán opciones de personalización</string>
     <string name="shortcut_action_help_main">Para agregar un botón, presiona el ícono Añadir (+). Puedes modificar su función tocando sobre él o agregar una acción a su pulsación prolongada.\n\nPara eliminar un botón desliza horizontalmente.\n\nPara reordenar desliza verticalmente.\n\nPara volver a los valores predeterminados presiona el botón Restaurar. </string>
     <string name="shortcut_action_help_delete_last_entry">Eliminar todos los %1$s de la lista desactivará la función.</string>
     <string name="shortcut_action_help">Ayuda</string>
@@ -211,7 +211,7 @@
     <string name="shortcuts_icon_picker_gplus">Google Plus</string>
     <string name="shortcuts_icon_picker_gtalk">Hangouts</string>
     <string name="shortcuts_icon_picker_help">Ayuda</string>
-    <string name="shortcuts_icon_picker_joystick">Joystick</string>
+    <string name="shortcuts_icon_picker_joystick">Palanca de mando</string>
     <string name="shortcuts_icon_picker_key">Contraseñas/Cuentas</string>
     <string name="shortcuts_icon_picker_laptop">Laptop</string>
     <string name="shortcuts_icon_picker_notes">Notas</string>
@@ -260,15 +260,15 @@
     <string name="notification_shortcuts_settings_title">Accesos directos</string>
     <string name="notification_shortcuts_settings_summary">Accesos rápidos en el panel de notificaciones</string>
 
-    <string name="notification_carrier_label_title">Etiqueta portadora</string>
-    <string name="notification_custom_carrier_label_title">Etiqueta portadora personalizada</string>
+    <string name="notification_carrier_label_title">Etiqueta de operadora</string>
+    <string name="notification_custom_carrier_label_title">Etiqueta de operadora personalizada</string>
     <string name="notification_custom_carrier_label_explain">Por favor introduzca una nueva etiqueta. Introduzca una etiqueta vacía para revertir a la etiqueta stock.</string>
     <string name="notification_custom_carrier_label_notset">Etiqueta personalizada actualmente no establecida</string>
     
     <!-- Notification hide labels -->
     <string name="notification_hide_labels_title">Ocultar etiquetas de notificación</string>
     <string name="notification_hide_labels_disable">Mostrar todas las etiquetas</string>
-    <string name="notification_hide_labels_carrier">Ocultar etiqueta portadora</string>
+    <string name="notification_hide_labels_carrier">Ocultar etiqueta de operadora</string>
     <string name="notification_hide_labels_wifi">Ocultar etiqueta WIFI</string>
     <string name="notification_hide_labels_all">Ocultar todas las etiquetas</string>
     <string name="notification_hide_labels_text">En el panel de notificaciones</string>
@@ -309,7 +309,7 @@
     <string name="animation_duration_title">Duración de animación</string>
     <string name="title_animation_no_override">Evitar que las App sobreescriban</string>
     <string name="summary_animation_no_override">Evitar que Apps reemplacen transiciones.</string>
-    <string name="animation_duration_default">Default</string>
+    <string name="animation_duration_default">Defecto</string>
     <string name="header_summary_animation">@null</string>
 
     <!-- Lockscreen battery ring -->
@@ -383,6 +383,7 @@
     
     <!-- Power menu -->
     <string name="power_menu_style_summary">Cambia el color de los íconos del menú de apagado</string>
+    <string name="power_menu_screenrecord_title">Grabador de pantalla</string>
 
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Medidor de RAM</string>
@@ -513,7 +514,7 @@
     <!-- ListView animation -->
     <string name="bars_and_menus_category_system_title">Sistema</string>
     <string name="listview_animation_title">Animación ListView</string>
-    <string name="listview_off">Off</string>
+    <string name="listview_off">Apagado</string>
     <string name="listview_wave_left">Ola (Izquierda)</string>
     <string name="listview_wave_right">Ola (Derecha)</string>
     <string name="listview_alpha">Alfa</string>
@@ -642,7 +643,7 @@
     <string name="notification_style_title">Estilo del fondo</string>
     <string name="notification_style_summary">Ver o cambiar el fondo del panel de notificación y de ajustes rápidos</string>
     <string name="notification_wallpaper_title">Fondo</string>
-    <string name="notification_wallpaper_landscape_title">Fondo en modo paisaje diferente</string>
+    <string name="notification_wallpaper_landscape_title">Diferente fondo en modo paisaje </string>
     <string name="notification_background_color_fill">Color de llenado</string>
     <string name="notification_background_custom_image">Imagen personalizada</string>
     <string name="notification_background_default_wallpaper">Fondo por defecto</string>
@@ -694,7 +695,7 @@
     <string name="title_tile_user">Cambiar Usuario</string>
     <string name="title_tile_networkmode">Modo de red</string>
     <string name="title_tile_nfc">NFC</string>
-    <string name="title_tile_screen_timeout">Timeout de pantalla</string>
+    <string name="title_tile_screen_timeout">Tiempo fuera de pantalla</string>
     <string name="title_tile_quick_record">Grabación rápida</string>
     <string name="title_tile_quiet_hours">Horas Silenciosas</string>
     <string name="title_tile_volume">Volumen</string>
@@ -713,9 +714,10 @@
     <string name="help_qs_message">Para añadir un azulejo a Ajustes rápidos, presione el botón Añadir y elija un azulejo. Para reordenar los azulejos, mantenga presionado el azulejo y muévalo a la posición que desee. Si desea eliminar un azulejo, arrástrelo al botón Eliminar que aparece mientras se mueve el azulejo.\n\nPara configurar azulejos dinámicos presione el ícono respectivo en la parte superior derecha de la pantalla\n\nPara deshabilitar Ajustes rápidos, remueva todos los azulejos.</string>
     <string name="custom_tile_dialog_text">Cada acción añadirá un nuevo estado al azulejo. Cada click cambia al siguiente estado. Presione prolongadamente para añadir acción de presión prolongada. Si no existe una acción de click se usará la acción para presión prolongada. Esto permite cambiar estados haciendo click y lanzar acciones con presionando prolongadamente.</string>
     <string name="custom_tile_dialog_title">Acción de azulejo personalizada</string>
-    <string name="custom_toggle_extras">Custom tile extras</string>
-    <string name="custom_toggle_collapse_check">Collapse notification shade</string>
-    <string name="custom_toggle_match_state_check">Click action matches icon</string>
+    <string name="custom_tile_dialog_extra_text">Detectado azulejo avanzado. Su azulejo ahora cambiará de estado cuando se ajusta desde cualquier lugar. Opcionalmente puede introducir un icono o una etiqueta para el toggle para cambiar si no\ se reconoce el estado en el\ que está.</string>
+    <string name="custom_toggle_extras">Azulejo extra personalizado</string>
+    <string name="custom_toggle_collapse_check">Contraer sombra de notificación</string>
+    <string name="custom_toggle_match_state_check">Haga click para partir la acción del icono</string>
     <string name="custom_tile_long_press">Presión prolongada:</string>
     <string name="custom_tile_null_warning">Primero debe asignar una acción</string>
     <string name="custom_tile_resolve_name">Desconocido</string>
@@ -750,8 +752,8 @@
     <string name="title_quick_pulldown">Acceso rápido</string>
     <string name="summary_quick_pulldown">Deslice hacia abajo el borde %1$s de la barra de estado para acceder a los Ajustes Rápidos</string>
     <string name="quick_pulldown_off">Apagado</string>
-    <string name="quick_pulldown_left">Izquierdo</string>
-    <string name="quick_pulldown_right">Derecho</string>
+    <string name="quick_pulldown_left">Izquierda</string>
+    <string name="quick_pulldown_right">Derecha</string>
 
     <!-- Status Bar Activity Indicators -->
     <string name="show_activity_indicators_on_status_bar_title">Indicador de actividad de red</string>
@@ -771,11 +773,11 @@
     <string name="volume_key_cursor_control_on_reverse">Volumen arriba/abajo mueve el cursor derecha/izquierda</string>
     <string name="keyboard_rotation_toggle_title">Rotación automática de teclado</string>
     <string name="keyboard_rotation_toggle_summary">Forzar auto-rotación cuando el teclado está visible</string>
-    <string name="keyboard_rotation_timeout_title">Timeout de auto-rotación</string>
+    <string name="keyboard_rotation_timeout_title">Tiempo fuera de auto-rotación</string>
     <string name="keyboard_rotation_timeout_summary">Deshabilita el sensor de auto-rotación <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos luego de que el teclado se oculta</string>
-    <string name="keyboard_rotation_dialog">Nota: Esta característica fuerza temporalmenet el encendido de la auto-rotación mientras el teclado no está. No tiene efecto cuando la auto-rotación ya está habilitada.</string>
-    <string name="show_enter_key_title">Mostrar tecla Enter</string>
-    <string name="show_enter_key_summary">Forzar que el teclado muestre la tecla Enter en lugar de la tecla de emoticones</string>
+    <string name="keyboard_rotation_dialog">Nota: Esta característica fuerza temporalmente el encendido de la auto-rotación mientras el teclado no está. No tiene efecto cuando la auto-rotación ya está habilitada.</string>
+    <string name="show_enter_key_title">Mostrar tecla Entrar</string>
+    <string name="show_enter_key_summary">Forzar que el teclado muestre la tecla Entrar en lugar de la tecla de emoticones</string>
     <string name="ime_switcher_notify">Notificación de selector</string>
     <string name="ime_switcher_notify_summary">Mostrar notificación de selección de método de entrada</string>
 
@@ -789,7 +791,7 @@
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Deslizamiento de la barra de estado inteligente</string>
     <string name="smart_pulldown_summary">Abra configuración rápida cuando no hay %1$s notificationes presentes</string>
-    <string name="smart_pulldown_off">Off</string>
+    <string name="smart_pulldown_off">Apagado</string>
     <string name="smart_pulldown_dismissable">Descartable</string>
     <string name="smart_pulldown_persistent">Persistente</string>
     
@@ -810,10 +812,10 @@
     <string name="encryptionpassword_choose_your_password_header">Asignar la contraseña de encriptación</string>
     
     <!-- Hardware keys -->
-    <string name="button_keys_title">Botones de hardware</string>
+    <string name="button_keys_title">Botones físicos</string>
     <string name="keys_bindings_title">Acciones de tecla</string>
     <string name="keys_enable_custom_title">Habilitar acciones personalizadas</string>
-    <string name="keys_enable_custom_summary">Habilitar acciones de tecla de hardware personalizados</string>
+    <string name="keys_enable_custom_summary">Habilitar acciones de tecla física personalizados</string>
     <string name="keys_back_press_title">Tecla atrás</string>
     <string name="keys_back_long_press_title">Tecla atrás (pulsación larga)</string>
     <string name="keys_back_double_tap_title">Tecla atrás (doble toque)</string>
@@ -839,17 +841,17 @@
 
     <!--Lockscreen See Through-->
      <string name="see_through_title">Mirar a través</string>
-     <string name="see_through_summary">Muestra el contenido detrás de la pantalla de bloqueo, sus datos pueden ser visibles a los que te rodean</string>
+     <string name="see_through_summary">Muestra el contenido detrás de la pantalla de bloqueo, sus datos pueden ser visibles a los que te rodean.</string>
 
     <!--Lockscreen blur-->
     <string name="blur_behind_title">Fondo de desenfoque de la pantalla de bloqueo</string>
     <string name="blur_behind_summary">Añade un efecto de desenfoque agradable para el fondo</string>
     <string name="blur_radius_title">Radio de desenfoque</string>
-    <string name="blur_radius_summary">Ajuste el radio de desenfoque, para el efecto de desenfoque</string>
+    <string name="blur_radius_summary">Ajuste el radio de desenfoque, para el efecto de desenfoque.</string>
 
     <!-- Lockscreen Notifications -->
     <string name="general">General</string>
-    <string name="layout">disposición</string>
+    <string name="layout">Disposición</string>
     <string name="privacy">Privacidad</string>
     <string name="lockscreen_notifications">Notificaciones en pantalla de bloqueo</string>
     <string name="lockscreen_notifications_summary">Mostrar las notificaciones pendientes en la pantalla de bloqueo</string>
@@ -864,7 +866,7 @@
     <string name="dismiss_all">Permitir descartar todas las notificaciones</string>
     <string name="dismiss_all_summary">Permitir descartar incluso notificaciones no eliminables. Por supuesto, son\ solo ocultadas de la pantalla de bloqueo y no del panel de notificaciones.</string>
     <string name="expanded_view">Vista ampliada</string>
-    <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista expandida a veces muestra la información más privada así que sería bueno desactivarlo.</string>
+    <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista expandida a veces muestra la información más privada así que sería bueno desactivarla.</string>
     <string name="force_expanded_view">Forzar vista ampliada</string>
     <string name="force_expanded_view_summary">Mostrar notificaciones expandido por defecto. Usted todavía será capaz de alternar entre la vista ampliada y normal.</string>
     <string name="wake_on_notification">Despertar con notificación</string>
@@ -880,7 +882,7 @@
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Grabador de pantalla</string>
     <string name="screen_recorder_summary">Ajuste de la configuración del grabador de pantalla</string>
-    <string name="screen_recorder_video_dimensions_title">tamaño de vídeo</string>
+    <string name="screen_recorder_video_dimensions_title">Tamaño del video</string>
     <string name="screen_recorder_video_bitrate_title">Bitrate</string>
     <string name="screen_recorder_record_audio_title">Grabación de audio</string>
     <string name="screen_recorder_record_audio_summary">Grabación de audio del micrófono</string>
@@ -933,7 +935,7 @@
 
     <!-- Notification Drawer - Swipe to Switch full screen detection-->
     <string name="title_full_screen_swipe">Detección deslizar-para cambiar</string>
-    <string name="summary_full_screen_swipe">Utilice la detección de pantalla completa para "deslizar para cambiar", no sólo la barra inferior</string>
+    <string name="summary_full_screen_swipe">Utilice la detección de pantalla completa para -deslizar para cambiar-, no sólo la barra inferior</string>
 
     <!-- Themes -->
     <string name="theme_settings_title">UI oscura (TRDS)</string>
@@ -948,12 +950,37 @@
     <string name="show_lte_or_fourgee_summary">Esto le permitirá mostrar 4G en lugar de LTE</string>
 
     <!-- Sound themes -->
-    <string name="sound_packages_title">paquete de sonido</string>
+    <string name="sound_packages_title">Paquete de sonido</string>
     <string name="install_sound_pack_title">Instale el paquete de sonido</string>
     <string name="install_sound_pack_summary">Instalar nuevos paquetes de sonido añadidos en la carpeta "Sound Packs" de la memoria interna</string>
     <string name="select_sound_pack_title">Seleccione el paquete de sonido</string>
     <string name="select_sound_pack_summary">Seleccione el paquete de sonido activo</string>
     <string name="default_sound_pack">Defecto (Sistema)</string>
     <string name="error_pack_install">Error al instalar el paquete de sonido</string>
+    
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Gestor de conexiones</string>
+    <string name="telo_radio_options_category">Configuración de la pantalla</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Seleccione esta opción si utiliza (4G) LTE.</string>
+    <string name="telo_radio_2g_wifi_title">2G en Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a Wi-Fi, Modo de red cambiará a 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Configuración con pantalla apagada</string>
+    <string name="telo_radio_2g_screenoff_title">2G con pantalla apagada</string>
+    <string name="telo_radio_2g_screenoff_summary">El dospositivo cambia a 2G cuando la pantalla está apagada.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Tiempo para cambiar a 2G</string>
+    <string name="telo_radio_2g_3min">3 minutos</string>
+    <string name="telo_radio_2g_5min">5 minutos</string>
+    <string name="telo_radio_2g_10min">10 minutos</string>
+    <string name="telo_radio_2g_15min">15 minutos</string>
+    <string name="telo_radio_2g_20min">20 minutos</string>
+    <string name="telo_radio_go_3g_unlock_title">Desbloquear 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Cuando el dispositivo está desbloqueado el modo de red cambiará a 3G de nuevo.</string>
+
+    <!-- Captive portal toggle -->
+    <string name="captive_toggle">Detección de portal cautivo</string>
+    <string name="captive_toggle_summary">Toggle de detección de portal cautivo</string>
+    <string name="captive_server">Servidor para la detección de portal cautivo</string>
+    <string name="captive_server_summary">Servidor utilizado para detectar portal cautivo. Dejar en blanco para dejarlo por defecto.</string>
  
 </resources>

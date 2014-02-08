@@ -904,13 +904,13 @@
     <string name="screen_recorder_bitrate_title_100000000">100 МБ/с</string>
 
     <!-- Breathing Notifications -->
-    <string name="breathing_notifications_title">"Живые" уведомления</string>
-    <string name="sms_breath_title">"Живое" СМС-сообщение</string>
-    <string name="sms_breath_summary">Придаст "эффект дыхания" вашему смс-сообщению в строке состояния</string>
-    <string name="missed_call_breath_title">"Живой" пропущеный вызов</string>
-    <string name="missed_call_breath_summary">Придаст "эффект дыхания" вашему сообщению о пропущенных звонках в строке состояния</string>
-    <string name="voicemail_breath_title">"Живая" голосовая почта</string>
-    <string name="voicemail_breath_summary">Придаст "эффект дыхания" вашему сообщению о голосовой почте в строке состояния</string>
+    <string name="breathing_notifications_title">\"Живые\" уведомления</string>
+    <string name="sms_breath_title">\"Живое\" СМС-сообщение</string>
+    <string name="sms_breath_summary">Придаст \"эффект дыхания\" вашему смс-сообщению в строке состояния</string>
+    <string name="missed_call_breath_title">\"Живой\" пропущеный вызов</string>
+    <string name="missed_call_breath_summary">Придаст \"эффект дыхания\" вашему сообщению о пропущенных звонках в строке состояния</string>
+    <string name="voicemail_breath_title">\"Живая\" голосовая почта</string>
+    <string name="voicemail_breath_summary">Придаст \"эффект дыхания\" вашему сообщению о голосовой почте в строке состояния</string>
 
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">Состояние батареи</string>
@@ -927,5 +927,44 @@
     <string name="theme_auto_mode_lightsensor">При изменении освещенности</string>
     <string name="theme_auto_mode_twilight">В дневное время</string>
     <string name="theme_auto_switch_mode_error">Включен режим автоматической смены темы при изменении освещенности. Ручное переключение невозможно.</string>
+
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Показывать сеть 4G</string>
+    <string name="show_lte_or_fourgee_summary">Это позволит показывать значек 4G вместо LTE</string>
+
+    <!-- Sound themes -->
+    <string name="audio_theme_title">Звуковая тема Omnirom</string>
+    <string name="sound_packages_title">Звуковые пакеты</string>
+    <string name="install_sound_pack_title">Установить звуковой пакет</string>
+    <string name="install_sound_pack_summary">Новые установленные звуковые пакеты добавляются в папку \"SoundPacks\" во внутренней памяти устройства</string>
+    <string name="select_sound_pack_title">Выбрать звуковой пакет</string>
+    <string name="select_sound_pack_summary">Выберите активный звуковой пакет для использования</string>
+    <string name="default_sound_pack">По умолчанию (системный)</string>
+    <string name="error_pack_install">Ошибка при установке звукового пакета</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Диспетчер соединений</string>
+    <string name="telo_radio_options_category">При включенном экране</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Выберите эту опцию, если вы используете режим LTE (4G)</string>
+    <string name="telo_radio_2g_wifi_title">Режим 2G при Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Когда Wi-Fi подключен, сетевой режим переключается на 2G</string>
+    <string name="telo_radio_2g_screenoff_category">При выключенном экране</string>
+    <string name="telo_radio_2g_screenoff_title">2G при выключенном экране</string>
+    <string name="telo_radio_2g_screenoff_summary">Устройство переключится в режим 2G, когда экран выключен</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Время для переключения в режим 2G</string>
+    <string name="telo_radio_2g_3min">3 минуты</string>
+    <string name="telo_radio_2g_5min">5 минут</string>
+    <string name="telo_radio_2g_10min">10 минут</string>
+    <string name="telo_radio_2g_15min">15 минут</string>
+    <string name="telo_radio_2g_20min">20 минут</string>
+    <string name="telo_radio_go_3g_unlock_title">Разблокировать режим 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Когда устройство разблокируется, режим сети переключается снова на 3G</string>
+
+    <!-- Captive portal toggle -->
+    <string name="captive_toggle">Обнаружение \"Captive portal\"</string>
+    <string name="captive_toggle_summary">Включить обнаружение \"Captive portal\"</string>
+    <string name="captive_server">Сервер для обнаружения \"Captive portal\"</string>
+    <string name="captive_server_summary">Сервер, используемый для обнаружения \"captive portal\". Оставьте строку пустой для использования по умолчанию</string>
 
 </resources>

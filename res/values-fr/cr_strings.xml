@@ -3,7 +3,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, temasek version -->
-    <string name="temasek_version_title">Version non-officielle de temasek</string>
+    <string name="temasek_version_title">Version non-officielle de Temasek</string>
 
     <!-- General strings -->
     <string name="reset">Réinitialiser</string>
@@ -81,7 +81,7 @@
     <string name="pref_low_battery_warning_policy_dialog_title">Indiquer un niveau de charge faible avec</string>
     <string name="low_battery_warning_policy_popup_sound">Son et pop-up</string>
     <string name="low_battery_warning_policy_notif_sound">Son et notification</string>
-    <string name="low_battery_warning_policy_popup">Fenêtre de pop-up seulement</string>
+    <string name="low_battery_warning_policy_popup">Pop-up seulement</string>
     <string name="low_battery_warning_policy_notif">Notification seulement</string>
     <string name="low_battery_warning_policy_sound">Son seulement</string>
     <string name="low_battery_warning_policy_disabled">Désactivé</string> 
@@ -922,11 +922,11 @@
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Breathing Notifications</string>
     <string name="sms_breath_title">Breathing SMS</string>
-    <string name="sms_breath_summary">Va donner à votre notification de sms un breathing effect dans la barre d\'état</string>
+    <string name="sms_breath_summary">Va donner à votre notification de sms un effet de souffle dans la barre d\'état</string>
     <string name="missed_call_breath_title">Breathing Appel Manqué</string>
-    <string name="missed_call_breath_summary">Va donner à votre notification d\'appel manqué un breathing effect dans la barre d\'état</string>
+    <string name="missed_call_breath_summary">Va donner à votre notification d\'appel manqué un effet de souffle dans la barre d\'état</string>
     <string name="voicemail_breath_title">Breathing Messagerie</string>
-    <string name="voicemail_breath_summary">Va donner à votre notification de messagerie un breathing effect dans la barre d\'état</string>
+    <string name="voicemail_breath_summary">Va donner à votre notification de messagerie un effet de souffle dans la barre d\'état</string>
 
     <!-- Keyguard always show battery -->
     <string name="lockscreen_battery_status_title">État de la batterie</string>
@@ -944,5 +944,43 @@
     <string name="theme_auto_mode_twilight">En fonction de l\'heure</string>
     <string name="theme_auto_switch_mode_error">Le changement automatique en fonction de la luminosité est activé. Le changement manuel est impossible.</string>
 
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Montrer le réseau 4G</string>
+    <string name="show_lte_or_fourgee_summary">Vous permet d\'afficher 4G au lieu de LTE</string>
+
+    <!-- Sound themes -->
+    <string name="audio_theme_title">Thème audio Omnirom</string>
+    <string name="sound_packages_title">Packs son</string>
+    <string name="install_sound_pack_title">Installer un pack son</string>
+    <string name="install_sound_pack_summary">Installer un nouveau pack son situer dans le dossier SoundPacks de la mémoire interne du téléphone</string>
+    <string name="select_sound_pack_title">Sélectionner le pack son</string>
+    <string name="select_sound_pack_summary">Sélectionner le pack son actif</string>
+    <string name="default_sound_pack">Défaut (Système)</string>
+    <string name="error_pack_install">Erreur lors de l\'installation du pack son</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Connection manager</string>
+    <string name="telo_radio_options_category">Configuration lorsque l\'écran est allumé</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Sélectionner cette option si vous utilisez LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G en Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Quand le Wifi fonctionne le réseau mobile est basculé en mode 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Configuration lorsque l\'écran est éteint</string>
+    <string name="telo_radio_2g_screenoff_title">Passer en mode 2G lorsque l\'écran est éteint</string>
+    <string name="telo_radio_2g_screenoff_summary">Le téléphone va passer en mode 2G lorsque l\'écran est éteint.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Délai pour passer en mode 2G</string>
+    <string name="telo_radio_2g_3min">3 minutes</string>
+    <string name="telo_radio_2g_5min">5 minutes</string>
+    <string name="telo_radio_2g_10min">10 minutes</string>
+    <string name="telo_radio_2g_15min">15 minutes</string>
+    <string name="telo_radio_2g_20min">20 minutes</string>
+    <string name="telo_radio_go_3g_unlock_title">Déverrouillage 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Quand le téléphone est déverrouillé basculer en mode 3G de nouveau.</string>
+
+    <!-- Captive portal toggle -->
+    <string name="captive_toggle">Captive portal detection</string>
+    <string name="captive_toggle_summary">Toggle captive portal detection</string>
+    <string name="captive_server">Server for captive portal detection</string>
+    <string name="captive_server_summary">Server used to detect captive portal. Leave empty for default.</string>
 
 </resources>

@@ -36,7 +36,7 @@ import android.view.MenuItem;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.widget.SeekBarPreference;
+import com.android.settings.temasek.SeekBarPreference;
 
 import net.margaritov.preference.colorpicker.ColorPickerPreference;
 

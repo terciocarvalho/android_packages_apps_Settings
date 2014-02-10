@@ -50,6 +50,9 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
     private static final String PREF_PIE_BACKGROUND_ALPHA = "pie_background_alpha";
     private static final String PREF_PIE_CONTROL_SIZE = "pie_control_size";
     private static final String PREF_PIE_MIRROR_RIGHT = "pie_mirror_right";
+    private static final String PREF_PIE_SHOW_TEXT = "pie_show_text";
+    private static final String PREF_PIE_SHOW_BACKGROUND = "pie_show_background";
+    private static final String PREF_PIE_SHOW_SNAP = "pie_show_snap";
 
     private static final float PIE_CONTROL_SIZE_MIN = 0.6f;
     private static final float PIE_CONTROL_SIZE_MAX = 1.5f;
@@ -61,12 +64,15 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
     Resources mSystemUiResources;
     private boolean mCheckPreferences;
 
-    ColorPickerPreference mPieBackgroundColor;
-    ColorPickerPreference mPieSnapColor;
-    ColorPickerPreference mPieTextColor;
-    SeekBarPreference mPieBackgroundAlpha;
-    SeekBarPreference mPieControlSize;
-    CheckBoxPreference mMirrorRightPie;
+    private ColorPickerPreference mPieBackgroundColor;
+    private ColorPickerPreference mPieSnapColor;
+    private ColorPickerPreference mPieTextColor;
+    private SeekBarPreference mPieBackgroundAlpha;
+    private CheckBoxPreference mShowSnap;
+    private CheckBoxPreference mShowText;
+    private CheckBoxPreference mShowBackground;
+    private SeekBarPreference mPieControlSize;
+    private CheckBoxPreference mMirrorRightPie;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -97,6 +103,15 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
 
         mPieBackgroundAlpha = (SeekBarPreference) findPreference(PREF_PIE_BACKGROUND_ALPHA);
         mPieBackgroundAlpha.setOnPreferenceChangeListener(this);
+
+        mShowSnap = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_SNAP);
+        mShowSnap.setOnPreferenceChangeListener(this);
+
+        mShowText = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_TEXT);
+        mShowText.setOnPreferenceChangeListener(this);
+
+        mShowBackground = (CheckBoxPreference) findPreference(PREF_PIE_SHOW_BACKGROUND);
+        mShowBackground.setOnPreferenceChangeListener(this);
 
         mPieControlSize = (SeekBarPreference) findPreference(PREF_PIE_CONTROL_SIZE);
         mPieControlSize.setOnPreferenceChangeListener(this);
@@ -181,6 +196,18 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.PIE_SNAP_COLOR, intHex);
             return true;
+        } else if (preference == mShowText) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_TEXT, (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mShowBackground) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_BACKGROUND, (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mShowSnap) {
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.PIE_SHOW_SNAP, (Boolean) newValue ? 1 : 0);
+            return true;
         } else if (preference == mMirrorRightPie) {
             Settings.System.putInt(getContentResolver(),
                     Settings.System.PIE_MIRROR_RIGHT,
@@ -239,6 +266,15 @@ public class PieStyleSettings extends SettingsPreferenceFragment implements
             mPieTextColor.setSummary(hexColor);
         }
         mPieTextColor.setNewPreviewColor(intColor);
+
+        mShowSnap.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.PIE_SHOW_SNAP, 1) == 1);
+
+        mShowText.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.PIE_SHOW_TEXT, 1) == 1);
+
+        mShowBackground.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.PIE_SHOW_BACKGROUND, 1) == 1);
 
         mMirrorRightPie.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
                 Settings.System.PIE_MIRROR_RIGHT, 1) == 1);

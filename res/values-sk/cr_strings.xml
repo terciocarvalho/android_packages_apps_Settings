@@ -7,9 +7,9 @@
     
     <!-- General strings -->
     <string name="reset">Obnoviť</string>
-    <string name="enabled">Zapnutý</string>
+    <string name="enabled">Zapnuté</string>
     <string name="attention">Upozornenie</string>
-    <string name="disabled">Vypnutý</string>
+    <string name="disabled">Vypnuté</string>
     <string name="default_string">Predvolené</string>
     <string name="additional_options_title">Ďalšie nastavenia</string>
     <string name="reset_message">Obnoviť všetky hodnoty na predvolené?</string>
@@ -144,18 +144,18 @@
     <string name="shortcut_action_power_off">Vypnúť</string>
     <string name="shortcut_action_reboot">Reštartovať</string>
     <string name="shortcut_action_sound">Zvuk</string>
-    <string name="shortcut_action_app">Vlastná app</string>
+    <string name="shortcut_action_app">Vlastná aplikácia</string>
     <string name="shortcut_action_home">Domov</string>
     <string name="shortcut_action_back">Späť</string>
     <string name="shortcut_action_recent">Nedávne</string>
-    <string name="shortcut_action_lastapp">Posledná app</string>
+    <string name="shortcut_action_lastapp">Posledná aplikácia</string>
     <string name="shortcut_action_assist">Hľadať</string>
-    <string name="shortcut_action_search">Hľadať v app</string>
+    <string name="shortcut_action_search">Hľadať v aplikáciách</string>
     <string name="shortcut_action_voice_search">Hlasové vyhľadávanie</string>
     <string name="shortcut_action_screenshot">Screenshot</string>
     <string name="shortcut_action_menu">Menu</string>
     <string name="shortcut_action_ime">IME prepínač</string>
-    <string name="shortcut_action_kill">Zabiť app</string>
+    <string name="shortcut_action_kill">Ukončiť aplikáciu</string>
     <string name="shortcut_action_power">Vypnúť obrazovku</string>
     <string name="shortcut_action_theme_switch">Prepínač témy</string>
     <string name="shortcut_action_notifications">Oznámenia</string>
@@ -163,7 +163,7 @@
     <string name="shortcut_action_qs">Panel rýchlych nastavení</string>
     <string name="shortcut_action_none">Žiadne</string>
     <string name="shortcut_action_power_menu">Power menu</string>
-    <string name="shortcut_action_torch">Baterka</string>
+    <string name="shortcut_action_torch">Svetlo</string>
     <string name="shortcut_action_longpress">Dlhé stlačenie:</string>
     <string name="shortcut_action_select_action_longpress">Vybrať akciu pre dlhé stlačenie:</string>
     <string name="shortcut_action_select_action">Vybrať akciu:</string>
@@ -178,10 +178,10 @@
     <string name="shortcut_image_not_valid">Vybraný obrázok má nesprávnu ikonu alebo nepodporuje orezanie obrázku. Použite iný.</string>
     <string name="shortcut_duplicate_entry">Vybraná skratka nemôže byť pridaná dvakrát</string>
 
-    <string name="shortcut_action_help_shortcut">skratka</string>
+    <string name="shortcut_action_help_shortcut">skratky</string>
     <string name="shortcut_action_help_button">tlačidlo</string>
-    <string name="shortcut_action_help_icon">, Pri kliknutí na ikonu vyvoláte možnosti prispôsobenia</string>
-    <string name="shortcut_action_help_main">Pre pridanie %1$s, vyberte Pridať ikonu.  Ak %1$s je pridaná, výberom riadku zmeníte cieľ%2$s\n\nPre zmazanie %1$s, potiahnite riadok doprava alebo doľava.  Zmeniť poradie %1$s v zozname môžte vertikálnym potiahnutím šípiek naľavo.\n\nVymazať alebo obnoviť všetky skratky, môžte kliknutím na Reset.</string>
+    <string name="shortcut_action_help_icon">Pri kliknutí na ikonu vyvoláte možnosti prispôsobenia</string>
+    <string name="shortcut_action_help_main">Pre pridanie %1$s, vyberte Pridať ikonu.  Ak je skratka pridaná, výberom riadku zmeníte cieľ skratky.\n\nPre zmazanie %1$s, potiahnite riadok doprava alebo doľava.  Zmeniť poradie %1$s v zozname môžte vertikálnym potiahnutím šípiek naľavo.\n\nVymazať alebo obnoviť všetky skratky, môžte kliknutím na Reset.</string>
     <string name="shortcut_action_help_delete_last_entry">Vymazaním všetkých %1$s v zozname deaktivujete túto funkciu.</string>
     <string name="shortcut_action_help">Pomoc</string>
 
@@ -306,8 +306,8 @@
     <string name="wallpaper_intra_open_title">Animácia otvorenia vnútri tapety</string>  
     <string name="wallpaper_intra_close_title">Animácia zatvorenia vnútri tapety</string>  
     <string name="animation_duration_title">Trvanie animácie</string>  
-    <string name="title_animation_no_override">Zabrániť app prelínanie animácií</string>  
-    <string name="summary_animation_no_override">Zabrániť apps mimoriadne prechody.</string>  
+    <string name="title_animation_no_override">Zabrániť prelínanie animácií</string>  
+    <string name="summary_animation_no_override">Zabráni mimoriadnym prechodom</string>  
     <string name="animation_duration_default">Predvolené</string>
     <string name="header_summary_animation">@null</string>
 
@@ -420,7 +420,7 @@
     <string name="lockscreen_target_summary">Ukázať alebo zmeniť vlastné akcie na zamknutej obrazovke</string>
     <string name="lockscreen_target_color_title">Farba ikony cieľa</string>
     <string name="lockscreen_eight_targets_title">Osem akcií posuvníka</string>
-    <string name="lockscreen_eight_targets_summary">Nastaviť osem vlastnýck akcií posuvníka na zamknutej obrazovke</string>
+    <string name="lockscreen_eight_targets_summary">Nastaviť osem vlastných akcií posuvníka na zamknutej obrazovke</string>
     <string name="lockscreen_enable_eight_targets_dialog">Výberom tejto možnosti obnovíte vaše aktuálne ciele na zamknutej obrazovke na pôvodné.</string>
     <string name="lockscreen_enable_eight_targets_enabled_dialog">\n\nAk je možnosť Osem cieľov aktivovaná, nemôžte súčasne používať vaše skratky posuvníka na zamknutej obrazovke.</string>
     <string name="lockscreen_glowpad_torch_title">Posuvník baterky</string>
@@ -504,7 +504,7 @@
     <string name="halo_msgbox_animation_flip">Prevrátiť</string>
 
     <string name="halo_enabled_title">Zapnúť HALO</string>
-    <string name="halo_enabled_summary">Úplné zapnutie/vypnutie HALO</string>
+    <string name="halo_enabled_summary">Zapne/vypne HALO</string>
 
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Čierny zoznam HALO</string>
@@ -526,7 +526,7 @@
     <string name="listview_translate_right">Príchod (zprava)</string>
 
     <!-- ListView interpolator -->
-    <string name="listview_interpolator_title">Animácia posúvania efekty</string>
+    <string name="listview_interpolator_title">Animácia efektov posúvania</string>
     <string name="listview_accelerate_interpolator">zrýchlený_príchod</string>
     <string name="listview_decelerate_interpolator">spomalený_príchod</string>
     <string name="listview_accelerate_decelerate_interpolator">zrýchlený_spomalený_príchod</string>
@@ -681,7 +681,7 @@
     <string name="title_tile_custom">Vlastná</string>
     <string name="title_tile_sleep">Uspať</string>
     <string name="title_tile_location">Lokalizácia</string>
-    <string name="title_tile_torch">Baterka</string>
+    <string name="title_tile_torch">Svetlo</string>
     <string name="title_tile_lockscreen">Zablokovať obrazovku</string>
     <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Mobilné dáta</string>
@@ -862,12 +862,12 @@
     <string name="hide_low_priority_summary">Skryje oznámenia s nízkou prioritou, ako napríklad oznámenia počasia z Google now</string>
     <string name="hide_non_clearable">Skryť neodstrániteľné</string>
     <string name="hide_non_clearable_summary">Skryje všetky neodstrániteľné oznámenia</string>
-    <string name="dismiss_all">Povoliť zrušiť všetky oznámenia</string>
-    <string name="dismiss_all_summary">Povolí zrušiť všetky oznámenia dokonca aj neodstrániteľné. Samozrejme tie zmiznú iba z oznámení zamknutej obrazovky a nie z lišty oznámení.</string>
+    <string name="dismiss_all">Zrušiť všetky oznámenia</string>
+    <string name="dismiss_all_summary">Povolí zrušiť všetky oznámenia naraz, dokonca aj neodstrániteľné. Samozrejme tie zmiznú iba z oznámení zamknutej obrazovky a nie z lišty oznámení.</string>
     <string name="expanded_view">Rozšírený pohľad oznámenia</string>
     <string name="expanded_view_summary">Pridá možnosť prepínať dlhým stlačením medzi normálnym a rozšíreným pohľadom. Rozšírený pohľad niekedy ukazuje veľa súkromných informácií, takže ho možno budete chcieť vypnúť.</string>
     <string name="force_expanded_view">Vynútiť rozšírený pohľad</string>
-    <string name="force_expanded_view_summary">Ukáže oznámenia rozšírene ako predvolene. Stále budete mať možnosť prepínať medzi rozšíreným a normálnym pohľadom.</string>
+    <string name="force_expanded_view_summary">Ukáže oznámenia rozšírene. Stále budete mať možnosť prepínať medzi rozšíreným a normálnym pohľadom.</string>
     <string name="wake_on_notification">Zobudiť pri oznámení</string>
     <string name="wake_on_notification_summary">Zobudí zariadenie po prijatí nového oznámenia</string>
     <string name="notifications_height">Počítadlo oznámení</string>
@@ -943,5 +943,18 @@
     <string name="theme_auto_mode_lightsensor">Na základe svetelných podmienok</string>
     <string name="theme_auto_mode_twilight">Na základe dennej doby</string>
     <string name="theme_auto_switch_mode_error">Mód automatického zisťovania svetelných podmienok je aktivovaný. Manuálne prepínanie nie je možné.</string>
+
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Ukáž 4G sieť</string>
+    <string name="show_lte_or_fourgee_summary">Dovolí ukázať 4G namiesto LTE</string>
+
+    <!-- Sound themes -->
+    <string name="sound_packages_title">Zvukové balíčky</string>
+    <string name="install_sound_pack_title">Inštalovať zvukový balíček</string>
+    <string name="install_sound_pack_summary">Nainštaluje nový zvukový balíček pridaný v SoundPacks súbore vo nútornej pamäti</string>
+    <string name="select_sound_pack_title">Zvoliť zvukový balíček</string>
+    <string name="select_sound_pack_summary">Zvolí aktívny zvukový balíček</string>
+    <string name="default_sound_pack">Predvolený (Systém)</string>
+    <string name="error_pack_install">Chyba počas inštalovania zvukového balíčka</string>
 
 </resources>

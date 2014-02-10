@@ -43,6 +43,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String KEY_ENABLED = "ad_enable";
     private static final String KEY_SHOW_TEXT = "ad_text";
+    private static final String KEY_SHOW_CONTENT = "ad_content";
     private static final String KEY_ALL_NOTIFICATIONS = "ad_all_notifications";
     private static final String KEY_HIDE_LOW_PRIORITY = "ad_hide_low_priority";
     private static final String KEY_POCKET_MODE = "ad_pocket_mode";
@@ -58,6 +59,7 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
 
     private SwitchPreference mEnabledPref;
     private CheckBoxPreference mShowTextPref;
+    private CheckBoxPreference mShowContentPref;
     private CheckBoxPreference mShowDatePref;
     private CheckBoxPreference mShowAmPmPref;
     private CheckBoxPreference mAllNotificationsPref;
@@ -85,6 +87,10 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
         mShowTextPref = (CheckBoxPreference) findPreference(KEY_SHOW_TEXT);
         mShowTextPref.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.ACTIVE_DISPLAY_TEXT, 0) == 1));
+
+        mShowContentPref = (CheckBoxPreference) findPreference(KEY_SHOW_CONTENT);
+        mShowContentPref.setChecked((Settings.System.getInt(getContentResolver(),
+                Settings.System.ACTIVE_DISPLAY_CONTENT, 0) != 0));
 
         mAllNotificationsPref = (CheckBoxPreference) findPreference(KEY_ALL_NOTIFICATIONS);
         mAllNotificationsPref.setChecked((Settings.System.getInt(getContentResolver(),
@@ -198,6 +204,11 @@ public class ActiveDisplaySettings extends SettingsPreferenceFragment implements
             value = mShowTextPref.isChecked();
             Settings.System.putInt(getContentResolver(),
                     Settings.System.ACTIVE_DISPLAY_TEXT,
+                    value ? 1 : 0);
+        } else if (preference == mShowContentPref) {
+            value = mShowContentPref.isChecked();
+            Settings.System.putInt(getContentResolver(),
+                    Settings.System.ACTIVE_DISPLAY_CONTENT,
                     value ? 1 : 0);
         } else if (preference == mAllNotificationsPref) {
             value = mAllNotificationsPref.isChecked();

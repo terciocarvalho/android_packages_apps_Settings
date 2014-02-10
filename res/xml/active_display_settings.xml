@@ -25,6 +25,13 @@
         android:summaryOn="@string/ad_enable_summary_on" />
 
     <CheckBoxPreference
+        android:key="ad_content"
+        android:persistent="false"
+        android:title="@string/ad_content_title"
+        android:summary="@string/ad_content_summary"
+        android:dependency="ad_enable"/>
+
+    <CheckBoxPreference
         android:key="ad_turnoff_mode"
         android:persistent="true"
         android:title="@string/ad_turnoff_mode_title"
@@ -127,6 +134,7 @@
             android:summary="@string/ad_brightness_summary"
             android:max="100"
             settings:min="0"
+            settings:interval="1"
             settings:unitsLeft=""
             settings:unitsRight="%"
             android:defaultValue="100"

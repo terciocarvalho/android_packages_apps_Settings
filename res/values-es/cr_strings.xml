@@ -967,7 +967,7 @@
     <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a Wi-Fi, Modo de red cambiará a 2G.</string>
     <string name="telo_radio_2g_screenoff_category">Configuración con pantalla apagada</string>
     <string name="telo_radio_2g_screenoff_title">2G con pantalla apagada</string>
-    <string name="telo_radio_2g_screenoff_summary">El dospositivo cambia a 2G cuando la pantalla está apagada.</string>
+    <string name="telo_radio_2g_screenoff_summary">El dispositivo cambia a 2G cuando la pantalla está apagada.</string>
     <string name="telo_radio_2g_screenoff_timeout_title">Tiempo para cambiar a 2G</string>
     <string name="telo_radio_2g_3min">3 minutos</string>
     <string name="telo_radio_2g_5min">5 minutos</string>
@@ -982,5 +982,53 @@
     <string name="captive_toggle_summary">Toggle de detección de portal cautivo</string>
     <string name="captive_server">Servidor para la detección de portal cautivo</string>
     <string name="captive_server_summary">Servidor utilizado para detectar portal cautivo. Dejar en blanco para dejarlo por defecto.</string>
+    
+    <!-- Pie Control -->
+    <string name="pie_control_title">SlimPIE</string>
+    <string name="pie_control_summary">Habilitar controles PIE</string>
+    <string name="pie_control_size">Tamaño de navegación</string>
+    <string name="pie_control_trigger_positions">Opciones de disparo</string>
+    <string name="pie_control_trigger_left">Disparo al borde izquierdo de la pantalla</string>
+    <string name="pie_control_trigger_bottom">Disparo al borde inferior de la pantalla</string>
+    <string name="pie_control_trigger_right">Disparo al borde derecho de la pantalla</string>
+    <string name="pie_control_trigger_top">Disparo al borde superior de la pantalla</string>
+    <string name="pie_control_trigger_top_summary">Constrol PIE en la parte superior no muestra la información del estado y el reloj</string>
+    <string name="pie_button_style">Estilo de los botones</string>
+    <string name="pie_button_color_title">Color del botón</string>
+    <string name="pie_button_alpha_title">Transparencia del boón</string>
+    <string name="pie_button_outline_color_title">Color del contorno del botón</string>
+    <string name="pie_button_pressed_color_title">Color del botón presionado</string>
+    <string name="pie_button_long_pressed_color_title">Color del botón a pulsacion larga</string>
+    <string name="pie_button_pressed_alpha_title">Transparencia del botón presionado</string>
+    <string name="pie_icon_style">Estilo del icono del botón</string>
+    <string name="pie_icon_color_title">Color de icono del botón</string>
+    <string name="pie_icon_color_mode_title">Modo de color de icono del botón</string>
+    <string name="pie_icon_color_mode_dialog_title">Colorear</string>
+    <string name="pie_icon_color_mode_summary">Cambiar el modo de color del icono del botón</string>
+    <string name="pie_trigger_note_title">Nota</string>
+    <string name="pie_trigger_note_summary">Para evitar conflictos con la barra de estado en la barra de navegación, los disparadores de estos bordes se desactivan automáticamente si uno o ambos están disponibles.</string>
+    <string name="pie_background_color_title">Color del fondo</string>
+    <string name="pie_snap_color_title">Color del punto snap</string>
+    <string name="pie_text_color_title">Color del texto</string>
+    <string name="pie_background_alpha_title">Transparencia del fondo</string>
+    <string name="pie_mirror_right_title">Espejo derecho de PIE</string>
+    <string name="pie_mirror_right_summary">Espejo derecho de PIE en el eje orizontal</string>
+    <string name="pie_style">Estilo y dimensiones</string>
+    <string name="pie_style_title">Estilo</string>
+    <string name="pie_dimens_title">Dimensión</string>
+    <string name="pie_additional_options">Opciones adicionales</string>
+    <string name="pie_show_snap_title">Mostrar puntos snaps</string>
+    <string name="pie_show_snap_summary">Mostrar puntos snaps para cambiar la inclinación de disparo de forma dinámica</string>
+    <string name="pie_show_text_title">Mostrar estado y hora</string>
+    <string name="pie_show_text_summary">Mostrar estado de teléfono, información de hora y fecha</string>
+    <string name="pie_show_background_title">Mostrar fondo</string>
+    <string name="pie_show_background_summary">Activar la pantalla de fondo de PIE</string>
+    <string name="pie_button">Botones</string>
+    <string name="pie_button_second_layer">Botones de la segunda capa</string>
+    <string name="pie_button_second_layer_summary">Cambiar botones de la segunda capa</string>
+    <string name="pie_button_style_summary">Cambiar el estilo del boton PIE</string>
+    <string name="pie_style_reset_message">Restablecer el estilo de las entradas por defecto?</string>
+    <string name="pie_warning_no_navigation_present">Ninguna otra navegación está actualmente habilitada. Apagar los controles PIE puede resultar en un dispositivo inutilizable. ¿Quieres activar la barra de navegación en su lugar?</string>
+    <string name="pie_trigger_warning">Mínimo uno de los principales disparadores (abajo, izquierda o derecha) debe estar habilitado.</string>
  
 </resources>

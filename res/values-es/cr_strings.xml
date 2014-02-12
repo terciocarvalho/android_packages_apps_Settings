@@ -19,6 +19,9 @@
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Opciones avanzadas</string>
+    
+    <!-- Temasek Shortcuts -->
+    <string name="temasek_shortcut_picker">Atajos</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Selector de color</string>
@@ -878,6 +881,7 @@
     <string name="privacy_mode_summary">Desactiva la muestra de las notificaciones de existencia y rechazo. De esta manera, usted solo verá los iconos de las notificaciones.</string>
     <string name="excluded_apps_title">Aplicaciones excluidas</string>
     <string name="excluded_apps_summary">Aplicaciones excluidas no se mostrará como notificaciones en la pantalla de bloqueo</string>
+    <string name="notification_color">Color del fondo de las notificaciones</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Grabador de pantalla</string>
@@ -950,6 +954,7 @@
     <string name="show_lte_or_fourgee_summary">Esto le permitirá mostrar 4G en lugar de LTE</string>
 
     <!-- Sound themes -->
+    <string name="audio_theme_title">Temas de audio de Omnirom</string>
     <string name="sound_packages_title">Paquete de sonido</string>
     <string name="install_sound_pack_title">Instale el paquete de sonido</string>
     <string name="install_sound_pack_summary">Instalar nuevos paquetes de sonido añadidos en la carpeta "Sound Packs" de la memoria interna</string>
@@ -1016,7 +1021,6 @@
     <string name="pie_style">Estilo y dimensiones</string>
     <string name="pie_style_title">Estilo</string>
     <string name="pie_dimens_title">Dimensión</string>
-    <string name="pie_additional_options">Opciones adicionales</string>
     <string name="pie_show_snap_title">Mostrar puntos snaps</string>
     <string name="pie_show_snap_summary">Mostrar puntos snaps para cambiar la inclinación de disparo de forma dinámica</string>
     <string name="pie_show_text_title">Mostrar estado y hora</string>
@@ -1030,5 +1034,7 @@
     <string name="pie_style_reset_message">Restablecer el estilo de las entradas por defecto?</string>
     <string name="pie_warning_no_navigation_present">Ninguna otra navegación está actualmente habilitada. Apagar los controles PIE puede resultar en un dispositivo inutilizable. ¿Quieres activar la barra de navegación en su lugar?</string>
     <string name="pie_trigger_warning">Mínimo uno de los principales disparadores (abajo, izquierda o derecha) debe estar habilitado.</string>
+    <string name="pie_disable_ime_triggers_title">Reducir el tamaño del disparo en el teclado</string>
+    <string name="pie_disable_ime_triggers_summary">Reduce el tamaño del disparo izquierdo y derecho si el teclado está activo</string>
  
 </resources>

@@ -327,22 +327,29 @@ Log.e("qsUtil", "torch removed");
         if (tileExtra != null) {
             String[] getResolvedIcon = tileExtra.split(TILE_CUSTOM_DELIMITER);
             if (getResolvedIcon.length > 2) {
-                deleteCustomIcon(getResolvedIcon[1]);
+                deleteCustomIcon(getResolvedIcon[1], null);
             }
         }
         deleteActions(context,
                 Settings.System.CUSTOM_TOGGLE_EXTRAS, tileKey);
         for (int i = 0; i < 5; i++) {
-            deleteCustomIcon(getActionsAtIndex(context, i, 2, tileKey));
+            deleteCustomIcon(getActionsAtIndex(context, i, 2, tileKey),
+                    getActionsAtIndex(context, i, 0, tileKey));
         }
         deleteActions(context,
                 Settings.System.CUSTOM_TOGGLE_ACTIONS, tileKey);
     }
 
-    private static void deleteCustomIcon(String file) {
+    private static void deleteCustomIcon(String file, String uri) {
         if (file != null && !file.equals(" ")) {
             File f = new File(file);
             if (f != null && f.exists()) {
+                f.delete();
+            }
+        }
+        if (uri != null) {
+            File f = new File(uri.replaceAll(".*?hasExtraIcon=", ""));
+            if (f.exists()) {
                 f.delete();
             }
         }
@@ -477,7 +484,7 @@ Log.e("qsUtil", "torch removed");
             indexes[0] = collapseMatch;
         }
         if (icon != null) {
-            deleteCustomIcon(indexes[1]);
+            deleteCustomIcon(indexes[1], null);
             indexes[1] = icon;
         }
         if (name != null) {
@@ -601,7 +608,7 @@ Log.e("qsUtil", "torch removed");
                     && oldList.get(i).endsWith(Integer.toString(index))) {
                 String[] split = oldList.get(i).split(TILE_CUSTOM_KEY);
                 String[] returned = split[0].split(TILE_CUSTOM_DELIMITER);
-                deleteCustomIcon(returned[2]);
+                deleteCustomIcon(returned[2], returned[0]);
             } else {
                 newList.add(oldList.get(i));
             }

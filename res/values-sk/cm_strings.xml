@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="increasing_ring_title">Zosilujúce zvonenie</string>
     <string name="checkbox_increasing_ring">Zapnuté</string>
-    <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť zvonenia/string>
+    <string name="increasing_ring_min_volume_title">Počiatočná hlasitosť zvonenia</string>
     <string name="increasing_ring_volume_notice">Poznámka:\nAk je nastavená počiatočná hlasitosť vyššia ako hlasitosť zvonenia, bude použitá jednotná hlasitosť.</string>
     <string name="increasing_ring_interval_title">Interval zvyšovania hlasitosti</string>
     <string name="increasing_ring_interval_eachring">Po každom zazvonení</string>

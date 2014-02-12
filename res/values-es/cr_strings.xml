@@ -645,8 +645,8 @@
     <!-- Notification drawer background -->
     <string name="notification_style_title">Estilo del fondo</string>
     <string name="notification_style_summary">Ver o cambiar el fondo del panel de notificación y de ajustes rápidos</string>
-    <string name="notification_wallpaper_title">Fondo</string>
-    <string name="notification_wallpaper_landscape_title">Diferente fondo en modo paisaje </string>
+    <string name="notification_wallpaper_title">Cambiar el fondo en modo retrato</string>
+    <string name="notification_wallpaper_landscape_title">Cambiar el fondo en modo paisaje </string>
     <string name="notification_background_color_fill">Color de llenado</string>
     <string name="notification_background_custom_image">Imagen personalizada</string>
     <string name="notification_background_default_wallpaper">Fondo por defecto</string>
@@ -889,7 +889,7 @@
     <string name="screen_recorder_video_dimensions_title">Tamaño del video</string>
     <string name="screen_recorder_video_bitrate_title">Bitrate</string>
     <string name="screen_recorder_record_audio_title">Grabación de audio</string>
-    <string name="screen_recorder_record_audio_summary">Grabación de audio del micrófono</string>
+    <string name="screen_recorder_record_audio_summary">Grabación de audio con micrófono</string>
     <!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
     <string name="screen_recorder_size_360x640">360x640</string>
@@ -969,10 +969,10 @@
     <string name="telo_radio_lte_title">LTE</string>
     <string name="telo_radio_lte_summary">Seleccione esta opción si utiliza (4G) LTE.</string>
     <string name="telo_radio_2g_wifi_title">2G en Wi-Fi</string>
-    <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a Wi-Fi, Modo de red cambiará a 2G.</string>
+    <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a una red Wi-Fi,el modo de red cambiará a 2G.</string>
     <string name="telo_radio_2g_screenoff_category">Configuración con pantalla apagada</string>
     <string name="telo_radio_2g_screenoff_title">2G con pantalla apagada</string>
-    <string name="telo_radio_2g_screenoff_summary">El dispositivo cambia a 2G cuando la pantalla está apagada.</string>
+    <string name="telo_radio_2g_screenoff_summary">El dispositivo cambiará a 2G cuando la pantalla esté apagada.</string>
     <string name="telo_radio_2g_screenoff_timeout_title">Tiempo para cambiar a 2G</string>
     <string name="telo_radio_2g_3min">3 minutos</string>
     <string name="telo_radio_2g_5min">5 minutos</string>
@@ -1013,7 +1013,7 @@
     <string name="pie_trigger_note_title">Nota</string>
     <string name="pie_trigger_note_summary">Para evitar conflictos con la barra de estado en la barra de navegación, los disparadores de estos bordes se desactivan automáticamente si uno o ambos están disponibles.</string>
     <string name="pie_background_color_title">Color del fondo</string>
-    <string name="pie_snap_color_title">Color del punto snap</string>
+    <string name="pie_snap_color_title">Color del punto circular</string>
     <string name="pie_text_color_title">Color del texto</string>
     <string name="pie_background_alpha_title">Transparencia del fondo</string>
     <string name="pie_mirror_right_title">Espejo derecho de PIE</string>
@@ -1021,8 +1021,8 @@
     <string name="pie_style">Estilo y dimensiones</string>
     <string name="pie_style_title">Estilo</string>
     <string name="pie_dimens_title">Dimensión</string>
-    <string name="pie_show_snap_title">Mostrar puntos snaps</string>
-    <string name="pie_show_snap_summary">Mostrar puntos snaps para cambiar la inclinación de disparo de forma dinámica</string>
+    <string name="pie_show_snap_title">Mostrar puntos circulares</string>
+    <string name="pie_show_snap_summary">Mostrar puntos circulares para cambiar la inclinación de disparo de forma dinámica</string>
     <string name="pie_show_text_title">Mostrar estado y hora</string>
     <string name="pie_show_text_summary">Mostrar estado de teléfono, información de hora y fecha</string>
     <string name="pie_show_background_title">Mostrar fondo</string>

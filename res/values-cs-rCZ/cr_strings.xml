@@ -842,7 +842,7 @@
     <string name="keys_action_normal">Normální stisk</string>
     <string name="keys_action_long">LDlouhý stisk</string>
     <string name="keys_action_double">Dvojitý klik</string>
-    <string name="no_home_key">Nemáte přiřazenou žádnou akci k tlačítku \"Home\"!\n\nVaše zařízení se může stát nepoužitelnám!</string>
+    <string name="no_home_key">Nemáte přiřazenou žádnou akci k tlačítku \"Domů\"!\n\nVaše zařízení se může stát nepoužitelnám!</string>
 
     <!-- Minimum Vibration Duration -->
     <string name="minimum_vibration_duration">Minimum trvání vibrací</string>

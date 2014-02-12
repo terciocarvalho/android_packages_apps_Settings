@@ -19,6 +19,9 @@
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Настройки от Temasek</string>
 
+    <!-- Temasek Shortcuts -->
+    <string name="temasek_shortcut_picker">Действия от Temasek</string>
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Палитра цветов</string>
     <string name="press_color_to_apply">Нажмите на выбранный цвет для применения</string>
@@ -138,6 +141,8 @@
     <string name="restart_systemui">Перезагрузка SystemUI</string>
 
     <!-- Button shorcut actions -->
+    <string name="shortcut_action_navbar">Панель навигации</string>
+    <string name="shortcut_action_pie">Управление панелью PIE</string>
     <string name="shortcut_action_airplane">Режим полёта</string>
     <string name="shortcut_action_expanded_desktop">Расширенный экран</string>
     <string name="shortcut_action_power_off">Отключить питание</string>
@@ -183,7 +188,8 @@
     <string name="shortcut_action_help_main">Чтобы добавить %1$s, нажмите значек Добавить.  После того, как %1$s добавлен, нажмите на строку для смены назначения%2$s\n\nЧтобы удалить %1$s, проведите по строке горизонтально влево или вправо.  Расположение %1$s в списке по вертикали меняется перетаскиванием иконки слева.\n\nЧтобы очистить или сбросить значения по умолчанию, нажмите на значек Сброс.</string>
     <string name="shortcut_action_help_delete_last_entry">Удаление любого %1$s в списке будет отключать функцию полностью.</string>
     <string name="shortcut_action_help">Справка</string>
-
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Удаление всех %1$s в списке полностью отключит второй слой панели PIE.</string>
+	
     <string name="shortcuts_icon_picker_alarm">Будильник</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
     <string name="shortcuts_icon_picker_battery">Батарея</string>
@@ -360,6 +366,7 @@
     <string name="navbar_targets_title">Ярлыки быстрого запуска</string>
     <string name="navbar_cat">Строка навигации</string>
     <string name="navbar_dimensions_reset_message">Сбросить все значения размеров по умолчанию?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Ни одна из панелей навигации сейчас не включена. Отключение панели навигации может привести к неработоспособности устройства. Вы хотите включить управление навигацией с помощью панели PIE?</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style_summary">Изменение цвета кнопок строки навигации</string>
@@ -574,12 +581,12 @@
     <string name="ad_all_notifications_summary">Показывать все уведомления, в том числе постоянные, не отфильтрованные уведомления.</string>
     <string name="ad_hide_low_priority_title">Скрыть низкий приоритет</string>
     <string name="ad_hide_low_priority_summary">Скрыть уведомления с низким приоритетом, например от Google Now</string>
-    <string name="ad_pocket_mode_title">"Карманный" режим</string>
+    <string name="ad_pocket_mode_title">\"Карманный\" режим</string>
     <string name="ad_pocket_mode_summary">Показывать уведомления активного дисплея, когда устройство извлекается из кармана.</string>
     <string name="ad_redisplay_title">Показывать уведомления повторно</string>
     <string name="ad_timeout_title">Задержка отключения дисплея</string>
     <string name="ad_threshold_title">Порог приближения</string>
-    <string name="ad_sunlight_mode_title">Режим "Солнечный свет"</string>
+    <string name="ad_sunlight_mode_title">Режим \"Солнечный свет\"</string>
     <string name="ad_sunlight_mode_summary">Инвертировать цвета, если вы находитесь в ярко освещённом месте, например под прямым солнечным светом.</string>
     <string name="ad_turnoff_mode_title">Отключение дисплея</string>
     <string name="ad_turnoff_mode_summary">Отключить дисплей, если устройство находится в кармане, и снова перейти в режим активного дисплея</string>
@@ -659,10 +666,10 @@
     <string name="omni_features_recent_panel_title" >Последние приложения</string>
 
     <!--  Recents clear all -->
-    <string name="show_recent_clear_all_button_title">Показывать кнопку "Очистить всё"</string>
+    <string name="show_recent_clear_all_button_title">Показывать кнопку \"Очистить всё\"</string>
     <string name="show_recent_clear_all_button_summary">Установите галочку, чтобы показать или снимите, чтобы скрыть отображение кнопки "Очистить всё" на экране последних приложений</string>
-    <string name="recent_clear_all_button_location_title">Расположение кнопки "Очистить всё"</string>
-    <string name="recent_clear_all_button_location_summary">Выберите, где будет располагаться кнопка "Очистить всё"</string>
+    <string name="recent_clear_all_button_location_title">Расположение кнопки \"Очистить всё\"</string>
+    <string name="recent_clear_all_button_location_summary">Выберите, где будет располагаться кнопка \"Очистить всё\"</string>
     <string name="recent_clear_all_button_location_top_left">Вверху слева</string>
     <string name="recent_clear_all_button_location_top_right">Вверху справа</string>
     <string name="recent_clear_all_button_location_bottom_left">Внизу слева</string>
@@ -881,6 +888,7 @@
     <string name="privacy_mode_summary">Отключает просмотр уведомлений на экране блокировки. Таким образом, вы просто видите иконки ваших уведомлений.</string>
     <string name="excluded_apps_title">Исключённые приложения</string>
     <string name="excluded_apps_summary">Уведомления от исключённых приложений не будут отображаться на экране блокировки</string>
+    <string name="notification_color">Цвет фона уведомления</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Запись с экрана</string>
@@ -966,5 +974,54 @@
     <string name="captive_toggle_summary">Включить обнаружение \"Captive portal\"</string>
     <string name="captive_server">Сервер для обнаружения \"Captive portal\"</string>
     <string name="captive_server_summary">Сервер, используемый для обнаружения \"captive portal\". Оставьте строку пустой для использования по умолчанию</string>
+
+    <!-- Pie Control -->
+    <string name="pie_control_title">Панель SlimPIE</string>
+    <string name="pie_control_summary">Включить управление с помощью PIE</string>
+    <string name="pie_control_size">Размер панели навигации</string>
+    <string name="pie_control_trigger_positions">Параметры триггера</string>
+    <string name="pie_control_trigger_left">Триггер слева на экране</string>
+    <string name="pie_control_trigger_bottom">Триггер внизу экрана</string>
+    <string name="pie_control_trigger_right">Триггер справа на экране</string>
+    <string name="pie_control_trigger_top">Триггер вверху экрана</string>
+    <string name="pie_control_trigger_top_summary">Панель PIE, расположенная вверху не отображает информацию о состоянии и часы</string>
+    <string name="pie_button_style">Стиль кнопок</string>
+    <string name="pie_button_color_title">Цвет кнопки</string>
+    <string name="pie_button_alpha_title">Прозрачность кнопки</string>
+    <string name="pie_button_outline_color_title">Цвет внешнего края кнопки</string>
+    <string name="pie_button_pressed_color_title">Цвет нажатой кнопки</string>
+    <string name="pie_button_long_pressed_color_title">Цвет кнопки при долгом нажатии</string>
+    <string name="pie_button_pressed_alpha_title">Прозрачность нажатой кнопки</string>
+    <string name="pie_icon_style">Стиль иконок</string>
+    <string name="pie_icon_color_title">Цвет иконок</string>
+    <string name="pie_icon_color_mode_title">Цветовой режим иконок</string>
+    <string name="pie_icon_color_mode_dialog_title">Раскрасить</string>
+    <string name="pie_icon_color_mode_summary">Изменение цветового режима для иконок</string>
+    <string name="pie_trigger_note_title">Примечание</string>
+    <string name="pie_trigger_note_summary">Во избежание конфликтов со строкой состояния или панелью навигации, триггеры на этих краях автоматически отключаются, если доступны один или оба.</string>
+    <string name="pie_background_color_title">Цвет фона</string>
+    <string name="pie_snap_color_title">Цвет точки прикрепления</string>
+    <string name="pie_text_color_title">Цвет текста</string>
+    <string name="pie_background_alpha_title">Прозрачность фона</string>
+    <string name="pie_mirror_right_title">PIE зеркально справа</string>
+    <string name="pie_mirror_right_summary">Панель PIE зеркально справа по горизонтальной оси</string>
+    <string name="pie_style">Стиль и размеры</string>
+    <string name="pie_style_title">Стиль</string>
+    <string name="pie_dimens_title">Размеры</string>
+    <string name="pie_show_snap_title">Показывать точки прикрепления</string>
+    <string name="pie_show_snap_summary">Показывать точки прикрепления для динамической смены расположения триггера</string>
+    <string name="pie_show_text_title">Показывать состояние и часы</string>
+    <string name="pie_show_text_summary">Показывать состояние телефона, сведения о дате и времени</string>
+    <string name="pie_show_background_title">Показывать фон</string>
+    <string name="pie_show_background_summary">Включить отображение фона панели PIE</string>
+    <string name="pie_button">Кнопки</string>
+    <string name="pie_button_second_layer">Кнопки второго слоя</string>
+    <string name="pie_button_second_layer_summary">Изменение кнопок второго слоя</string>
+    <string name="pie_button_style_summary">Изменение внешнего вида кнопок панели PIE</string>
+    <string name="pie_style_reset_message">Сбросить параметры стиля по умолчанию?</string>
+    <string name="pie_warning_no_navigation_present">Ни одна панель навигации в настоящее время не включена. Отключение элементов управления PIE может привести к неработоспособноcnи устройства. Вы хотите включить обычную панель навигации вместо панели PIE?</string>
+    <string name="pie_trigger_warning">Как минимум один из основных триггеров (внизу, слева или справа) должен быть включен.</string>
+    <string name="pie_disable_ime_triggers_title">Уменьшить размер триггера на клавиатуре</string>
+    <string name="pie_disable_ime_triggers_summary">Уменьшает размер левого и правого триггера, если клавиатура активна</string>
 
 </resources>

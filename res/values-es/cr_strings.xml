@@ -1017,7 +1017,7 @@
     <string name="pie_text_color_title">Color del texto</string>
     <string name="pie_background_alpha_title">Transparencia del fondo</string>
     <string name="pie_mirror_right_title">Espejo derecho de PIE</string>
-    <string name="pie_mirror_right_summary">Espejo derecho de PIE en el eje orizontal</string>
+    <string name="pie_mirror_right_summary">Espejo derecho de PIE en el eje horizontal</string>
     <string name="pie_style">Estilo y dimensiones</string>
     <string name="pie_style_title">Estilo</string>
     <string name="pie_dimens_title">Dimensión</string>

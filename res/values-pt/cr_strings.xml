@@ -211,4 +211,8 @@
     <string name="clock_date_style_uppercase">Maiúscula</string>
     <string name="clock_date_format_custom">Formato customizado java</string>
     
+    <!-- Volume pane timeout -->
+    <string name="volume_panel_timeout_title">Tempo de espera</string>
+    <string name="volume_panel_timeout_summary">Tempo até o painel de volume esconder-se</string>
+
 </resources>

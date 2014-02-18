@@ -39,6 +39,12 @@
             android:entries="@array/media_scanner_on_boot_entries"
             android:entryValues="@array/media_scanner_on_boot_values" />
 
+         <!-- Dual Panel -->
+         <CheckBoxPreference
+            android:key="dual_pane"
+            android:title="@string/dual_pane"
+            android:summary="@string/dual_pane_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

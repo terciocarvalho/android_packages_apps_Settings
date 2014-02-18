@@ -24,11 +24,13 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
     private static final String RESTART_SYSTEMUI = "restart_systemui";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
+    private static final String KEY_DUAL_PANE = "dual_pane";
 
     private CheckBoxPreference mUseAltResolver;
     private CheckBoxPreference mShowCpuInfo;
     private Preference mRestartSystemUI;
     private ListPreference mMsob;
+    private CheckBoxPreference mDualPane;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,14 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
                 Settings.System.MEDIA_SCANNER_ON_BOOT, 0)));
         mMsob.setSummary(mMsob.getEntry());
         mMsob.setOnPreferenceChangeListener(this);
+
+        mDualPane = (CheckBoxPreference) findPreference(KEY_DUAL_PANE);
+        mDualPane.setOnPreferenceChangeListener(this);
+        boolean preferDualPane = getResources().getBoolean(
+                com.android.internal.R.bool.preferences_prefer_dual_pane);
+        boolean dualPaneMode = Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.DUAL_PANE_PREFS, (preferDualPane ? 1 : 0)) == 1;
+        mDualPane.setChecked(dualPaneMode);
 
     }
 
@@ -97,6 +107,11 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
 
             mMsob.setValue(String.valueOf(value));
             mMsob.setSummary(mMsob.getEntry());
+            return true;
+        } else if (preference == mDualPane) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.DUAL_PANE_PREFS,
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;

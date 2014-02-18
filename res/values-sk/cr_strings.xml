@@ -91,7 +91,7 @@
     <string name="screen_on_notification_led_summary">Zapnúť oznámenia diódou aj keď je obrazovka zapnutá</string> 
 
     <!-- Alternate default app picker -->
-    <string name="general_settings_title">Ďalšie nastevenia</string>
+    <string name="general_settings_title">Ďalšie nastavenia</string>
     <string name="general_settings_style_title">Ďalšie možnosti</string>
     <string name="display_short">Displej</string>
     <string name="misc_short">Všeličo</string>

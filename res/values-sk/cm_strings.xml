@@ -270,6 +270,56 @@
     <!-- Performance settings -->
     <string name="performance_settings_title">Výkon</string>
     
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">Postupujte opatrne</string>
+    <string name="performance_settings_warning">Tieto funkcie sú experimentálne a vykonané zmeny môžu spôsobiť nestabilitu, pády, straty dát alebo zlyhania hardvéru.\n\nŽiadame vás: nepodávajte hlásenia o chybách, ak niektoré z týchto nastavení bolo zmenené z východiskového nastavenia.</string>
+
+    <!-- Performance Settings : Set on boot option -->
+    <string name="performance_set_on_boot">Nastaviť pri štarte</string>
+    <string name="performance_set_on_boot_summary">Obnoviť nastavenia pri štarte</string>
+
+    <!-- Performance Settings : Processor Settings -->
+    <!-- Performance Settings : Processor settings title -->
+    <string name="processor_title">Procesor</string>
+    
+    <!-- Performance Settings : Processor settings sub items -->
+    <string name="cpu_cur_freq_title">Aktuálna frekvencia CPU</string>
+    <string name="cpu_governors_title">CPU správca</string>
+    <string name="cpu_governors_summary" translatable="false">%S</string>
+    <string name="cpu_min_freq_title">Minimálna frekvencia CPU</string>
+    <string name="cpu_min_freq_summary" translatable="false">%s</string>
+    <string name="cpu_max_freq_title">Maximálna frekvencia CPU</string>
+    <string name="cpu_max_freq_summary" translatable="false">%s</string>
+    
+    <!-- Performance Settings : I/O scheduler settings title -->
+    <string name="io_scheds_title">I/O plánovač</string>
+
+    <!-- Performance Settings : I/O scheduler settings sub items -->
+    <string name="io_sched_title">I/O plánovač</string>
+    <string name="io_sched_summary" translatable="false">%S</string>
+
+    <!-- Performance Settings : Performance profile settings -->
+    <string name="perf_profile_title">Profil</string>
+    <string name="perf_profile_summary" translatable="false">%s</string>
+    
+    <!-- Memory Management -->
+    <string name="memory_management_title">Správa pamäte</string>
+   
+    <!-- Purgeable Assets -->
+    <string name="pref_purgeable_assets_title">Povoliť mazanie záznamov</string>
+    <string name="pref_purgeable_assets_summary">Vymazaním záznamov bitmapovej pamäte umožní v prípade potreby uvoľniť viac pamäte RAM (vyžaduje reštart)</string>
+    
+    <!-- Performance Settings : 16bpp Alpha -->
+    <string name="pref_use_16bpp_alpha_title">16bit zobrazovanie</string>
+    <string name="pref_use_16bpp_alpha_summary">Lepší grafický výkon, ale nižšia kvalita a môže spôsobiť vizuálne chyby (vyžaduje reštart)</string>
+    
+     <!-- Change Log strings -->
+    <string name="changelog_title">Zobraziť changelog</string>
+    <string name="changelog_loading">Načítavam changelog\u2026</string>
+    <string name="changelog_error">Nepodarilo sa načítať changelog</string>
+    <string name="changelog_unknown">Neznámy</string>
+    <string name="changelog_version">Verzia</string>
+    
     <!-- Hardware keys -->
     <string name="button_settings">Tlačidlá</string>
     <string name="hardware_keys_enable_custom_title">Povoliť vlastné tlačidlá</string>
@@ -355,7 +405,7 @@
     <!--  Other device settings - More -->
     <string name="more_device_controls_title">Viac\u2026</string>
     <string name="more_device_settings_title">Iné nastavenia</string>
-    <string name="sensors_motors_title">Sensors &amp; motors</string>
+    <string name="sensors_motors_title">Senzory &amp; pohyb</string>
     <string name="display_calibration_title">Kalibrácia displeja</string>
     
     <!-- Launch music player when headset is connected -->
@@ -389,10 +439,71 @@
     <string name="privacy_guard_advanced_settings_title">Rozšírené</string>
     <string name="privacy_guard_notification_title">Ukázať oznámenie</string>
     
+    <!-- About phone screen,  setting option name -->
+    <string name="mod_version">CyanogenMod verzia</string>
+    <string name="mod_version_default">Neznáma</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Dátum zostavenia</string>
+    <string name="build_date_default" translatable="false">2012-01-01-0000</string>
+    <!-- About device screen, Cpu info -->
+    <string name="cpu_info">CPU</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">Pamäť RAM</string>
+    <!-- About phone screen, status item label -->
     
+    <!-- Anonymous Statistics #CM -->
+    <!-- About device screen, list item title. Takes the user to the screen about opting in or out of anonymous statistics. -->
+    <string name="anonymous_statistics_title">CyanogenMod štatistiky</string>
+    <string name="anonymous_statistics_summary">Pomôžte CyanogenModu byť lepším zasielaním anonymných štatistík</string>
+    <string name="anonymous_statistics_warning_title">Poznámka</string>
+    <string name="anonymous_statistics_warning">Zapojením sa do CyanogenMod štatistík dovolíte zariadeniu odosielať neosobné dáta vývojárom CyanogenModu, aby mohli sledovať inštalácie na rôznych zariadeniach. Zaslané informácie obsahujú jedinečný identifikátor, ktorý neohrozí vaše súkromie alebo osobné údaje. Dáta sa odosielajú pri každom zapnutí zariadenia.\n\nPre príklad dát ktoré sú odosielané, kliknite na Zobraziť dáta.</string>
+    <string name="enable_reporting_title">Zapnúť odosielanie dát</string>
+    <string name="preview_data_title">Zobraziť dáta</string>
+    <string name="preview_data_summary" translatable="false">%s</string>
+    <string name="view_stats_title">Ukázať štatistiky</string>
+    <string name="anonymous_learn_more">Zistiť viac</string>
+
+    <!-- Anonymous Statistics - Notification -->
+    <string name="anonymous_notification_desc">Zapnúť alebo vypnúť CyanogenMod štatistiky</string>
+
+    <!-- Anonymous Statistics - Preview -->
+    <string name="preview_id_title">Jedinečné ID</string>
+    <string name="preview_device_title">Zariadenie</string>
+    <string name="preview_version_title">Verzia</string>
+    <string name="preview_country_title">Štát</string>
+    <string name="preview_carrier_title">Operátor</string>
     
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">Čierny zoznam</string>
+    <string name="blacklist_edit_dialog_title">Upraviť položky čierného zoznamu</string>
+    <string name="blacklist_prefs">Nastavenia</string>
+    <string name="blacklist_button_delete">Zmazať</string>
+    <string name="blacklist_empty_text">Žiadne čísla v čiernom zozname. Pridajte položku kliknutím na tlačidlo Pridať (+).</string>
+    <string name="blacklist_disabled_empty_text">Pre obmedzenie čísiel a/alebo správ zo zoznamu, aktivujte čierny zoznam.</string>
+    <string name="blacklist_summary_disabled">VYpnuté</string>
+    <string name="blacklist_summary">Prichádzajúce hovory a správy z čísiel v čiernom zozname budú zablokované</string>
+    <string name="blacklist_notify">Ukázať oznámenie</string>
+    <string name="blacklist_private_numbers_title">Súkromné čísla</string>
+    <string name="blacklist_private_numbers_summary_disabled">Neblokovať čísla zo zoznamu súkromných čísiel</string>
+    <string name="blacklist_private_numbers_summary">Zablokovať prichádzajúce <xliff:g id="type">%s</xliff:g> zo zoznamu súkromných čísiel</string>
+    <string name="blacklist_unknown_numbers_title">Neznáme čísla</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Neblokovať čísla alebo správy z čísiel, ktoré nie sú v mojom zozname</string>
+    <string name="blacklist_unknown_numbers_summary">Blokovať prichádzajúce <xliff:g id="type">%s</xliff:g> z čísiel, ktoré nie sú v mojom zozname</string>
+    <string name="blacklist_summary_type_calls_only">Hovory</string>
+    <string name="blacklist_summary_type_messages_only">Správy</string>
+    <string name="blacklist_summary_type_calls_and_messages">Hovory a správy</string>
+    <string name="blacklist_regex_title">Použiť náhradné znaky</string>
+    <string name="blacklist_regex_summary">Použije . ako náhradu a * pre opakovanie. Napr. 123.* zablokuje čísla začínajúce na 123 a .*123.* zablokuje čísla obsahujúce 123</string>
+    <string name="blacklist_policy_block_calls">Zablokovať prichádzajúce hovory</string>
+    <string name="blacklist_policy_block_messages">Zablokovať prichádzajúce správy</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">Pridať číslo</string>
+    <string name="remove_blacklist_number_title">Zmazať číslo</string>
+    <string name="remove_blacklist_entry">Chcete zmazať túto položku z čierneho zoznamu?</string>
+    <string name="select_contact">Vybrať kontakt</string>
     
-    
-    
+    <!-- tap-to-wake -->
+    <string name="double_tap_to_wake_title">Zobudiť dvojklikom</string>
     
 </resources>

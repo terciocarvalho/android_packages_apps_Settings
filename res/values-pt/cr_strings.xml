@@ -215,4 +215,36 @@
     <string name="volume_panel_timeout_title">Tempo de espera</string>
     <string name="volume_panel_timeout_summary">Tempo até o painel de volume esconder-se</string>
 
+    <!-- Lockscreen Notifications -->
+    <string name="general">Geral</string>
+    <string name="layout">Layout</string>
+    <string name="privacy">Privacidade</string>
+    <string name="Lockscreen_notifications_header">Notificações na Tela de bloqueio</string>
+    <string name="lockscreen_notifications">Notificações na Tela de bloqueio</string>
+    <string name="lockscreen_notifications_summary">Exibe notificações pendentes na tela de bloqueio</string>
+    <string name="pocket_mode">Modo bolso</string>
+    <string name="pocket_mode_summary">Ligua a tela e mostra todas as notificações quando o aparelho é retirado do bolso. Desliga a tela quando o aparelho e colocado novamente no bolso.</string>
+    <string name="show_always">Sempre mostrar</string>
+    <string name="show_always_summary">Tela é ligada quando o aparelho é retirado do bolso, mesmo quando não há notificações pendentes</string>
+    <string name="hide_low_priority">Esconder notificações de baixa prioridade</string>
+    <string name="hide_low_priority_summary">Esconde notificações de baixa prioridade. Exemplo: notificações de clima do Google now</string>
+    <string name="hide_non_clearable">Esconder notificações não removíves</string>
+    <string name="hide_non_clearable_summary">Esconde todas as notificações não removíves</string>
+    <string name="dismiss_all">Permitir descartar todas as notificações</string>
+    <string name="dismiss_all_summary">Permite descartar mesmo notificações não removíveis. Claro, elas estarão escondidas somente da tela de bloqueio e não do painel de notificações.</string>
+    <string name="expanded_view">Vista expandida das notificações</string>
+    <string name="expanded_view_summary">Mostra as notificações sempre expandidas quando possível</string>
+    <string name="force_expanded_view">Forcar vista expandida</string>
+    <string name="force_expanded_view_summary">Mostra notificações expandidas por normal. Ainda será possível mudar entre vista expandida e normal.</string>
+    <string name="wake_on_notification">Acordar com notificações</string>
+    <string name="wake_on_notification_summary">Acorda o aparelho quando novas notificações forem recebidas</string>
+    <string name="notifications_height">Contador de notificações</string>
+    <string name="notifications_height_summary">Número de notificações mostradas de uma só vez</string>
+    <string name="offset_top">Deslocamento para a parte superior da tela:</string>
+    <string name="privacy_mode">Modo privacidade</string>
+    <string name="privacy_mode_summary">Desablita notificações de serem mostradas e dispensadas. Dessa forma, somente os ícones das notificações serão vistos</string>
+    <string name="excluded_apps_title">Aplicações excluídas</string>
+    <string name="excluded_apps_summary">Aplicações excluídas não serão mostradas como notificações na tela de bloqueio</string>
+    <string name="notification_color">Cor do fundo das notificações</string>
+
 </resources>

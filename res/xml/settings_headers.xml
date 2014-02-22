@@ -107,6 +107,14 @@
         android:fragment="com.android.settings.temasek.NavigationSettings"
         android:title="@string/navigation_settings_title" />
 
+    <!-- Wakelock Blocker -->
+    <header
+        android:id="@+id/wakelock_blocker"
+        android:fragment="com.android.settings.temasek.WakeLockBlocker"
+        android:icon="@drawable/ic_settings_wakelock_blocker"
+        android:layout="@layout/preference_wakelockblocker"
+        android:title="@string/wakelock_blocker" />
+
     <!-- HALO -->
     <header
         android:id="@+id/halo_settings"

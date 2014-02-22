@@ -4,7 +4,7 @@
 
     <!-- About phone screen, crDroid version -->
     <string name="crdroid_version_title">crDroid Simple version</string>
-    <string name="crdroid_version_default">Build 1</string>
+    <string name="crdroid_version_default">Build 6</string>
 
     <!-- General strings -->
     <string name="default_string">Default</string>
@@ -246,5 +246,15 @@
     <string name="excluded_apps_title">Excluded applications</string>
     <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
     <string name="notification_color">Notification background color</string>
+
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Wakelock Blocker</string>
+    <string name="wakelock_blocker_title">Enable</string>
+    <string name="wakelock_blocker_summary">Activate blocking for checked wakelocks</string>
+    <string name="wakelock_blocker_save">Save</string>
+    <string name="wakelock_list_header">Available Wakelocks</string>
+    <string name="wakelock_blocker_reload">Reload</string>
+    <string name="wakelock_blocker_warning_title">Proceed with Caution</string>
+    <string name="wakelock_blocker_warning">Blocking wakelocks have the potential to cause instability, crashes or data loss.</string>
 
 </resources>

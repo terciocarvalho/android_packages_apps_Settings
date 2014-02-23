@@ -1040,4 +1040,20 @@
     <string name="pie_disable_ime_triggers_title">Smanji veličinu prekidača na tipkovnici</string>
     <string name="pie_disable_ime_triggers_summary">Smanjuje veličinu lijevog i desnog prekidača ako je tipkovnica aktivna</string>
 
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Koraci glasnoće</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Alarm</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Glazba</string>
+    <string name="volume_steps_notification_title">Obavijest</string>
+    <string name="volume_steps_ring_title">Zvono</string>
+    <string name="volume_steps_system_title">Sustav</string>
+    <string name="volume_steps_voice_call_title">Glasovni poziv</string>
+
 </resources>

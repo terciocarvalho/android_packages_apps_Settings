@@ -20,6 +20,9 @@
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temasek dodatne postavke</string>
 
+    <!-- Temasek Shortcuts -->
+    <string name="temasek_shortcut_picker">Temasek radnje</string> 
+
     <!-- Color Picker -->
     <string name="dialog_color_picker">Odabir boja</string>
     <string name="press_color_to_apply">Dotakni boju za primjenu</string>
@@ -139,6 +142,8 @@
     <string name="restart_systemui">Ponovno pokreni SystemUI</string>
 
     <!-- Button shorcut actions -->
+    <string name="shortcut_action_navbar">Navigacijska traka</string>
+    <string name="shortcut_action_pie">Kontrole u obliku torte</string>
     <string name="shortcut_action_airplane">Način rada u zrakoplovu</string>
     <string name="shortcut_action_expanded_desktop">Prišireni prikaz</string>
     <string name="shortcut_action_power_off">Isključi</string>
@@ -184,6 +189,7 @@
     <string name="shortcut_action_help_main">Da bi dodali %1$s, odaberite Dodaj ikonu.  Jednom kad je %1$s dodana, izbor retka će promjeniti cilj%2$s\n\nDa bi uklonili %1$s, prevucite redak vodoravno lijevo ili desno.  Za preslagivanje %1$s na popisu vucite okomito držeći simbol s lijeve strane.\n\nZa brisanje ili postavljanje na postavljene vrijednosti odaberite ikonu za postavljanje.</string>
     <string name="shortcut_action_help_delete_last_entry">Brisanje svake %1$s na popisu će potpuno onemogućiti značajku.</string>
     <string name="shortcut_action_help">Pomoć</string>
+    <string name="shortcut_action_help_pie_second_layer_delete_last_entry">Brisanje svake %1$s sa popisa u potpunosti će ukloniti drugi sloj kontrola u obliku torte</string>
 
     <string name="shortcuts_icon_picker_alarm">Alarm</string>
     <string name="shortcuts_icon_picker_andy">Andy</string>
@@ -361,6 +367,7 @@
     <string name="navbar_targets_title">Radnje na prstenu</string>
     <string name="navbar_cat">Navigacijska traka</string>
     <string name="navbar_dimensions_reset_message">Vrati sve vrijednosti dimenzija na početne?</string>
+    <string name="navigation_bar_warning_no_navigation_present">Nijedna druga navigacija nije omogućena. Isključivanje navigacijske trake može dovesti do neupotrebljivog uređaja. Želite li izabrati kontrole u obliku torte?</string>
 
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style_summary">Promjenite izgled tipki na navigacijskoj traci</string>
@@ -877,6 +884,7 @@
     <string name="privacy_mode_summary">Onemogućuje prikaz i skrivanje obavijesti. U ovom načinu vidite samo ikone obavijesti.</string>
     <string name="excluded_apps_title">Isključene aplikacije</string>
     <string name="excluded_apps_summary">Aplikacije isključene iz prikaza obavijesti na zaslonu zaključavanja</string>
+    <string name="notification_color">Pozadinska boja obavijesti</string>
 
     <!-- Screen recorder -->
     <string name="screen_recorder_title">Snimač zaslona</string>
@@ -943,5 +951,93 @@
     <string name="theme_auto_mode_lightsensor">Stanje promjene pri umjetnoj svjetlosti</string>
     <string name="theme_auto_mode_twilight">Pri dnevnoj svjetlosti</string>
     <string name="theme_auto_switch_mode_error">Omogućen način automatskog prebacivanja na osnovu svjetlosnih uvjeta. Ručno prebacivanje nije moguće.</string>
+
+    <!-- Show 4G icon instead of LTE. User defined settings -->
+    <string name="show_lte_or_fourgee_title">Prikaži 4G mrežu</string>
+    <string name="show_lte_or_fourgee_summary">Omogućuje prikaz 4G umjesto LTE</string>
+
+    <!-- Sound themes -->
+    <string name="audio_theme_title">Omnirom audio tema</string>
+    <string name="sound_packages_title">Zvučni paketi</string>
+    <string name="install_sound_pack_title">Instaliraj zvučne pakete</string>
+    <string name="install_sound_pack_summary">Instaliraj nove zvučne pakete u SoundPacks mapu u internu pohranu</string>
+    <string name="select_sound_pack_title">Odaberi zvučni paket</string>
+    <string name="select_sound_pack_summary">Odaberi aktivni zvučni paket</string>
+    <string name="default_sound_pack">Početno (sistem)</string>
+    <string name="error_pack_install">Greška pri instalaciji zvučnog paketa</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Upravitelj povezivanja</string>
+    <string name="telo_radio_options_category">Podešavanje kod upaljenog zaslona</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Odaberite ovu opciju ako koristite LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G na Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Kad je spojen Wi-Fi način mreže prebaci u 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Podešavanje kod isključenog zaslona</string>
+    <string name="telo_radio_2g_screenoff_title">2G sa ugašenim zaslonom</string>
+    <string name="telo_radio_2g_screenoff_summary">Uređaj će se prebaciti u 2G kad je zaslon isključen.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Rok za prebacivanje u 2G</string>
+    <string name="telo_radio_2g_3min">3 minute</string>
+    <string name="telo_radio_2g_5min">5 minuta</string>
+    <string name="telo_radio_2g_10min">10 minuta</string>
+    <string name="telo_radio_2g_15min">15 minuta</string>
+    <string name="telo_radio_2g_20min">20 minuta</string>
+    <string name="telo_radio_go_3g_unlock_title">3G otključavanje</string>
+    <string name="telo_radio_go_3g_unlock_summary">Kad se uređaj otključa mreža se prebacuje u 3G.</string>
+
+    <!-- Captive portal toggle -->
+    <string name="captive_toggle">Otkrivanje portala zaključavanja</string>
+    <string name="captive_toggle_summary">Prebacivanje otkrivanja portala zaključavanja</string>
+    <string name="captive_server">Poslužitelj za otkrivanje portala zaključavanja</string>
+    <string name="captive_server_summary">Poslužitelj za otkrivanje portala zaključavanja. Ostavite prazno za početne postavke.</string>
+
+    <!-- Pie Control -->
+    <string name="pie_control_title">SlimPIE</string>
+    <string name="pie_control_summary">Omogući kotrole u obliku torte</string>
+    <string name="pie_control_size">Veličina</string>
+    <string name="pie_control_trigger_positions">Mogućnosti prekidača</string>
+    <string name="pie_control_trigger_left">Prekidač na lijevom rubu zaslona</string>
+    <string name="pie_control_trigger_bottom">Prekidač na donjem rubu zaslona</string>
+    <string name="pie_control_trigger_right">Prekidač na desnom rubu zaslona</string>
+    <string name="pie_control_trigger_top">Prekidač na gornjem rubu zaslona</string>
+    <string name="pie_control_trigger_top_summary">Glavna torta ne prikazuje status i sat</string>
+    <string name="pie_button_style">Oblik dugmadi</string>
+    <string name="pie_button_color_title">Boja dugmadi</string>
+    <string name="pie_button_alpha_title">Prozirnost dugmadi</string>
+    <string name="pie_button_outline_color_title">Boja ruba dugmadi</string>
+    <string name="pie_button_pressed_color_title">Boja pritisnute dugmadi</string>
+    <string name="pie_button_long_pressed_color_title">Boja dugmadi pri dugom pritisku</string>
+    <string name="pie_button_pressed_alpha_title">Prozirnost pritisnute dugmadi</string>
+    <string name="pie_icon_style">Izgled ikone dugmadi</string>
+    <string name="pie_icon_color_title">Boja ikone dugmadi</string>
+    <string name="pie_icon_color_mode_title">Način boje ikone dugmadi</string>
+    <string name="pie_icon_color_mode_dialog_title">Oboji</string>
+    <string name="pie_icon_color_mode_summary">Promjeni način boje ikone dugmadi</string>
+    <string name="pie_trigger_note_title">Obavijest</string>
+    <string name="pie_trigger_note_summary">Radi izbjegavanja sukoba između statusne trake i navigacijske trake prekidači na ovim rubovima automatski su isključeni ako su jedan ili oba dostupni</string>
+    <string name="pie_background_color_title">Boja pozadine</string>
+    <string name="pie_snap_color_title">Boja točke pucanja</string>
+    <string name="pie_text_color_title">Boja teksta</string>
+    <string name="pie_background_alpha_title">Prozirnost pozadine</string>
+    <string name="pie_mirror_right_title">Odraz desne torte</string>
+    <string name="pie_mirror_right_summary">Odraz desne torte po vodoravnoj osi</string>
+    <string name="pie_style">Izgled i dimenzije</string>
+    <string name="pie_style_title">Izgled</string>
+    <string name="pie_dimens_title">Dimenzije</string>
+    <string name="pie_show_snap_title">Prikaži točke pucanja</string>
+    <string name="pie_show_snap_summary">Prikaži točke pucanja za dinamičku izmjenu ruba prekidača</string>
+    <string name="pie_show_text_title">Prikaži status i sat</string>
+    <string name="pie_show_text_summary">Prikaži status telefona, vrijeme i datum</string>
+    <string name="pie_show_background_title">Prikaži pozadinu</string>
+    <string name="pie_show_background_summary">Omogući pozadinu torte</string>
+    <string name="pie_button">Dugmad</string>
+    <string name="pie_button_second_layer">Drugi sloj dugmadi</string>
+    <string name="pie_button_second_layer_summary">Promjeni drugi sloj dugmadi</string>
+    <string name="pie_button_style_summary">Promjeni izgled dugmadi torte</string>
+    <string name="pie_style_reset_message">Vrati izgled na početni?</string>
+    <string name="pie_warning_no_navigation_present">Nijedna druga navigacija nije trenutno omogućena. Gašenje kotrola u obliku torte može dovesti do neupotrebljivog uređaja. Želite li omogućiti navigacijsku traku?</string>
+    <string name="pie_trigger_warning">Najmanje jedan glavni prekidač (dolje, lijevo, desno) mora biti omogućen.</string>
+    <string name="pie_disable_ime_triggers_title">Smanji veličinu prekidača na tipkovnici</string>
+    <string name="pie_disable_ime_triggers_summary">Smanjuje veličinu lijevog i desnog prekidača ako je tipkovnica aktivna</string>
 
 </resources>

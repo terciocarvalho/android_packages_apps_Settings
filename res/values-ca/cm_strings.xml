@@ -348,7 +348,6 @@
     <string name="volume_adjust_sounds_enable_title">So d\'ajust del volum</string>
     <string name="volume_adjust_sounds_enable_summary">Reprodueix un so quan s\'ajusti el volum amb els actuadors del volum</string>
     <string name="button_settings">Botons</string>
-    <string name="hardware_keys_enable_custom_title">Permet botons personalitzats</string>
     <string name="hardware_keys_home_key_title">Botó d\'inici</string>
     <string name="hardware_keys_menu_key_title">Botó menú</string>
     <string name="hardware_keys_assist_key_title">Botó cerca</string>

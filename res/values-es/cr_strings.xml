@@ -367,7 +367,7 @@
     <string name="navbar_dimensions_reset_message">¿Restaurar dimensiones predeterminadas?</string>
  
     <!-- Navigation bar button style -->
-    <string name="nav_bar_button_style_summary">Modifica el color de los botones de la barra</string>
+    <string name="nav_bar_button_style_summary">Modifica el color de los botones de la barra de navegación</string>
     <string name="button_transparency_title">Transparencia de los botones</string>
     <string name="nav_button_color_mode_summary">Modifica el color de los botones</string>
     <string name="navigation_bar_glow_tint_title">Color del resplandor</string>
@@ -785,22 +785,22 @@
     <string name="ime_switcher_notify_summary">Mostrar notificación de selección de método de entrada</string>
 
     <!-- Add option to hide power menu when screen is locked -->
-    <string name="lockscreen_power_menu_title">Habilitar menú de Encendido</string>
-    <string name="lockscreen_power_menu_summary">Mostrar menú de Encendido cuando la pantalla está bloqueada</string>
+    <string name="lockscreen_power_menu_title">Habilitar menú de encendido</string>
+    <string name="lockscreen_power_menu_summary">Mostrar menú de encendido cuando la pantalla está bloqueada</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings -->
     <string name="advanced_settings_title">Avanzado</string>
     
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Deslizamiento de la barra de estado inteligente</string>
-    <string name="smart_pulldown_summary">Abra configuración rápida cuando no haya notificationes %1$s</string>
+    <string name="smart_pulldown_summary">Abra configuración rápida cuando no haya notificationes %1$ss</string>
     <string name="smart_pulldown_off">Apagado</string>
     <string name="smart_pulldown_dismissable">Descartable</string>
     <string name="smart_pulldown_persistent">Persistente</string>
     
     <!-- QuickSettings: Quick Collapse -->
     <string name="title_collapse_panel">Colapso rápido</string>
-    <string name="summary_collapse_panel">Cerrar el panel de notificaciones sobre el toggle</string>
+    <string name="summary_collapse_panel">Cerrar el panel de notificaciones al pulsar sobre un toggle</string>
 
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Cámara de secretos</string>
@@ -867,18 +867,18 @@
     <string name="hide_non_clearable">Ocultar no eliminables</string>
     <string name="hide_non_clearable_summary">Ocultar todas las notificaciones no eliminables</string>
     <string name="dismiss_all">Permitir descartar todas las notificaciones</string>
-    <string name="dismiss_all_summary">Permitir descartar incluso notificaciones no eliminables. Por supuesto, son\ solo ocultadas de la pantalla de bloqueo y no del panel de notificaciones.</string>
+    <string name="dismiss_all_summary">Permitir descartar incluso notificaciones no eliminables. Por supuesto, son solo ocultadas de la pantalla de bloqueo y no del panel de notificaciones.</string>
     <string name="expanded_view">Vista ampliada</string>
     <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista ampliada a veces muestra la información más privada así que sería bueno desactivarla.</string>
     <string name="force_expanded_view">Forzar vista ampliada</string>
-    <string name="force_expanded_view_summary">Mostrar notificaciones expandido por defecto. Usted todavía será capaz de alternar entre la vista ampliada y normal.</string>
+    <string name="force_expanded_view_summary">Mostrar notificaciones de forma ampliada por defecto. Usted todavía será capaz de alternar entre la vista ampliada y normal.</string>
     <string name="wake_on_notification">Despertar con notificación</string>
     <string name="wake_on_notification_summary">Despertar dispositivo cuando recibe una nueva notificación</string>
     <string name="notifications_height">Contador de Notificaciónes</string>
     <string name="notifications_height_summary">Número de notificaciones que se muestran a la vez</string>
     <string name="offset_top">Desplazamiento a la parte superior de la pantalla:</string>
     <string name="privacy_mode">Modo privacidad</string>
-    <string name="privacy_mode_summary">Desactiva la muestra de las notificaciones de existencia y rechazo. De esta manera, usted solo verá los iconos de las notificaciones.</string>
+    <string name="privacy_mode_summary">Desactiva la muestra de las notificaciones e incluso el rechazo. De esta manera, usted solo verá los iconos de las notificaciones.</string>
     <string name="excluded_apps_title">Aplicaciones excluidas</string>
     <string name="excluded_apps_summary">Aplicaciones excluidas no se mostrará como notificaciones en la pantalla de bloqueo</string>
     <string name="notification_color">Color del fondo de las notificaciones</string>
@@ -927,7 +927,7 @@
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Notificaciones respirantes</string>
     <string name="sms_breath_title">SMS respirante</string>
-    <string name="sms_breath_summary">Dará sus alertas de sms un efecto de respiración en la barra de estado</string>
+    <string name="sms_breath_summary">Dará a sus notificaciones de sms un efecto de respiración en la barra de estado</string>
     <string name="missed_call_breath_title">Llamada perdida respirante</string>
     <string name="missed_call_breath_summary">Dará a sus notificaciones de llamadas perdidas un efecto de respiración en la barra de estado</string>
     <string name="voicemail_breath_title">Correo de voz respirante</string>
@@ -997,7 +997,7 @@
     <string name="pie_control_trigger_bottom">Disparo al borde inferior de la pantalla</string>
     <string name="pie_control_trigger_right">Disparo al borde derecho de la pantalla</string>
     <string name="pie_control_trigger_top">Disparo al borde superior de la pantalla</string>
-    <string name="pie_control_trigger_top_summary">Control PIE en la parte superior no muestra la información del estado y el reloj</string>
+    <string name="pie_control_trigger_top_summary">Los Controles PIE en la parte superior no mostrarán la información del estado y el reloj</string>
     <string name="pie_button_style">Estilo de los botones</string>
     <string name="pie_button_color_title">Color del botón</string>
     <string name="pie_button_alpha_title">Transparencia del botón</string>
@@ -1011,26 +1011,26 @@
     <string name="pie_icon_color_mode_dialog_title">Colorear</string>
     <string name="pie_icon_color_mode_summary">Cambiar el modo de color del icono del botón</string>
     <string name="pie_trigger_note_title">Nota</string>
-    <string name="pie_trigger_note_summary">Para evitar conflictos con la barra de estado en la barra de navegación, los disparadores de estos bordes se desactivan automáticamente si uno o ambos están disponibles.</string>
+    <string name="pie_trigger_note_summary">Para evitar conflictos con la barra de estado y la barra de navegación, los disparadores de estos bordes se desactivan automáticamente si uno o ambos están disponibles.</string>
     <string name="pie_background_color_title">Color del fondo</string>
     <string name="pie_snap_color_title">Color del punto circular</string>
     <string name="pie_text_color_title">Color del texto</string>
     <string name="pie_background_alpha_title">Transparencia del fondo</string>
     <string name="pie_mirror_right_title">Espejo derecho de PIE</string>
-    <string name="pie_mirror_right_summary">Espejo derecho de PIE en el eje horizontal</string>
+    <string name="pie_mirror_right_summary">Espejo derecho de los controles PIE en el eje horizontal</string>
     <string name="pie_style">Estilo y dimensiones</string>
     <string name="pie_style_title">Estilo</string>
     <string name="pie_dimens_title">Dimensión</string>
     <string name="pie_show_snap_title">Mostrar puntos circulares</string>
     <string name="pie_show_snap_summary">Mostrar puntos circulares para cambiar la inclinación de disparo de forma dinámica</string>
     <string name="pie_show_text_title">Mostrar estado y hora</string>
-    <string name="pie_show_text_summary">Mostrar estado de teléfono, información de hora y fecha</string>
+    <string name="pie_show_text_summary">Mostrar estado de teléfono, información de fecha y hora</string>
     <string name="pie_show_background_title">Mostrar fondo</string>
-    <string name="pie_show_background_summary">Activar el fondo de pantalla PIE</string>
+    <string name="pie_show_background_summary">Activar el fondo de pantalla de los controles PIE</string>
     <string name="pie_button">Botones</string>
     <string name="pie_button_second_layer">Botones de la segunda capa</string>
-    <string name="pie_button_second_layer_summary">Cambiar botones de la segunda capa</string>
-    <string name="pie_button_style_summary">Cambiar el estilo del boton PIE</string>
+    <string name="pie_button_second_layer_summary">Cambiar el estilo botones de la segunda capa de los controles PIE</string>
+    <string name="pie_button_style_summary">Cambiar el estilo del boton de los controles PIE</string>
     <string name="pie_style_reset_message">Restablecer el estilo de las entradas por defecto?</string>
     <string name="pie_warning_no_navigation_present">Ninguna otra navegación está actualmente habilitada. Apagar los controles PIE puede resultar en un dispositivo inutilizable. ¿Quieres activar la barra de navegación en su lugar?</string>
     <string name="pie_trigger_warning">Mínimo uno de los principales disparadores (abajo, izquierda o derecha) debe estar habilitado.</string>

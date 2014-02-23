@@ -793,7 +793,7 @@
     
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Deslizamiento de la barra de estado inteligente</string>
-    <string name="smart_pulldown_summary">Abra configuración rápida cuando no hay %1$s notificationes presentes</string>
+    <string name="smart_pulldown_summary">Abra configuración rápida cuando no haya notificationes %1$s</string>
     <string name="smart_pulldown_off">Apagado</string>
     <string name="smart_pulldown_dismissable">Descartable</string>
     <string name="smart_pulldown_persistent">Persistente</string>
@@ -861,7 +861,7 @@
     <string name="pocket_mode">Modo Bolsillo</string>
     <string name="pocket_mode_summary">Prender la pantalla y mostrar todas las notificaciones cuando el dispositivo se saca de su bolsillo. Apagar la pantalla cuando el dispositivo se pone de nuevo en el bolsillo</string>
     <string name="show_always">Mostar siempre</string>
-    <string name="show_always_summary">mantener siempre la pantalla prendida cuando se saca de su bolsillo, incluso cuando no hay notificaciones pendientes</string>
+    <string name="show_always_summary">Mantener siempre la pantalla prendida cuando se saca de su bolsillo, incluso cuando no hay notificaciones pendientes</string>
     <string name="hide_low_priority">Ocultar baja prioridad</string>
     <string name="hide_low_priority_summary">Ocultar notificaciones de baja prioridad como Google now notificaciones meteorológicas</string>
     <string name="hide_non_clearable">Ocultar no eliminables</string>
@@ -869,13 +869,13 @@
     <string name="dismiss_all">Permitir descartar todas las notificaciones</string>
     <string name="dismiss_all_summary">Permitir descartar incluso notificaciones no eliminables. Por supuesto, son\ solo ocultadas de la pantalla de bloqueo y no del panel de notificaciones.</string>
     <string name="expanded_view">Vista ampliada</string>
-    <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista expandida a veces muestra la información más privada así que sería bueno desactivarla.</string>
+    <string name="expanded_view_summary">Añade la posibilidad de alternar entre la vista normal y ampliada por pulsación larga. La vista ampliada a veces muestra la información más privada así que sería bueno desactivarla.</string>
     <string name="force_expanded_view">Forzar vista ampliada</string>
     <string name="force_expanded_view_summary">Mostrar notificaciones expandido por defecto. Usted todavía será capaz de alternar entre la vista ampliada y normal.</string>
     <string name="wake_on_notification">Despertar con notificación</string>
     <string name="wake_on_notification_summary">Despertar dispositivo cuando recibe una nueva notificación</string>
     <string name="notifications_height">Contador de Notificaciónes</string>
-    <string name="notifications_height_summary">Número de notificaciones que se muestran a la véz</string>
+    <string name="notifications_height_summary">Número de notificaciones que se muestran a la vez</string>
     <string name="offset_top">Desplazamiento a la parte superior de la pantalla:</string>
     <string name="privacy_mode">Modo privacidad</string>
     <string name="privacy_mode_summary">Desactiva la muestra de las notificaciones de existencia y rechazo. De esta manera, usted solo verá los iconos de las notificaciones.</string>
@@ -969,7 +969,7 @@
     <string name="telo_radio_lte_title">LTE</string>
     <string name="telo_radio_lte_summary">Seleccione esta opción si utiliza (4G) LTE.</string>
     <string name="telo_radio_2g_wifi_title">2G en Wi-Fi</string>
-    <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a una red Wi-Fi,el modo de red cambiará a 2G.</string>
+    <string name="telo_radio_2g_wifi_title_summary">Cuando está conectado a una red Wi-Fi, el modo de red cambiará a 2G.</string>
     <string name="telo_radio_2g_screenoff_category">Configuración con pantalla apagada</string>
     <string name="telo_radio_2g_screenoff_title">2G con pantalla apagada</string>
     <string name="telo_radio_2g_screenoff_summary">El dispositivo cambiará a 2G cuando la pantalla esté apagada.</string>
@@ -1036,5 +1036,21 @@
     <string name="pie_trigger_warning">Mínimo uno de los principales disparadores (abajo, izquierda o derecha) debe estar habilitado.</string>
     <string name="pie_disable_ime_triggers_title">Reducir el tamaño del disparo en el teclado</string>
     <string name="pie_disable_ime_triggers_summary">Reduce el tamaño del disparo izquierdo y derecho si el teclado está activo</string>
+    
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Niveles de volumen</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Alarma</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Música</string>
+    <string name="volume_steps_notification_title">Notificación</string>
+    <string name="volume_steps_ring_title">Campanero</string>
+    <string name="volume_steps_system_title">Sistema</string>
+    <string name="volume_steps_voice_call_title">Llamada de voz</string>
  
 </resources>

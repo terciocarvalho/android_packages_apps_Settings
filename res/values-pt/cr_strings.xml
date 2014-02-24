@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- About phone screen, crDroid version -->
+    <string name="crdroid_version_title">crDroid versão simples</string>
+    <string name="crdroid_version_default">Build 1</string>
+
+    <!-- General strings -->
+    <string name="default_string">Normal</string>
+    <string name="recents_panel_settings_title" >Ajustes do painel de recentes</string>
+    <string name="reset">Restaurar</string>
+
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Comportamento do Halo</string>
+    <string name="halo_hide_title">Esconder o Halo após atividade</string>
+    <string name="halo_hide_summary">Halo aparecerá para as tarefas de entrada e irá para fora da vista depois de um tempo</string>
+    <string name="halo_state_title">Política do Halo</string>
+    <string name="halo_state_summary">Habilitar notificações lista negra/branca</string>
+    <string name="halo_state_black">Lista negra</string>
+    <string name="halo_state_white">Lista branca</string>
+    <string name="halo_pause_title">Pausar o apliativo ativo</string>
+    <string name="halo_pause_summary">Ao abrir um aplicativo com o Halo o aplicativo subjacente ficará em pausa</string>
+    <string name="halo_notification_msgbox_title">Habilitar mensagens pop-up</string>
+    <string name="halo_notification_msgbox_summary">Mostrar caixa de mansagens para notificações de entrada</string>
+    <string name="halo_unlock_ping_title">Mostar o Halo ao desbloquear o aparelho</string>
+    <string name="halo_unlock_ping_summary">Halo irá aparecer ao desbloqueio se houver novas notificações recebidas</string>
+
+    <string name="halo_size_title">Tamanho Halo</string>
+    <string name="halo_size_summary">Defina o tamanho do Halo</string>
+    <string name="halo_size_miniscule">Minúsculo</string>
+    <string name="halo_size_small">Pequeno</string>
+    <string name="halo_size_default">Normal</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monstruoso</string>
+
+    <string name="halo_notification_count_title">Contador de notificações</string>
+    <string name="halo_notification_count_summary">Mostrar contador de notificações no Halo</string>
+    <string name="halo_notification_count_none">Nenhum</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Por aplicativo</string>
+    <string name="halo_notification_count_both">Ambos</string>
+
+    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
+    <string name="app_halo_label_black">Lista negra pelo HALO</string>
+    <string name="app_halo_label_white">Lista branca pelo HALO</string>
+
+    <!-- QS and navring Power menu -->
+    <string name="title_tile_power">Power Menu</string> 
+    <string name="navring_action_power_menu">Power menu</string>       
+
+    <!-- Navigation bar -->
+    <string name="navbar_enable_bar">Habilitar a barra de navegação</string>
+    <string name="navbar_enable_bar_summary">Hablilitar a barra de navegação</string>
+    <string name="navbar_style_dimen_title">Dimensões</string>
+    <string name="navbar_dimensions_reset_message">Restaurar as dimensões para o normal?</string>
+    <string name="navigation_bar_height_title">Altura da barra de navegação</string>
+    <string name="navigation_bar_height_summary">Altura da barra de navegação em modo retrato</string>
+    <string name="navigation_bar_width_title">Largura da barra de navegação</string>
+    <string name="navigation_bar_width_summary">Altura da barra de navegação ao lado da tela</string>
+    <string name="navigation_bar_size_42_dp_default">42 dp (normal)</string>
+    <string name="navigation_bar_size_36_dp">36 dp</string>
+    <string name="navigation_bar_size_30_dp">30 dp</string>
+    <string name="navigation_bar_size_24_dp">24 dp</string>
+    <string name="navigation_bar_size_48_dp_default">48 dp (normal)</string>
+    <string name="navigation_bar_size_44_dp">44 dp</string>
+    <string name="navigation_bar_size_40_dp">40 dp</string>
+    <string name="navigation_bar_size_42_dp">42 dp</string>
+    <string name="navigation_bar_size_0_dp">0 dp (desligada)</string>
+
+    <!-- Low battery warning policy -->
+    <string name="pref_low_battery_warning_policy_title">Alerta de baixo nível da bateria</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Indique o baixo nível da bateria com:</string>
+    <string name="low_battery_warning_policy_popup_sound">Som e pop-up</string>
+    <string name="low_battery_warning_policy_notif_sound">Notificação e som</string>
+    <string name="low_battery_warning_policy_popup">Somente pop-up</string>
+    <string name="low_battery_warning_policy_notif">Somente notificação</string>
+    <string name="low_battery_warning_policy_sound">Somente som</string>
+    <string name="battery_prefs_title">Opções</string>
+    <string name="battery_stats_title">Estatísticas</string>
+
+    <!--Lockscreen See Through-->
+    <string name="see_through_title">Tela de bloqueio ofuscada</string>
+    <string name="see_through_summary">Ofusca e mostra o conteúdo atrás da tela de bloqueio. Cuidado, suas informações podem ficar visíveis para outros ao seu redor</string>
+    <string name="blur_radius_title">Intensidade da ofuscamento</string>
+    <string name="blur_radius_summary">Intensidade para o efeito ofuscado</string>
+
+    <!-- Lockscreen pin shuffle -->
+    <string name="lock_numpad_random_title">Mudara a ordem do teclado numérico PIN</string>
+    <string name="lock_numpad_random_dialog_title">Ordem randômica do teclado PIN</string>
+    <string name="lock_numpad_random_off">Disabilitado</string>
+    <string name="lock_numpad_random_always">Sempre</string>
+    <string name="lock_numpad_random_on_request">À solicitação</string>
+
+    <!-- Lock before unlock -->
+    <string name="lock_before_unlock_title">Atalho(s) antes do desbloqueio seguro</string>
+    <string name="lock_before_unlock_summary">Mostra o(s) atalho(s) da tela de bloqueio antes do mecanismo de desbloqueio seguro</string>
+
+    <!-- QuickSettings style options -->
+    <string name="quick_tiles_bg_no_title">ATENÇÃO</string>
+    <string name="quick_tiles_bg_summary">Todas as mudanças referentes a cores e transparência serão diretamente refletidas nos atalhos Ribbon</string>
+    <string name="quicksettings_tiles_style">Estilo das configurações rápidas</string>
+    <string name="summary_quicksettings_tiles_style">Mostre ou mude o estilo das configurações rápidas</string>
+    <string name="quicksettings_tiles_style_additional_options">Opções adicionais</string>
+    <string name="tiles_per_row_title">Tiles por linha</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Quantidade em modo paisagem</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Modo paisagem irá dobrar a quantidade de tiles por linha</string>
+    <string name="quick_tiles_bg_color_title">Cor do fundo</string>
+    <string name="quick_tiles_bg_pressed_color_title">Cor do fundo pressionado</string>
+    <string name="quick_tiles_text_color_title">Cor do texto</string>
+    <string name="quick_tiles_alpha_title">Transparência do fundo</string>
+    <string name="quick_tiles_alpha_summary">O estilo do fundo dos ribbons vai seguir essas mudanças</string>
+    <string name="qs_style_reset_message">Restaurar cores da barra dos tiles para o estado normal?</string>
+
+    <!--  Recents clear all -->
+    <string name="recents_clear_all_button">Botão de limpeza do painel de recentes</string>
+    <string name="show_recent_clear_all_button_title">Mostrar o botão de limpeza</string>
+    <string name="show_recent_clear_all_button_summary">Marque para mostrar ou desmarque para retirar o botão de limpeza do painel dos recentes</string>
+    <string name="recent_clear_all_button_location_title">Posição do botão</string>
+    <string name="recent_clear_all_button_location_summary">Escolha qual o canto da tela será colocado o botão</string>
+    <string name="recent_clear_all_button_location_top_left">Topo à esquerda</string>
+    <string name="recent_clear_all_button_location_top_right">Topo à direita</string>
+    <string name="recent_clear_all_button_location_bottom_left">Fundo à esquerda</string>
+    <string name="recent_clear_all_button_location_bottom_right">Fundo à direita</string>
+    
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Seletor de cor</string>
+    <string name="press_color_to_apply">Pressione a cor abaixo para aplicá-la</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#ff000000</string>
+    <string name="set">Aplicar</string>
+    <string name="color_default">Restaurar</string>
+
+    <!-- Recents Ram Bar -->
+    <string name="ram_bar">Barra de memória RAM</string>
+    <string name="ram_bar_note_title">Note</string>
+    <string name="ram_bar_note_summary">Essa bara mostra a quantidade atual de memória (RAM) utilizada. Atente: manter os aplicativos em cache faz os mesmos abrirem com maior rapidez</string>
+    <string name="ram_bar_mode_title">Modo da barra de memória RAM</string>
+    <string name="ram_bar_mode_dialog_title">Mostrar a barra de memória RAM</string>
+    <string name="ram_bar_none">Não mostrar</string>
+    <string name="ram_bar_apps">Aplicações</string>
+    <string name="ram_bar_cache">Aplicações e cache</string>
+    <string name="ram_bar_other">Aplicações, cache e outros</string>
+    <string name="ram_bar_style_cat">Estilo da barra de memória RAM</string>
+    <string name="ram_bar_color_app_mem_color">Cor das aplicações</string>
+    <string name="ram_bar_color_cache_mem_color">Cor do cache</string>
+    <string name="ram_bar_color_total_mem_color">Cor de outros</string>
+    <string name="ram_bar_color_enabled">Habilitar</string>
+    <string name="ram_bar_color_disabled">Desabilitar</string>
+    <string name="ram_bar_button_help">Ajuda</string>
+    <string name="ram_bar_button_reset">Restaurar cores</string>
+    <string name="ram_bar_reset">Restaurar</string>
+    <string name="ram_bar_reset_message">Restaurar cores da barra de RAM para o estado normal?</string>
+
+    <!-- Notification drawer background -->
+    <string name="notification_style_title">Estilo do fundo</string>
+    <string name="notification_style_summary">Mude o estilo do fundo da gaveta de notificações</string>
+    <string name="notification_wallpaper_title">Fundo em modo retrato</string>
+    <string name="notification_wallpaper_landscape_title">Fundo em modo paisagem</string>
+    <string name="notification_background_color_fill">Cor cheia</string>
+    <string name="notification_background_custom_image">Imagem customizada</string>
+    <string name="notification_background_default_wallpaper">Fundo normal</string>
+    <string name="notification_drawer_custom_background_dialog_title">Escolha a cor</string>
+    <string name="notif_wallpaper_alpha_title">Transparência do fundo</string>
+    <string name="notif_alpha_title">Transparência das notificações</string>
+    <string name="shortcut_image_not_valid">O aplicativo escolhido não retornou um ícone válido ou não suporta recorte de imagem. Use outro aplicativo</string>
+
+</resources>

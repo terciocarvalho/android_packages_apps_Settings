@@ -49,6 +49,7 @@ import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.util.Helpers;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -140,6 +141,7 @@ public class DensitySettings extends SettingsPreferenceFragment {
             Slog.w(TAG, "Failure communicating with activity manager", e);
         }
         killRunningApps();
+        Helpers.restartSystemUI();
     }
 
     private static void killRunningApps() {

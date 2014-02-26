@@ -21,7 +21,7 @@
     <string name="temasek_settings_title">Opciones avanzadas</string>
     
     <!-- Temasek Shortcuts -->
-    <string name="temasek_shortcut_picker">Atajos</string>
+    <string name="temasek_shortcut_picker">Atajos de temasek</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Selector de color</string>
@@ -572,6 +572,8 @@
     <string name="ad_enable_title">Activada</string>
     <string name="ad_enable_summary_on">Pantalla Activa activada</string>
     <string name="ad_enable_summary_off">Pantalla Activa desactivada</string>
+    <string name="ad_bypass_title">Derivar pantalla activa</string>
+    <string name="ad_bypass_summary">Cuando no existan notificaciones, el modo bolsillo iniciará la pantalla de bloqueo</string>
     <string name="ad_text_title">Texto notificación</string>
     <string name="ad_text_summary">Muestra el texto de notificación alrededor del anillo.</string>
     <string name="ad_all_notifications_title">Todas notificaciones</string>
@@ -1029,8 +1031,8 @@
     <string name="pie_show_background_summary">Activar el fondo de pantalla de los controles PIE</string>
     <string name="pie_button">Botones</string>
     <string name="pie_button_second_layer">Botones de la segunda capa</string>
-    <string name="pie_button_second_layer_summary">Cambiar el estilo botones de la segunda capa de los controles PIE</string>
-    <string name="pie_button_style_summary">Cambiar el estilo del boton de los controles PIE</string>
+    <string name="pie_button_second_layer_summary">Cambiar el estilo de los botones de la segunda capa de los controles PIE</string>
+    <string name="pie_button_style_summary">Cambiar el estilo del botón de los controles PIE</string>
     <string name="pie_style_reset_message">Restablecer el estilo de las entradas por defecto?</string>
     <string name="pie_warning_no_navigation_present">Ninguna otra navegación está actualmente habilitada. Apagar los controles PIE puede resultar en un dispositivo inutilizable. ¿Quieres activar la barra de navegación en su lugar?</string>
     <string name="pie_trigger_warning">Mínimo uno de los principales disparadores (abajo, izquierda o derecha) debe estar habilitado.</string>
@@ -1052,5 +1054,12 @@
     <string name="volume_steps_ring_title">Campanero</string>
     <string name="volume_steps_system_title">Sistema</string>
     <string name="volume_steps_voice_call_title">Llamada de voz</string>
+    
+    <!-- Notification Reminders -->
+    <string name="noti_reminder_category">Recordatorio de notificación</string>
+    <string name="noti_reminder_enable_title">Habilitar recordatorio de notificación</string>
+    <string name="noti_reminder_sound_title">Notificar sonido</string>
+    <string name="noti_reminder_sound_looping">Hasta descartar</string>
+    <string name="noti_reminder_ringtone">Notificar ringtone</string>
  
 </resources>

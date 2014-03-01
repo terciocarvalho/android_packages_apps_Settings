@@ -1061,5 +1061,24 @@
     <string name="noti_reminder_sound_title">Notificar sonido</string>
     <string name="noti_reminder_sound_looping">Hasta descartar</string>
     <string name="noti_reminder_ringtone">Notificar ringtone</string>
+    
+    <!-- Wakelock blocker -->
+    <string name="wakelock_blocker">Bloqueador wakelock</string>
+    <string name="wakelock_blocker_title">Permitir</string>
+    <string name="wakelock_blocker_summary">Activar el bloqueo para verificar wakelocks</string>
+    <string name="wakelock_blocker_save">Guardar</string>
+    <string name="wakelock_list_header">Disponible wakelocks</string>
+    <string name="wakelock_blocker_reload">Recargar</string>
+    <string name="wakelock_blocker_warning_title">Proceder con precaución</string>
+    <string name="wakelock_blocker_warning">Bloqueo de wakelocks tiene el potencial de causar inestabilidad, accidentes o pérdida de datos.</string>
+
+    <!-- Density Changer -->
+    <string name="custom_density_title">Personalizar la densidad del LCD</string>
+    <string name="set_custom_density_title">Establecer densidad personalizada</string>
+    <string name="set_custom_density_set">Establecer</string>
+    <string name="current_density">"Densidad actual: "</string>
+    <string name="new_density">"Nueva densidad: "</string>
+    <string name="density_change_warning">Nota: El cambio de densidad cerrará todas las aplicaciones en ejecución!</string>
+    <string name="density_settings_title">Cambiador de densidad</string>
  
 </resources>

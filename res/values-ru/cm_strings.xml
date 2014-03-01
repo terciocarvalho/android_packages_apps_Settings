@@ -791,5 +791,8 @@
     <string name="app_ops_reset_counters">Сбросить счётчики</string>
     <string name="app_ops_reset_confirm_title">Подтверждение сброса</string>
     <string name="app_ops_reset_confirm_mesg">Вы уверены, что хотите сбросить счетчики \"операций в приложениях\"?</string>
-
+	
+    <string name="data_usage_cycle_editor_subtitle_cm">Дата каждого цикла:</string>
+	
+    <string name="data_usage_lengths_spinner_subtitle">Продолжительность цикла:</string>
 </resources>

@@ -1058,6 +1058,15 @@
     <string name="wakelock_blocker_warning_title">Действовать с осторожностью</string>
     <string name="wakelock_blocker_warning">Блокирование вейклоков потенциально может привести к нестабильной работе устройства, сбою или потере данных</string>
 
+    <!-- Density Changer -->
+    <string name="custom_density_title">Плотность экрана (PPI)</string>
+    <string name="set_custom_density_title">Установите плотность экрана</string>
+    <string name="set_custom_density_set">Применить</string>
+    <string name="current_density">"Текущая плотность: "</string>
+    <string name="new_density">"Новая плотность: "</string>
+    <string name="density_change_warning">Примечание: Изменение плотности экрана закроет все запущенные приложения!</string>
+    <string name="density_settings_title">Изменение плотности</string>
+
     <!-- Lockscreen wallpaper -->
     <string name="lockscreen_wallpaper">Пользовательские обои</string>
     <string name="select_wallpaper">Выберите обои</string>

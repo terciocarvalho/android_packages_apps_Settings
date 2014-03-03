@@ -24,4 +24,8 @@
         <attr name="unitsRight" format="string|reference" />
     </declare-styleable>
 
+    <declare-styleable name="ImageListPreferenceChOS">
+        <attr name="entryImagez" format="reference" />
+    </declare-styleable>
+
 </resources>

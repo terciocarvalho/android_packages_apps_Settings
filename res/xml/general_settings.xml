@@ -12,6 +12,12 @@
         <Preference android:key="restart_systemui"
             android:title="@string/restart_systemui" />
 
+        <CheckBoxPreference
+            android:key="full_swipe_to_switch_detection"
+            android:title="@string/title_full_screen_swipe"
+            android:summary="@string/summary_full_screen_swipe"
+            android:defaultValue="false" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>

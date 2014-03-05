@@ -7,6 +7,9 @@
     <!-- Do NOT translate this -->
     <string name="temasek_version_default">Build 0</string>
 
+    <!-- temasek spare parts -->
+    <string name="temasek_settings_title">Temasek spare parts</string>
+
     <!-- General strings -->
     <string name="default_string">Default</string>
     <string name="recents_panel_settings_title" >Recents panel settings</string>

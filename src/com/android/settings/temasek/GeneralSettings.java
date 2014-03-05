@@ -20,11 +20,8 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String RESTART_SYSTEMUI = "restart_systemui";
-    private static final String PRE_SWIPE_TO_SWITCH_SCREEN_DETECTION =
-            "full_swipe_to_switch_detection";
 
     private Preference mRestartSystemUI;
-    CheckBoxPreference mFullScreenDetection;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,11 +30,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.general_settings);
 
         mRestartSystemUI = findPreference(RESTART_SYSTEMUI);
-
-        mFullScreenDetection = (CheckBoxPreference) findPreference(PRE_SWIPE_TO_SWITCH_SCREEN_DETECTION);
-        mFullScreenDetection.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.SWIPE_TO_SWITCH_SCREEN_DETECTION, 0) == 1);
-        mFullScreenDetection.setOnPreferenceChangeListener(this);
 
     }
 
@@ -56,12 +48,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (preference == mFullScreenDetection) {
-            Settings.System.putInt(getContentResolver(),
-                    Settings.System.SWIPE_TO_SWITCH_SCREEN_DETECTION,
-                    (Boolean) newValue ? 1 : 0);
-            return true;
-        }
         return false;
     }
 }

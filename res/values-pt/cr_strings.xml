@@ -326,4 +326,11 @@
     <string name="noti_reminder_interval_3dot5s">3,5 segundos</string>
     <string name="noti_reminder_interval_4s">4 segundos</string>
 
+    <!-- QuickSettings: Smart Pulldown -->
+    <string name="smart_pulldown_title">Puxar para baixo inteligente</string>
+    <string name="smart_pulldown_summary">Abre as configurações rápidas quando não há %1$s notificações presentes</string>
+    <string name="smart_pulldown_off">Desligado</string>
+    <string name="smart_pulldown_dismissable">Dispensável</string>
+    <string name="smart_pulldown_persistent">Persistente</string>
+
 </resources>

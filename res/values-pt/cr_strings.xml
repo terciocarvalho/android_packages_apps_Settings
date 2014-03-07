@@ -333,4 +333,8 @@
     <string name="smart_pulldown_dismissable">Dispensável</string>
     <string name="smart_pulldown_persistent">Persistente</string>
 
+    <!-- Custom Recent Settings -->
+    <string name="custom_recent_title">Mudar entre estilos de recentes</string>
+    <string name="custom_recent_summary">Marque para o estilo Slim Roms ou desmarque para o estilo normal. MARCANDO OU DESMARCANDO ESSA OPÇÃO IRÁ REINICIAR O SEU SYSTEMUI</string>
+
 </resources>

@@ -47,6 +47,11 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     // Enable/disable nav bar	
     private static final String ENABLE_NAVIGATION_BAR = "enable_nav_bar";
 
+    // Enable/disable hardware keys
+    private static final String KEY_MENU_ENABLED = "key_menu_enabled";
+    private static final String KEY_BACK_ENABLED = "key_back_enabled";
+    private static final String KEY_HOME_ENABLED = "key_home_enabled";
+
     private ListPreference mExpandedDesktopPref;
     private CheckBoxPreference mExpandedDesktopNoNavbarPref;
     private CheckBoxPreference mNavigationBarLeftPref;
@@ -54,12 +59,23 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
     // Enable/disable nav bar
     private CheckBoxPreference mEnableNavigationBar;
 
+    // Enable/disable hardware keys
+    private CheckBoxPreference mMenuKeyEnabled;
+    private CheckBoxPreference mBackKeyEnabled;
+    private CheckBoxPreference mHomeKeyEnabled;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_ui_settings);
         PreferenceScreen prefScreen = getPreferenceScreen();
+
+        // Enable/disable hardware keys
+        mMenuKeyEnabled = (CheckBoxPreference) findPreference(KEY_MENU_ENABLED);
+        mBackKeyEnabled = (CheckBoxPreference) findPreference(KEY_BACK_ENABLED);
+        mHomeKeyEnabled = (CheckBoxPreference) findPreference(KEY_HOME_ENABLED);
+
         PreferenceCategory expandedCategory =
                 (PreferenceCategory) findPreference(CATEGORY_EXPANDED_DESKTOP);
 
@@ -103,10 +119,40 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         mEnableNavigationBar.setOnPreferenceChangeListener(this);
 
 	updateNavbarPreferences(enableNavigationBar);
+
+        if (mEnableNavigationBar.isChecked()) {
+            enableKeysPrefs();
+        } else {
+            resetKeys();
+        }
     }
 
     // Enable/disbale nav bar
     private void updateNavbarPreferences(boolean show) {}
+
+    public void enableKeysPrefs() {
+        mMenuKeyEnabled.setEnabled(true);
+        mBackKeyEnabled.setEnabled(true);
+        mHomeKeyEnabled.setEnabled(true);
+        mMenuKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_MENU_ENABLED, 1) == 1));
+        mBackKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_BACK_ENABLED, 1) == 1));
+        mHomeKeyEnabled.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.KEY_HOME_ENABLED, 1) == 1));
+    }
+
+    public void resetKeys() {
+        mMenuKeyEnabled.setEnabled(false);
+        mBackKeyEnabled.setEnabled(false);
+        mHomeKeyEnabled.setEnabled(false);
+        mMenuKeyEnabled.setChecked(true);
+        mBackKeyEnabled.setChecked(true);
+        mHomeKeyEnabled.setChecked(true);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_MENU_ENABLED, 1);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_BACK_ENABLED, 1);
+        Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.KEY_HOME_ENABLED, 1);
+    }
 
     public boolean onPreferenceChange(Preference preference, Object objValue) {
         if (preference == mExpandedDesktopPref) {
@@ -127,6 +173,37 @@ public class SystemUiSettings extends SettingsPreferenceFragment  implements
         }
 
         return false;
+    }
+
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        boolean value;
+        if (preference == mEnableNavigationBar) {
+            value = mEnableNavigationBar.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.NAVIGATION_BAR_SHOW, value ? 1 : 0);
+            if (value) {
+                enableKeysPrefs();
+            } else {
+                resetKeys();
+            }
+            return true;
+        } else if (preference == mMenuKeyEnabled) {
+            value = mMenuKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_MENU_ENABLED, value ? 1 : 0);
+            return true;
+        } else if (preference == mBackKeyEnabled) {
+            value = mBackKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_BACK_ENABLED, value ? 1 : 0);
+            return true;
+        } else if (preference == mHomeKeyEnabled) {
+            value = mHomeKeyEnabled.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.KEY_HOME_ENABLED, value ? 1 : 0);
+            return true;
+        }
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
 
     private void updateExpandedDesktop(int value) {

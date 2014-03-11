@@ -2,47 +2,11 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- About phone screen, crDroid version -->
-    <string name="crdroid_version_title">crDroid versão simples</string>
-    <string name="crdroid_version_default">Build 4</string>
-
     <!-- General strings -->
     <string name="default_string">Normal</string>
     <string name="recents_panel_settings_title" >Ajustes do painel de recentes</string>
     <string name="reset">Restaurar</string>
     <string name="advanced">Acançado</string>
-
-    <!-- Halo -->
-    <string name="halo_settings_title">Halo</string>
-    <string name="halo_behavior_title">Comportamento do Halo</string>
-    <string name="halo_hide_title">Esconder o Halo após atividade</string>
-    <string name="halo_hide_summary">Halo aparecerá para as tarefas de entrada e irá para fora da vista depois de um tempo</string>
-    <string name="halo_state_title">Política do Halo</string>
-    <string name="halo_state_summary">Habilitar notificações lista negra/branca</string>
-    <string name="halo_state_black">Lista negra</string>
-    <string name="halo_state_white">Lista branca</string>
-    <string name="halo_pause_title">Pausar o apliativo ativo</string>
-    <string name="halo_pause_summary">Ao abrir um aplicativo com o Halo o aplicativo subjacente ficará em pausa</string>
-    <string name="halo_notification_msgbox_title">Habilitar mensagens pop-up</string>
-    <string name="halo_notification_msgbox_summary">Mostrar caixa de mansagens para notificações de entrada</string>
-    <string name="halo_unlock_ping_title">Mostar o Halo ao desbloquear o aparelho</string>
-    <string name="halo_unlock_ping_summary">Halo irá aparecer ao desbloqueio se houver novas notificações recebidas</string>
-
-    <string name="halo_size_title">Tamanho Halo</string>
-    <string name="halo_size_summary">Defina o tamanho do Halo</string>
-    <string name="halo_size_miniscule">Minúsculo</string>
-    <string name="halo_size_small">Pequeno</string>
-    <string name="halo_size_default">Normal</string>
-    <string name="halo_size_large">Grande</string>
-    <string name="halo_size_gigantic">Gigante</string>
-    <string name="halo_size_monster">Monstruoso</string>
-
-    <string name="halo_notification_count_title">Contador de notificações</string>
-    <string name="halo_notification_count_summary">Mostrar contador de notificações no Halo</string>
-    <string name="halo_notification_count_none">Nenhum</string>
-    <string name="halo_notification_count_total">Total</string>
-    <string name="halo_notification_count_individual">Por aplicativo</string>
-    <string name="halo_notification_count_both">Ambos</string>
 
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Lista negra pelo HALO</string>
@@ -336,5 +300,28 @@
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Mudar entre estilos de recentes</string>
     <string name="custom_recent_summary">Marque para o estilo Slim Roms ou desmarque para o estilo normal. MARCANDO OU DESMARCANDO ESSA OPÇÃO IRÁ REINICIAR O SEU SYSTEMUI</string>
+
+    <!-- Lockscreen Lid Settings -->
+    <string name="smart_cover_category_title">Capa inteligente</string>
+    <string name="smart_cover_wake_title">Acordar usando capa inteligente</string>
+    <string name="smart_cover_wake_summary">Acordar o aparelho quando abrir a capa inteligente (smart cover)</string>
+
+    <!-- Ability to disable hardware keys via nav bar settings -->
+    <string name="hw_keys_title">Botões físicos</string>
+    <string name="key_menu_enabled">Botão menu habilitado</string>
+    <string name="key_back_enabled">Botão voltar habilitado</string>
+    <string name="key_home_enabled">Botão home habilitado</string>
+
+    <!-- Keyboard and Input ASS methods  -->
+    <string name="title_keyboard_input">Opções avançadas</string>
+    <string name="disable_fullscreen_keyboard_title">Desabilite teclado em tela cheia</string>
+    <string name="disable_fullscreen_keyboard_summary">Teclado em modo paisagem nunca irá ocupar a tela inteira</string>
+    <string name="keyboard_rotation_toggle_title">Auto rotação do teclado</string>
+    <string name="keyboard_rotation_toggle_summary">Forçar auto rotação quando o teclado é mostrado</string>
+    <string name="keyboard_rotation_timeout_title">Tempo de auto rotação</string>
+    <string name="keyboard_rotation_timeout_summary">Desabilite o sensor de auto rotaçãor <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após o tecaldo ser ocultado</string>
+    <string name="keyboard_rotation_dialog">OBS: Essa função força o ligamento da auto rotação temporariamente enquanto o teclado está visível. Isso não têm nenhum efeito se a função de auto rotação já estiver habilitada.</string>
+    <string name="show_enter_key_title">Mostrar a tecla ENTER</string>
+    <string name="show_enter_key_summary">Forçar o teclado à mostrar a tecla ENTER ao invés da tecla emotions</string>
 
 </resources>

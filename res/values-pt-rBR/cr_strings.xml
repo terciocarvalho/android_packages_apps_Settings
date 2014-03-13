@@ -8,6 +8,38 @@
     <string name="reset">Restaurar</string>
     <string name="advanced">Acançado</string>
 
+    <!-- Halo -->
+    <string name="halo_settings_title">Halo</string>
+    <string name="halo_behavior_title">Comportamento do Halo</string>
+    <string name="halo_hide_title">Esconder o Halo após atividade</string>
+    <string name="halo_hide_summary">Halo aparecerá para as tarefas de entrada e irá para fora da vista depois de um tempo</string>
+    <string name="halo_state_title">Política do Halo</string>
+    <string name="halo_state_summary">Habilitar notificações lista negra/branca</string>
+    <string name="halo_state_black">Lista negra</string>
+    <string name="halo_state_white">Lista branca</string>
+    <string name="halo_pause_title">Pausar o apliativo ativo</string>
+    <string name="halo_pause_summary">Ao abrir um aplicativo com o Halo o aplicativo subjacente ficará em pausa</string>
+    <string name="halo_notification_msgbox_title">Habilitar mensagens pop-up</string>
+    <string name="halo_notification_msgbox_summary">Mostrar caixa de mansagens para notificações de entrada</string>
+    <string name="halo_unlock_ping_title">Mostar o Halo ao desbloquear o aparelho</string>
+    <string name="halo_unlock_ping_summary">Halo irá aparecer ao desbloqueio se houver novas notificações recebidas</string>
+
+    <string name="halo_size_title">Tamanho Halo</string>
+    <string name="halo_size_summary">Defina o tamanho do Halo</string>
+    <string name="halo_size_miniscule">Minúsculo</string>
+    <string name="halo_size_small">Pequeno</string>
+    <string name="halo_size_default">Normal</string>
+    <string name="halo_size_large">Grande</string>
+    <string name="halo_size_gigantic">Gigante</string>
+    <string name="halo_size_monster">Monstruoso</string>
+
+    <string name="halo_notification_count_title">Contador de notificações</string>
+    <string name="halo_notification_count_summary">Mostrar contador de notificações no Halo</string>
+    <string name="halo_notification_count_none">Nenhum</string>
+    <string name="halo_notification_count_total">Total</string>
+    <string name="halo_notification_count_individual">Por aplicativo</string>
+    <string name="halo_notification_count_both">Ambos</string>
+
     <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
     <string name="app_halo_label_black">Lista negra pelo HALO</string>
     <string name="app_halo_label_white">Lista branca pelo HALO</string>
@@ -323,5 +355,24 @@
     <string name="keyboard_rotation_dialog">OBS: Essa função força o ligamento da auto rotação temporariamente enquanto o teclado está visível. Isso não têm nenhum efeito se a função de auto rotação já estiver habilitada.</string>
     <string name="show_enter_key_title">Mostrar a tecla ENTER</string>
     <string name="show_enter_key_summary">Forçar o teclado à mostrar a tecla ENTER ao invés da tecla emotions</string>
+
+    <!-- Telo Radio -->
+    <string name="telo_radio_settings_title">Gerenciador de conexção</string>
+    <string name="telo_radio_options_category">Configuração de tela ligada</string>
+    <string name="telo_radio_lte_title">LTE</string>
+    <string name="telo_radio_lte_summary">Selecione essa opção se você utiliza LTE (4G).</string>
+    <string name="telo_radio_2g_wifi_title">2G no Wi-Fi</string>
+    <string name="telo_radio_2g_wifi_title_summary">Quando o Wi-Fi é conectado o modo de rede é alterado para 2G.</string>
+    <string name="telo_radio_2g_screenoff_category">Configuração de tela desligada</string>
+    <string name="telo_radio_2g_screenoff_title">2G com a  tela ligada</string>
+    <string name="telo_radio_2g_screenoff_summary">O aparelho irá mudar para 2G quando aa tela desligar.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Tempo para mudar para 2G</string>
+    <string name="telo_radio_2g_3min">3 minutos</string>
+    <string name="telo_radio_2g_5min">5 minutos</string>
+    <string name="telo_radio_2g_10min">10 minutos</string>
+    <string name="telo_radio_2g_15min">15 minutos</string>
+    <string name="telo_radio_2g_20min">20 minutos</string>
+    <string name="telo_radio_go_3g_unlock_title">Desbloqueio 3G</string>
+    <string name="telo_radio_go_3g_unlock_summary">Quando o aparelho é desbloqueado o mode de rede é alterado para 3G novamente.</string>
 
 </resources>

@@ -10,7 +10,7 @@
         
     <!-- General strings -->
     <string name="default_string">По умолчанию</string>
-    <string name="recents_panel_settings_title" >Настройка панели последних приложений</string>
+    <string name="recents_panel_settings_title" >Панель последних приложений</string>
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
     <string name="disabled">Отключено</string>
@@ -140,7 +140,7 @@
     <string name="shortcut_image_not_valid">Выбранное приложение содержит недопустимую иконку или не поддерживает цифровое кадрирование. Используйте другое приложение</string>
 
     <!-- TRDS -->
-    <string name="theme_settings_title">Тёмная тема оформления</string>
+    <string name="theme_settings_title">Тёмная тема</string>
     <string name="theme_auto_mode_title">Переключатель тем</string>
     <string name="theme_auto_mode_off">Вручную</string>
     <string name="theme_auto_mode_lightsensor">При изменении освещенности</string>
@@ -191,7 +191,7 @@
     <string name="clock_font_normal">Нормальный</string>
 
     <!-- Volume pane timeout -->
-    <string name="volume_panel_timeout_title"> панели громкости</string>
+    <string name="volume_panel_timeout_title">Таймаут панели громкости</string>
     <string name="volume_panel_timeout_summary">Задержка времени до закрытия панели громкости</string>
   
     <!-- Lockscreen Notifications -->
@@ -229,7 +229,7 @@
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Блокировка вейклоков</string>
     <string name="wakelock_blocker_title">Включить</string>
-    <string name="wakelock_blocker_summary">Активировать блокировку для проверенных вейклоков</string>
+    <string name="wakelock_blocker_summary">Активировать блокировку для выбранных вейклоков</string>
     <string name="wakelock_blocker_save">Сохранить</string>
     <string name="wakelock_list_header">Доступные вейклоки</string>
     <string name="wakelock_blocker_reload">Перезагрузить</string>
@@ -484,60 +484,60 @@
     <string name="identicons_style_dotmatrix">Точечная матрица</string>
 
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_title">Gesture Anywhere</string>
-    <string name="gesture_anywhere_enabled_summary">Enable the Gesture Anywhere feature</string>
-    <string name="gesture_anywhere_position_title">Loction</string>
-    <string name="gesture_anywhere_position_left">Left edge</string>
-    <string name="gesture_anywhere_position_right">Right edge</string>
-    <string name="gesture_anywhere_gestures_title">Gestures</string>
-    <string name="gesture_anywhere_gestures_summary">Add, remove, and edit gestures</string>
+    <string name="gesture_anywhere_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_title">\"Жест везде\"</string>
+    <string name="gesture_anywhere_enabled_summary">Включить функцию \"Жест везде\"</string>
+    <string name="gesture_anywhere_position_title">Расположение</string>
+    <string name="gesture_anywhere_position_left">По левому краю</string>
+    <string name="gesture_anywhere_position_right">По правому краю</string>
+    <string name="gesture_anywhere_gestures_title">Жесты</string>
+    <string name="gesture_anywhere_gestures_summary">Добавление, удаление и редактирование жестов</string>
     <!-- Label, button used to add a gesture -->
-    <string name="ga_button_add">Add gesture</string>
+    <string name="ga_button_add">Добавить жест</string>
     <!-- Label, button used to reload all gestures -->
-    <string name="ga_button_reload">Reload</string>
+    <string name="ga_button_reload">Обновить</string>
     <!-- Label, button used to cancel the operation of adding a gesture -->
-    <string name="ga_button_discard">Discard</string>
+    <string name="ga_button_discard">Сброс</string>
     <!-- Label, button used to save a gesture newly created -->
-    <string name="ga_button_done">Done</string>
+    <string name="ga_button_done">Готово</string>
     <!-- Label, prompt asking the user to enter the name of the gesture -->
-    <string name="ga_prompt_gesture_name">Name</string>
+    <string name="ga_prompt_gesture_name">Название</string>
     <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
-    <string name="ga_error_missing_name">You must enter a name</string>
+    <string name="ga_error_missing_name">Вы должны ввести название</string>
     <!-- success message, tells the user where the gesture was saved -->
-    <string name="ga_save_success">Gesture saved in %s</string>
+    <string name="ga_save_success">Жест сохранён в %s</string>
     <!-- Buttons in Rename gesture dialog box -->
     <string name="ga_rename_action">OK</string>
     <!-- Buttons in Rename gesture dialog box -->
-    <string name="ga_cancel_action">Cancel</string>
+    <string name="ga_cancel_action">Отмена</string>
     <!-- Message displayed when the user opens the gestures settings screen -->
-    <string name="ga_gestures_loading">Loading gestures...</string>
+    <string name="ga_gestures_loading">Загрузка жестов...</string>
     <!-- Message displayed when the user has no gestures -->
-    <string name="ga_gestures_empty">No gestures</string>
+    <string name="ga_gestures_empty">Нет жестов</string>
     <!-- Title of the screen used to view/manage gestures -->
-    <string name="ga_gestures_activity">Gestures</string>
+    <string name="ga_gestures_activity">Жесты</string>
     <!-- Noun, menu item used to edit a gesture -->
-    <string name="ga_gestures_edit">Edit</string>
+    <string name="ga_gestures_edit">Редактировать</string>
     <!-- Noun, menu item used to remove a gesture -->
-    <string name="ga_gestures_delete">Delete</string>
+    <string name="ga_gestures_delete">Удалить</string>
     <!-- Message displayed when a gesture is successfully deleted -->
-    <string name="ga_gestures_delete_success">Gesture deleted</string>
+    <string name="ga_gestures_delete_success">Жест удалён</string>
     <!-- Title of dialog box -->
-    <string name="ga_gestures_rename_title">Rename gesture</string>
+    <string name="ga_gestures_rename_title">Переименовать жест</string>
     <!-- Label of gesture name field in Rename gesture dialog box -->
-    <string name="ga_gestures_rename_label">Gesture name</string>
+    <string name="ga_gestures_rename_label">Название жеста</string>
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
-    <string name="ga_gestures_error_loading">Could not load %s. Make sure you have storage available.</string>
-    <string name="trigger_category">Trigger region</string>
-    <string name="trigger_width_title">Trigger width</string>
-    <string name="trigger_width_summary">Adjust the width of the trigger area</string>
-    <string name="trigger_top_title">Trigger position</string>
-    <string name="trigger_top_summary">Adjust the vertical postion of the trigger area</string>
-    <string name="trigger_bottom_title">Trigger height</string>
-    <string name="trigger_bottom_summary">Adjust the height of the trigger area</string>
+    <string name="ga_gestures_error_loading">Не удалось загрузить %s. Убедитесь, что у вас есть доступ к SD-карте</string>
+    <string name="trigger_category">Область триггера</string>
+    <string name="trigger_width_title">Ширина триггера</string>
+    <string name="trigger_width_summary">Регулировка ширины области триггера</string>
+    <string name="trigger_top_title">Положение триггера</string>
+    <string name="trigger_top_summary">Регулировка вертикальной позиции области триггера</string>
+    <string name="trigger_bottom_title">Высота триггера</string>
+    <string name="trigger_bottom_summary">Регулировка высоты области триггера</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
-    <string name="advanced_settings_title">Расширенные</string>
+    <string name="advanced_settings_title">Расширенные настройки</string>
 
     <!-- Keyboard and Input ASS methods  -->
     <string name="title_keyboard_input">Дополнительные параметры</string>
@@ -571,7 +571,7 @@
     <string name="toast_SlideRightLeft_animation">Скольжение справа налево</string>
 
     <!-- Smooth ProgressBar -->
-    <string name="progressbar_title">Пользовательский индикатор прогресса</string>
+    <string name="progressbar_title">Индикатор прогресса</string>
     <string name="progressbar_mirror_title">Зеркальный режим</string>
     <string name="progressbar_reverse_title">Обратный</string>
     <string name="progressbar_speed_title">Ускоренный</string>
@@ -582,7 +582,7 @@
     <string name="progressbar_color_2_title">Цвет2</string>
     <string name="progressbar_color_3_title">Цвет3</string>
     <string name="progressbar_color_4_title">Цвет4</string>
-    <string name="sample_progressbar_text">Индикатор прогресса : Предпросмотр</string>
+    <string name="sample_progressbar_text">Индикатор прогресса : предпросмотр</string>
     <string name="progressbar_interpolator">Интерполятор</string>
     <string name="progressbar_none">Нет</string>
     <string name="progressbar_acclerate">Ускоренный</string>
@@ -591,4 +591,9 @@
     <string name="progressbar_decelerate">Замедленный</string>
     <string name="progressbar_reset_message">Сбросить стиль индикатора по умолчанию?</string>
 
+    <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
+    <string name="show_cpu_info">Информация о загрузке ЦП</string>
+    <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
+    <string name="show_cpu_info_summary">Включить экран, показывающий текущую загрузку ЦП</string>
+    
 </resources>

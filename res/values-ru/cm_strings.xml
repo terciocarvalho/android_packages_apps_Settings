@@ -174,7 +174,7 @@
 
     <string name="navigation_bar_category">Строка навигации</string>
     <string name="navigation_bar_title">Кнопки и их расположение</string>
-    <string name="navigation_bar_left_title">Режим левши</string>
+    <string name="navigation_bar_left_title">Режим \"левши\"</string>
     <string name="navigation_bar_left_summary">Отображать строку навигации слева в альбомной ориентации экрана</string>
     <string name="navigation_bar_help_text">1 — Для редактирования нажмите значок замка\n2 — Нажмите кнопку для изменения её функциональности\n3 — Долгим нажатием на кнопке можно перенести её влево или вправо\n4 — Для сохранения снова нажмите на значок замка\n5 — Для восстановления настроек нажмите кнопку «Сброс»\n</string>
     <string name="navigation_bar_tips">&#8226; Одно действие может быть назначено только на одну кнопку\n\n&#8226; Нельзя изменить назначение кнопки «Домой»\n\n&#8226; Нельзя перемещать боковые кнопки</string>
@@ -439,9 +439,12 @@
     <string name="power_menu_reboot_title">Перезагрузка</string>
     <string name="power_menu_screenshot_title">Скриншот</string>
     <string name="power_menu_expanded_desktop">Расширенный экран</string>
+    <string name="expanded_desktop_style">Вид расширенного экрана</string>
     <string name="expanded_desktop_disabled">Выключен</string>
     <string name="expanded_desktop_status_bar">Со строкой состояния</string>
     <string name="expanded_desktop_no_status_bar">Без строки состояния</string>
+    <string name="expanded_desktop_system_bars_visibility">Отключить на экране блокировки</string>
+    <string name="expanded_desktop_system_bars_visibility_summary">Отображать строку состояния и строку навигации при включенной функции расширенного экрана</string>
     <string name="power_menu_profiles_title">Выбор профиля</string>
     <string name="power_menu_airplane_title">Режим полёта</string>
     <string name="power_menu_user_title">Переключение пользователей</string>
@@ -638,7 +641,7 @@
     <string name="app_ops_show_system_apps">Системные приложения</string>
     <string name="app_ops_reset_counters">Сбросить счётчики</string>
     <string name="app_ops_reset_confirm_title">Подтверждение сброса</string>
-    <string name="app_ops_reset_confirm_mesg">Данные счётчиков «операций в приложениях» будут удалены.</string>
+    <string name="app_ops_reset_confirm_mesg">Вы уверены, что хотите сбросить счетчики \"операций в приложениях\"?</string>
 
     <string name="blacklist_title">Чёрный список</string>
     <string name="blacklist_edit_dialog_title">Редактировать чёрный список</string>
@@ -668,8 +671,9 @@
     <string name="select_contact">Выбор контакта</string>
 
     <string name="whisperpush_title">Технология WhisperPush</string>
+    <string name="whisperpush_summary">Управление параметрами безопасности SMS</string>
     <string name="whisperpush_registration_title">Регистрация</string>
-    <string name="whisperpush_registration_summary">Зарегистрироваться в WhisperPush для шифрования SMS-сообщений.</string>
+    <string name="whisperpush_registration_summary">Зарегистрируйтесь в WhisperPush для шифрования SMS-сообщений</string>
     <string name="whisperpush_identitykey_title">Просмотреть ключи идентификации</string>
 
     <string name="ime_switcher_notify">Переключатель способа ввода</string>
@@ -691,10 +695,10 @@
     <string name="gestures_action_back">Назад</string>
     <string name="gestures_action_menu">Меню</string>
     <string name="gestures_action_search">Поиск</string>
-    <string name="gestures_action_recent">Запущенные приложения</string>
+    <string name="gestures_action_recent">Последние приложения</string>
     <string name="stylus_app_not_installed">Приложение «%s» не установлено</string>
-    <string name="stylus_icon_enabled_title">Указатель пера</string>
-    <string name="stylus_icon_enabled_summary">Показывать значок указателя при работе с пером</string>
+    <string name="stylus_icon_enabled_title">Иконка при работе с пером</string>
+    <string name="stylus_icon_enabled_summary">Показывать иконку указателя при работе с пером</string>
 
     <string name="accessibility_home_button_answers_call_prerefence_title">Отвечать на вызов кнопкой «Домой»</string>
 
@@ -715,7 +719,7 @@
     <string name="root_access_adb">Только ADB</string>
     <string name="root_access_all">Приложения и ADB</string>
     <string name="development_shortcut_title">Дополнительные пункты меню</string>
-    <string name="development_shortcut_summary">Показывать пункты «Стереть данные» и «Остановить» в уведомлениях и списке недавних приложений</string>
+    <string name="development_shortcut_summary">Показывать пункты \"Стереть данные\" и \"Остановить\" в уведомлениях и списке недавних приложений</string>
     <string name="kill_app_longpress_back">Закрытие приложения</string>
     <string name="kill_app_longpress_back_summary">Долгое нажатие кнопки «Назад» закроет запущенное приложение</string>
     <string name="custom_runtime_warning_title">Внимание</string>
@@ -824,13 +828,18 @@
     <string name="app_ops_summaries_write_sms">создание SMS</string>
 
     <string name="app_ops_labels_access_notifications">Доступ к уведомлениям</string>
-    <string name="app_ops_labels_alarm_volume">Аудиофокус</string>
-    <string name="app_ops_labels_bluetooth_volume">Громкость при разговоре</string>
+    <string name="app_ops_labels_alarm_volume">Громкость будильника</string>
+    <string name="app_ops_labels_bluetooth_volume">Громкость Bluetooth</string>
+    <string name="app_ops_labels_audio_focus">Аудиофокус</string>
+    <string name="app_ops_labels_master_volume">Основная громкость</string>
+    <string name="app_ops_labels_voice_volume">Громкость голоса</string>
+    <string name="app_ops_labels_ring_volume">Громкость звонка</string>
+    <string name="app_ops_labels_media_volume">Громкость мультимедиа</string>
     <string name="app_ops_labels_call_phone">Телефонный звонок</string>
     <string name="app_ops_labels_camera">Камера</string>
     <string name="app_ops_labels_draw_on_top">Отображение поверх других элементов</string>
-    <string name="app_ops_labels_keep_awake">Громкость звонка</string>
-    <string name="app_ops_labels_location">Громкость будильника</string>
+    <string name="app_ops_labels_keep_awake">Бодрствование</string>
+    <string name="app_ops_labels_location">Местоположение</string>
     <string name="app_ops_labels_media_buttons">Кнопки мультимедиа</string>
     <string name="app_ops_labels_modify_calendar">Изменение календаря</string>
     <string name="app_ops_labels_modify_call_log">Изменение списка вызовов</string>
@@ -838,7 +847,7 @@
     <string name="app_ops_labels_modify_contacts">Изменение контактов</string>
     <string name="app_ops_labels_modify_settings">Изменение настроек</string>
     <string name="app_ops_labels_notification_toast">Вывод уведомления</string>
-    <string name="app_ops_labels_notification_volume">Общая громкость</string>
+    <string name="app_ops_labels_notification_volume">Громкость уведомлений</string>
     <string name="app_ops_labels_play_audio">Воспроизведение аудио</string>
     <string name="app_ops_labels_read_calendar">Чтение данных календаря</string>
     <string name="app_ops_labels_read_call_log">Просмотр списка вызовов</string>
@@ -851,10 +860,20 @@
     <string name="app_ops_labels_send_sms">Отправка SMS/MMS</string>
     <string name="app_ops_labels_vibrate">Вибросигнал</string>
     <string name="app_ops_labels_write_sms_db">Запись БД SMS-сообщений</string>
+    <string name="app_ops_labels_send_mms">Отправка MMS</string>
+    <string name="app_ops_labels_read_mms">Чтение MMS</string>
+    <string name="app_ops_labels_write_mms">Создание MMS</string>
 
     <string name="app_ops_categories_device">Устройство</string>
     <string name="app_ops_categories_location">Местоположение</string>
     <string name="app_ops_categories_media">Мультимедиа</string>
     <string name="app_ops_categories_messaging">Сообщения</string>
     <string name="app_ops_categories_personal">Личные данные</string>
+	
+    <string name="edge_gesture_service_title">Блокироать жест прикосновения</string>
+    <string name="edge_gesture_service_summary">Не отрабатывать жест прикосновения для приложений в строке состояния и навигации</string>
+
+    <string name="data_usage_cycle_editor_subtitle_cm">Дата каждого цикла:</string>
+    <string name="data_usage_lengths_spinner_subtitle">Продолжительность цикла:</string>
+	
 </resources>

@@ -15,22 +15,6 @@
 -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string-array name="profile_entries">
-        <item>Включить</item>
-        <item>Выключить</item>
-        <item>Оставить без изменения</item>
-    </string-array>
-
-    <string-array name="profile_connection_entries">
-        <item>Выключить</item>
-        <item>Включить</item>
-    </string-array>
-
-    <string-array name="entries_screentimeout_widget">
-        <item>15 сек. | 1 мин. | 5 мин.</item>
-        <item>30 сек. | 2 мин. | 5 мин.</item>
-    </string-array>
-
     <string-array name="wifi_countrycode_entries">
         <item>США</item>
         <item>Канада, Тайвань</item>
@@ -43,5 +27,43 @@
         <item>Турция</item>
         <item>Сингапур</item>
         <item>Бразилия</item>
+    </string-array>
+	
+    <string-array name="profile_entries">
+        <item>Включить</item>
+        <item>Выключить</item>
+        <item>Не изменять</item>
+    </string-array>
+
+    <string-array name="profile_connection_entries">
+        <item>Выключить</item>
+        <item>Включить</item>
+    </string-array>
+
+    <string-array name="entries_screentimeout_widget">
+        <item>15 сек. | 1 мин. | 5 мин.</item>
+        <item>30 сек. | 2 мин. | 5 мин.</item>
+    </string-array>
+	
+    <string-array name="data_usage_cycle_length">
+        <item>Суточный</item>
+        <item>Недельный</item>
+        <item>Месячный</item>
+    </string-array>
+
+    <string-array name="data_usage_cycle_weekdays">
+        <item>Воскресенье</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+    </string-array>
+	
+    <string-array name="app_ops_permissions">
+        <item>Разрешить</item>
+        <item>Отказать</item>
+        <item>Всегда спрашивать</item>
     </string-array>
 </resources>

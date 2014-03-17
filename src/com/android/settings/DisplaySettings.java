@@ -77,6 +77,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private static final String PREF_SMART_COVER_CATEGORY = "smart_cover_category";
     private static final String PREF_SMART_COVER_WAKE = "smart_cover_wake";
+    private static final String KEY_SCREEN_ON_NOTIFICATION_LED = "screen_on_notification_led";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -97,8 +98,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mAdaptiveBacklight;
     private CheckBoxPreference mTapToWake;
-
     private CheckBoxPreference mSmartCoverWake;
+    private CheckBoxPreference mScreenOnNotificationLed;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
@@ -153,6 +154,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     getPreferenceScreen().findPreference(PREF_SMART_COVER_CATEGORY);
             getPreferenceScreen().removePreference(smartCoverOptions);
         }
+
+        // Notification light when screen is on
+        int statusScreenOnNotificationLed = Settings.System.getInt(getContentResolver(),
+                Settings.System.SCREEN_ON_NOTIFICATION_LED, 1);
+        mScreenOnNotificationLed = (CheckBoxPreference) findPreference(KEY_SCREEN_ON_NOTIFICATION_LED);
+        mScreenOnNotificationLed.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.SCREEN_ON_NOTIFICATION_LED, 0) == 1);
 
         mAdaptiveBacklight = (CheckBoxPreference) findPreference(KEY_ADAPTIVE_BACKLIGHT);
         if (!isAdaptiveBacklightSupported()) {
@@ -487,6 +495,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mTapToWake) {
             return TapToWake.setEnabled(mTapToWake.isChecked());
+        } else if (preference == mScreenOnNotificationLed) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                    Settings.System.SCREEN_ON_NOTIFICATION_LED,
+                    mScreenOnNotificationLed.isChecked() ? 1 : 0);
+            return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }

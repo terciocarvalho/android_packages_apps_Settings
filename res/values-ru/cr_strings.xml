@@ -705,7 +705,30 @@
 
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_title">Панель уведомлений</string>
-    <string name="notification_shortcuts_settings_title">Ярлыки</string>
+    <string name="notification_shortcuts_settings_title">Ярлыки приложений</string>
     <string name="notification_shortcuts_settings_summary">Показывать ярлыки приложений в панели уведомлений</string>
+
+    <!-- Screen-On Notification Light -->
+    <string name="screen_on_notification_led_title">Индикация уведомлений при включенном экране</string>
+    <string name="screen_on_notification_led_summary">Включить индикатор уведомлений даже когда экран включен</string>
+
+    <!-- Brightness Slider -->
+    <string name="notification_drawer_brightness_slider_title">Ползунок яркости</string>
+
+    <!-- Recent panel -->
+    <string name="recent_panel_category">Панель последних приложений Slim</string>
+    <string name="recent_panel_scale_title">Размер</string>
+    <string name="recent_panel_scale_summary">Размер панели последних приложений в процентах</string>
+    <string name="recent_panel_100">100% (по умолчанию)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Показывать по левому краю</string>
+    <string name="recent_panel_lefty_mode_summary">Показывать панель последних приложений по левому краю экрана</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">Режим \"В движении\"</string>
+    <string name="title_tile_onthego">\"В движении\"</string>
 
 </resources>

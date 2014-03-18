@@ -745,7 +745,7 @@
     <string name="notification_drawer_brightness_slider_title">Brightness Slider</string>
 
     <!-- Recent panel -->
-    <string name="recent_panel_category">Recent apps panel</string>
+    <string name="recent_panel_category">Slim-Recent apps panel</string>
     <string name="recent_panel_scale_title">Size</string>
     <string name="recent_panel_scale_summary">Recent apps panel size in percent.</string>
     <string name="recent_panel_100">100% (default)</string>

@@ -55,7 +55,17 @@
          <extra android:name="disableLongpress" android:value="true" />
          <extra android:name="useAppPickerOnly" android:value="true" />
          <extra android:name="fragment" android:value="com.android.settings.temasek.fragments.NotificationsShortcutFragment" />
-     </PreferenceScreen>
+    </PreferenceScreen>
+
+    <PreferenceCategory
+        android:title="@string/notification_drawer_brightness_slider_title">
+
+        <com.android.settings.cyanogenmod.SystemSettingCheckBoxPreference
+            android:key="notification_brightness_slider"
+            android:title="@string/title_quick_access"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/category_quick_access" >

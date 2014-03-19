@@ -728,7 +728,15 @@
     <string name="recent_panel_lefty_mode_summary">Показывать панель последних приложений по левому краю экрана</string>
 
     <!-- On-The-Go -->
-    <string name="power_menu_onthego_title">Режим \"В движении\"</string>
-    <string name="title_tile_onthego">\"В движении\"</string>
+    <string name="power_menu_onthego_title">Режим \"На ходу\"</string>
+    <string name="title_tile_onthego">\"На ходу\"</string>
 
+    <!-- Text for forcing expanded notifications -->
+    <string name="disable_fc_notifications_title">Отключить уведомления об остановке</string>
+    <string name="disable_fc_notifications_summary">Эта функция скроет все уведомления об остановке приложений</string>
+	
+    <string name="expanded_desktop_style">Вид расширенного экрана</string>
+    <string name="expanded_desktop_system_bars_visibility">Отключить на экране блокировки</string>
+    <string name="expanded_desktop_system_bars_visibility_summary">Отображать строку состояния и строку навигации при включенной функции расширенного экрана</string>
+	
 </resources>

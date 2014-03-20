@@ -4,8 +4,6 @@
 
     <!-- About phone screen, Temasek version -->
     <string name="temasek_version_title">Temasek unofficial version</string>
-    <!-- Do NOT translate this -->
-    <string name="temasek_version_default">V55</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Opciones avanzadas de temasek</string>
@@ -759,9 +757,5 @@
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">Modo On-The-Go</string>
     <string name="title_tile_onthego">On-The-Go</string>
-
-    <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Desactivar notificaciones FC</string>
-    <string name="disable_fc_notifications_summary">Esto esconderá todas las notificaciones de cierre forzado</string>
 
 </resources>

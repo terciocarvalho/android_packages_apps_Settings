@@ -29,13 +29,7 @@
 	<CheckBoxPreference
             android:key="show_cpu_info"
             android:title="@string/show_cpu_info"
-            android:summary="@string/show_cpu_info_summary"/>
-
-        <!-- Allow disabling of FC dialogs -->
-        <CheckBoxPreference
-            android:key="disable_fc_notifications"
-            android:title="@string/disable_fc_notifications_title"
-            android:summary="@string/disable_fc_notifications_summary" />
+            android:summary="@string/show_cpu_info_summary"/>     
 
     </PreferenceCategory>
 

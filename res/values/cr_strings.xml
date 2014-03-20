@@ -760,8 +760,4 @@
     <string name="power_menu_onthego_title">On-The-Go Mode</string>
     <string name="title_tile_onthego">On-The-Go</string>
 
-    <!-- Text for forcing expanded notifications -->
-    <string name="disable_fc_notifications_title">Diable FC Notifications</string>
-    <string name="disable_fc_notifications_summary">This will hide all force close notificaitons</string>
-
 </resources>

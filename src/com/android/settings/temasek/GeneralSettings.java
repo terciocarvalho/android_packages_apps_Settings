@@ -23,12 +23,10 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
     private static final String RESTART_SYSTEMUI = "restart_systemui";
     private static final String PREF_MEDIA_SCANNER_ON_BOOT = "media_scanner_on_boot";
     private static final String SHOW_CPU_INFO_KEY = "show_cpu_info";
-    private static final String PREF_DISABLE_FC_NOTIFICATIONS = "disable_fc_notifications";
 
     private Preference mRestartSystemUI;
     private ListPreference mMsob;
     private CheckBoxPreference mShowCpuInfo;
-    CheckBoxPreference mDisableFC;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -45,10 +43,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
         mMsob.setOnPreferenceChangeListener(this);
 
 	mShowCpuInfo = (CheckBoxPreference) findPreference(SHOW_CPU_INFO_KEY);
-
-        mDisableFC = (CheckBoxPreference) findPreference(PREF_DISABLE_FC_NOTIFICATIONS);
-        mDisableFC.setChecked(Settings.System.getBoolean(mContext.getContentResolver(),
-                Settings.System.DISABLE_FC_NOTIFICATIONS, true));
     }
 
     @Override
@@ -75,11 +69,6 @@ public class GeneralSettings extends SettingsPreferenceFragment implements
             Helpers.restartSystemUI();
 	} else if (preference == mShowCpuInfo) {
             writeCpuInfoOptions();
-        } else if (preference == mDisableFC) {
-            Settings.System.putBoolean(mContext.getContentResolver(),
-                    Settings.System.DISABLE_FC_NOTIFICATIONS,
-                    ((CheckBoxPreference) preference).isChecked());
-            return true;
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);

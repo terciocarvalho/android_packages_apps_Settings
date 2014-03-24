@@ -85,6 +85,7 @@
     <string name="qs_style_reset_message">Alle Farben auf Standardwerte zurücksetzen?</string>
 
     <!-- Recents clear all -->
+    <string name="recents_clear_all_button">Recents clear all button</string>
     <string name="show_recent_clear_all_button_title">Zeige -Alles schließen- Taste</string>
     <string name="show_recent_clear_all_button_summary">Haken setzen oder nicht setzen zum anzeigen bzw. verstecken der -Alles schließen- Taste innerhalb des Recents (zuvor geöffnete Apps) Bildschirms.</string>
     <string name="recent_clear_all_button_location_title">Position -Alles schließen- Taste</string>

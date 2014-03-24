@@ -8,45 +8,9 @@
     <string name="reset">Restaurar</string>
     <string name="advanced">Acançado</string>
 
-    <!-- Halo -->
-    <string name="halo_settings_title">Halo</string>
-    <string name="halo_behavior_title">Comportamento do Halo</string>
-    <string name="halo_hide_title">Esconder o Halo após atividade</string>
-    <string name="halo_hide_summary">Halo aparecerá para as tarefas de entrada e irá para fora da vista depois de um tempo</string>
-    <string name="halo_state_title">Política do Halo</string>
-    <string name="halo_state_summary">Habilitar notificações lista negra/branca</string>
-    <string name="halo_state_black">Lista negra</string>
-    <string name="halo_state_white">Lista branca</string>
-    <string name="halo_pause_title">Pausar o apliativo ativo</string>
-    <string name="halo_pause_summary">Ao abrir um aplicativo com o Halo o aplicativo subjacente ficará em pausa</string>
-    <string name="halo_notification_msgbox_title">Habilitar mensagens pop-up</string>
-    <string name="halo_notification_msgbox_summary">Mostrar caixa de mansagens para notificações de entrada</string>
-    <string name="halo_unlock_ping_title">Mostar o Halo ao desbloquear o aparelho</string>
-    <string name="halo_unlock_ping_summary">Halo irá aparecer ao desbloqueio se houver novas notificações recebidas</string>
-
-    <string name="halo_size_title">Tamanho Halo</string>
-    <string name="halo_size_summary">Defina o tamanho do Halo</string>
-    <string name="halo_size_miniscule">Minúsculo</string>
-    <string name="halo_size_small">Pequeno</string>
-    <string name="halo_size_default">Normal</string>
-    <string name="halo_size_large">Grande</string>
-    <string name="halo_size_gigantic">Gigante</string>
-    <string name="halo_size_monster">Monstruoso</string>
-
-    <string name="halo_notification_count_title">Contador de notificações</string>
-    <string name="halo_notification_count_summary">Mostrar contador de notificações no Halo</string>
-    <string name="halo_notification_count_none">Nenhum</string>
-    <string name="halo_notification_count_total">Total</string>
-    <string name="halo_notification_count_individual">Por aplicativo</string>
-    <string name="halo_notification_count_both">Ambos</string>
-
-    <!-- Label for are-halo-notifications-allowed checkbox in app details [CHAR LIMIT=20] -->
-    <string name="app_halo_label_black">Lista negra pelo HALO</string>
-    <string name="app_halo_label_white">Lista branca pelo HALO</string>
-
     <!-- QS and navring Power menu -->
-    <string name="title_tile_power">Power Menu</string> 
-    <string name="navring_action_power_menu">Power menu</string>       
+    <string name="title_tile_power">Menu de energia</string> 
+    <string name="navring_action_power_menu">Menu de energia</string>       
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Habilitar a barra de navegação</string>
@@ -132,7 +96,7 @@
     <string name="set">Aplicar</string>
     <string name="color_default">Restaurar</string>
 
-    <!-- Recents Ram Bar -->
+    <!-- Recent Ram Bar -->
     <string name="ram_bar">Barra de memória RAM</string>
     <string name="ram_bar_note_title">Note</string>
     <string name="ram_bar_note_summary">Essa bara mostra a quantidade atual de memória (RAM) utilizada. Atente: manter os aplicativos em cache faz os mesmos abrirem com maior rapidez</string>
@@ -316,7 +280,7 @@
     <string name="noti_reminder_interval">Intervalo do giro</string>
     <string name="noti_reminder_interval_1s">1 segundo</string>
     <string name="noti_reminder_interval_1dot5s">1,5 segundos</string>
-    <string name="noti_reminder_interval_2s">2 secundos</string>
+    <string name="noti_reminder_interval_2s">2 segundos</string>
     <string name="noti_reminder_interval_2dot5s">2,5 segundos</string>
     <string name="noti_reminder_interval_3s">3 segundos</string>
     <string name="noti_reminder_interval_3dot5s">3,5 segundos</string>
@@ -331,7 +295,7 @@
 
     <!-- Custom Recent Settings -->
     <string name="custom_recent_title">Mudar entre estilos de recentes</string>
-    <string name="custom_recent_summary">Marque para o estilo Slim Roms ou desmarque para o estilo normal. MARCANDO OU DESMARCANDO ESSA OPÇÃO IRÁ REINICIAR O SEU SYSTEMUI</string>
+    <string name="custom_recent_summary">Marque para o estilo Slim Roms ou desmarque para o estilo normal. MARCANDO OU DESMARCANDO ESSA OPÇÃO IRÁ REINICIAR O SYSTEMUI</string>
 
     <!-- Lockscreen Lid Settings -->
     <string name="smart_cover_category_title">Capa inteligente</string>
@@ -349,9 +313,9 @@
     <string name="disable_fullscreen_keyboard_title">Desabilite teclado em tela cheia</string>
     <string name="disable_fullscreen_keyboard_summary">Teclado em modo paisagem nunca irá ocupar a tela inteira</string>
     <string name="keyboard_rotation_toggle_title">Auto rotação do teclado</string>
-    <string name="keyboard_rotation_toggle_summary">Forçar auto rotação quando o teclado é mostrado</string>
+    <string name="keyboard_rotation_toggle_summary">Força auto rotação quando o teclado é mostrado</string>
     <string name="keyboard_rotation_timeout_title">Tempo de auto rotação</string>
-    <string name="keyboard_rotation_timeout_summary">Desabilite o sensor de auto rotaçãor <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após o tecaldo ser ocultado</string>
+    <string name="keyboard_rotation_timeout_summary">Desabilita o sensor de auto rotaçãor <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após o tecaldo ser ocultado</string>
     <string name="keyboard_rotation_dialog">OBS: Essa função força o ligamento da auto rotação temporariamente enquanto o teclado está visível. Isso não têm nenhum efeito se a função de auto rotação já estiver habilitada.</string>
     <string name="show_enter_key_title">Mostrar a tecla ENTER</string>
     <string name="show_enter_key_summary">Forçar o teclado à mostrar a tecla ENTER ao invés da tecla emotions</string>
@@ -374,5 +338,51 @@
     <string name="telo_radio_2g_20min">20 minutos</string>
     <string name="telo_radio_go_3g_unlock_title">Desbloqueio 3G</string>
     <string name="telo_radio_go_3g_unlock_summary">Quando o aparelho é desbloqueado o mode de rede é alterado para 3G novamente.</string>
+
+    <!-- Volume Steps -->
+    <string name="volume_steps_title">Passos do volume</string>
+    <string name="volume_steps_60">60</string>
+    <string name="volume_steps_45">45</string>
+    <string name="volume_steps_30">30</string>
+    <string name="volume_steps_15">15</string>
+    <string name="volume_steps_7">7</string>
+    <string name="volume_steps_5">5</string>
+    <string name="volume_steps_alarm_title">Alarme</string>
+    <string name="volume_steps_dtmf_title">DTMF</string>
+    <string name="volume_steps_music_title">Música</string>
+    <string name="volume_steps_notification_title">Notificação</string>
+    <string name="volume_steps_ring_title">Toque</string>
+    <string name="volume_steps_system_title">Sistema</string>
+    <string name="volume_steps_voice_call_title">Chamada de voz</string>
+
+    <!-- NavBar long press actions -->
+    <string name="navbar_long_press_title">Açoes de pressionamento longo</string>
+    <string name="recent_long_press_title">Pressionamento longo do botão recente</string>
+    <string name="recent_long_press_none">Nada</string>
+    <string name="recent_long_press_last_app">Último aplicativo</string>
+    <string name="recent_long_press_screenshot">Foto da tela</string>
+    <string name="recent_long_press_kill_app">Matar aplicativo</string>
+    <string name="recent_long_press_notif_panel">Painel de notificações</string>
+    <string name="recent_long_press_qs_panel">Painel de configurações rápidas</string>
+    <string name="recent_long_press_power_menu">Menu de energia</string>
+
+    <!-- Recent panel -->
+    <string name="recent_panel_category">Painel de aplicativos recentes</string>
+    <string name="recent_panel_scale_title">Tamanho</string>
+    <string name="recent_panel_scale_summary">Tamanho do painel em porcentagem.</string>
+    <string name="recent_panel_100">100% (normal)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Mostar no lado esquerdo</string>
+    <string name="recent_panel_lefty_mode_summary">Mostar o painle de recentes no lado esquerdo.</string>
+
+    <!-- Brightness Slider -->
+    <string name="notification_drawer_brightness_slider_title">Barra de ajuste de brilho</string>
+
+    <!-- On-The-Go -->
+    <string name="power_menu_onthego_title">Mode em movimento</string>
+    <string name="title_tile_onthego">Em movimento</string>
 
 </resources>

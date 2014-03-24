@@ -10,7 +10,7 @@
 
     <!-- General strings -->
     <string name="default_string">По умолчанию</string>
-    <string name="recent_panel_settings_title">Панель \"Недавних приложений\"</string>
+    <string name="recents_panel_settings_title">Панель \"Недавних приложений\"</string>
     <string name="reset">Сброс</string>
     <string name="enabled">Включено</string>
     <string name="disabled">Отключено</string>
@@ -88,7 +88,7 @@
     <string name="qs_style_reset_message">Сбросить все цвета по умолчанию?</string>
 
     <!--  Recent clear all -->
-    <string name="recent_clear_all_button">Кнопка \"Очистить всё\"</string>
+    <string name="recents_clear_all_button">Кнопка \"Очистить всё\"</string>
     <string name="show_recent_clear_all_button_title">Показывать кнопку \"Очистить всё\"</string>
     <string name="show_recent_clear_all_button_summary">Установите галочку, чтобы показать или снимите, чтобы скрыть отображение кнопки \"Очистить всё\" на экране \"Недавних приложений\"</string>
     <string name="recent_clear_all_button_location_title">Расположение кнопки \"Очистить всё\"</string>

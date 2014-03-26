@@ -3,7 +3,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About phone screen, Temasek version -->
-    <string name="temasek_version_title">Temaseks inoffizielle CM Version</string>
+    <string name="temasek_version_title">Temaseks inoffizieller CyanogenMod</string>
 
     <!-- temasek spare parts -->
     <string name="temasek_settings_title">Temaseks Erweiterungen</string>
@@ -24,13 +24,13 @@
 
     <!-- Navigation bar -->
     <string name="navbar_enable_bar">Navigationsleiste aktivieren</string>
-    <string name="navbar_enable_bar_summary">Aktiviere die Navigationsleiste</string>
+    <string name="navbar_enable_bar_summary">Aktiviert die Navigationsleiste.</string>
     <string name="navbar_style_dimen_title">Abmessungen</string>
-    <string name="navbar_dimensions_reset_message">Alle Abmessungen auf Standard zurücksetzen?</string>
-    <string name="navigation_bar_height_title">Höhe der Navigationsleiste</string>
-    <string name="navigation_bar_height_summary">Höhe der Navigationsleiste im Längsformat</string>
-    <string name="navigation_bar_width_title">Breite der Navigationsleiste</string>
-    <string name="navigation_bar_width_summary">Breite der Navigationsleiste wenn diese an der Seite dargestellt wird</string>
+    <string name="navbar_dimensions_reset_message">Abmessungen wirklich zurücksetzen?</string>
+    <string name="navigation_bar_height_title">Höhe</string>
+    <string name="navigation_bar_height_summary">Höhe der Navigationsleiste im Längsformat.</string>
+    <string name="navigation_bar_width_title">Breite</string>
+    <string name="navigation_bar_width_summary">Breite der Navigationsleiste wenn diese an der Seite dargestellt wird.</string>
     <string name="navigation_bar_size_42_dp_default">42 DPI (Standard)</string>
     <string name="navigation_bar_size_36_dp">36 DPI</string>
     <string name="navigation_bar_size_30_dp">30 DPI</string>
@@ -42,15 +42,15 @@
     <string name="navigation_bar_size_0_dp">0 DPI (Aus)</string>
 
     <!-- Low battery warning policy -->
-    <string name="pref_low_battery_warning_policy_title">Warnung bei schwachem Akku</string>
-    <string name="pref_low_battery_warning_policy_dialog_title">Warnung bei schwachem Akku</string>
-    <string name="low_battery_warning_policy_popup_sound">Pop-Up und Ton</string>
-    <string name="low_battery_warning_policy_notif_sound">Benachrichtigung und Ton</string>
+    <string name="pref_low_battery_warning_policy_title">Warnung bei niedrigen Akkustand</string>
+    <string name="pref_low_battery_warning_policy_dialog_title">Wie möchten Sie gewarnt werden?</string>
+    <string name="low_battery_warning_policy_popup_sound">Pop-Up mit Ton</string>
+    <string name="low_battery_warning_policy_notif_sound">Benachrichtigung mit Ton</string>
     <string name="low_battery_warning_policy_popup">Nur Pop-Up</string>
     <string name="low_battery_warning_policy_notif">Nur Benachrichtigung</string>
     <string name="low_battery_warning_policy_sound">Nur Ton</string>
     <string name="battery_prefs_title">Optionen</string>
-    <string name="battery_stats_title">Statistik</string>
+    <string name="battery_stats_title">Statistik zum Akkuverbrauch</string>
 
     <!--Lockscreen See Through-->
     <string name="see_through_title">Unscharfer Hintergrund</string>
@@ -70,26 +70,26 @@
     <string name="lock_before_unlock_summary">Zeige Slider Sperrbildschirm vor dem Sicherheits Entsperrungs-Mechanismus.</string>
 
     <!-- QuickSettings style options -->
-    <string name="quick_tiles_bg_no_title">ANMERKUNG</string>
-    <string name="quick_tiles_bg_summary">Alle Farb- und Transparenzänderungen wirken sich auf die Schnelleinstellungen-Kacheln aus</string>
-    <string name="quicksettings_tiles_style">Optik</string>
-    <string name="summary_quicksettings_tiles_style">Anpassen der Kacheln</string>
-    <string name="quicksettings_tiles_style_additional_options">Weitere Optionen</string>
+    <string name="quick_tiles_bg_no_title">ACHTUNG:</string>
+    <string name="quick_tiles_bg_summary">Alle Farb- und Transparenzänderungen wirken sich auch auf die Schnellzugriffsleiste der Benachrichtigungsleiste aus.</string>
+    <string name="quicksettings_tiles_style">Aussehen</string>
+    <string name="summary_quicksettings_tiles_style">Aussehen der Kacheln bearbeiten.</string>
+    <string name="quicksettings_tiles_style_additional_options">Weitere Einstellungen</string>
     <string name="tiles_per_row_title">Kacheln pro Reihe</string>
-    <string name="tiles_per_row_duplicate_landscape_title">Querformat anpassen</string>
-    <string name="tiles_per_row_duplicate_landscape_summary">Querformat verdoppelt die Anzahl der Kacheln pro Reihe</string>
-    <string name="quick_tiles_bg_color_title">Hintergrundfarbe</string>
-    <string name="quick_tiles_bg_pressed_color_title">Hintergrundfarbe gedrückt</string>
+    <string name="tiles_per_row_duplicate_landscape_title">Kachelanzahl im Querformat verdoppeln</string>
+    <string name="tiles_per_row_duplicate_landscape_summary">Verdoppelt die Anzahl der pro Reihe angezeigten Kacheln im Querformat.</string>
+    <string name="quick_tiles_bg_color_title">Hintergrundfarbe ungedrückter Kacheln</string>
+    <string name="quick_tiles_bg_pressed_color_title">Hintergrundfarbe gedrückter Kacheln</string>
     <string name="quick_tiles_text_color_title">Textfarbe</string>
     <string name="quick_tiles_alpha_title">Hintergrundtransparenz</string>
     <string name="qs_style_reset_message">Alle Farben auf Standardwerte zurücksetzen?</string>
 
     <!-- Recents clear all -->
-    <string name="recents_clear_all_button">Recents clear all button</string>
-    <string name="show_recent_clear_all_button_title">Zeige -Alles schließen- Taste</string>
-    <string name="show_recent_clear_all_button_summary">Haken setzen oder nicht setzen zum anzeigen bzw. verstecken der -Alles schließen- Taste innerhalb des Recents (zuvor geöffnete Apps) Bildschirms.</string>
-    <string name="recent_clear_all_button_location_title">Position -Alles schließen- Taste</string>
-    <string name="recent_clear_all_button_location_summary">Entscheide in welcher Ecke die -Alles schließen- Taste angezeigt werden soll.</string>
+    <string name="recents_clear_all_button">Schließen durch Tastendruck</string>
+    <string name="show_recent_clear_all_button_title">Taste anzeigen</string>
+    <string name="show_recent_clear_all_button_summary">Zeigt eine Taste um alle Anwendungen aus dem Anwendungsverlauf zu entfernen.</string>
+    <string name="recent_clear_all_button_location_title">Position der Taste</string>
+    <string name="recent_clear_all_button_location_summary">Setzt die Position der Taste fest.</string>
     <string name="recent_clear_all_button_location_top_left">Oben links</string>
     <string name="recent_clear_all_button_location_top_right">Oben rechts</string>
     <string name="recent_clear_all_button_location_bottom_left">Unten links</string>
@@ -108,44 +108,44 @@
     <!-- Recents Ram Bar -->
     <string name="ram_bar">Recents RAM-Leiste</string>
     <string name="ram_bar_note_title">Hinweis</string>
-    <string name="ram_bar_note_summary">Diese RAM-Leiste zeigt die momentane Android-Speicherauslastung (RAM) an. Bitte beachten! Apps im Cache zu halten hilft dem Gerät diese schneller öffen zu können. Für weitere Erklärungen über die Funktionsweise der Android-Speicherverwaltung benutzen sie das Hilfe-Menü.</string>
-    <string name="ram_bar_mode_title">Modus Recents RAM-Leiste</string>
-    <string name="ram_bar_mode_dialog_title">Recents RAM-Leiste anzeigen</string>
-    <string name="ram_bar_none">Keine</string>
-    <string name="ram_bar_apps">Nur Apps</string>
-    <string name="ram_bar_cache">Apps und Cache</string>
-    <string name="ram_bar_other">Apps, Cache und Sonstige</string>
-    <string name="ram_bar_style_cat">Style Recents RAM-Leiste</string>
-    <string name="ram_bar_color_app_mem_color">Farbe RAM Apps</string>
-    <string name="ram_bar_color_cache_mem_color">Farbe RAM Cache</string>
-    <string name="ram_bar_color_total_mem_color">Farbe RAM Sonstige</string>
+    <string name="ram_bar_note_summary">Die RAM-Leiste zeigt die momentane Auslastung des Arbeitsspeichers (RAM) im Anwendungsverlauf an. Apps im Cache zu halten hilft Ihrem Gerät diese schneller öffnen zu können! Für weitere Erklärungen über die Funktionsweise der Speicherverwaltung nutzen Sie das Hilfe-Menü.</string>
+    <string name="ram_bar_mode_title">Modus der RAM-Leiste</string>
+    <string name="ram_bar_mode_dialog_title">RAM-Leiste verwenden</string>
+    <string name="ram_bar_none">Ausgeschaltet (Standard)</string>
+    <string name="ram_bar_apps">Zeige Anwendungen</string>
+    <string name="ram_bar_cache">Zeige Anwendungen und Cache</string>
+    <string name="ram_bar_other">Zeige Anwendungen, Cache und Sonstiges</string>
+    <string name="ram_bar_style_cat">Aussehen der RAM-Leiste</string>
+    <string name="ram_bar_color_app_mem_color">Farbe für Anwendungen</string>
+    <string name="ram_bar_color_cache_mem_color">Farbe für Cache</string>
+    <string name="ram_bar_color_total_mem_color">Farbe für Sonstiges</string>
     <string name="ram_bar_color_enabled">Eingeschaltet</string>
     <string name="ram_bar_color_disabled">Ausgeschaltet</string>
     <string name="ram_bar_button_help">Hilfe</string>
     <string name="ram_bar_button_reset">Farben zurücksetzen</string>
     <string name="ram_bar_reset">Zurücksetzen</string>
-    <string name="ram_bar_reset_message">Aussehen der Recents RAM-Leiste zurücksetzen?</string>
+    <string name="ram_bar_reset_message">Die RAM-Leiste wirklich zurücksetzen?</string>
 
     <!-- Notification drawer background -->
-    <string name="notification_style_title">Aussehen Hintergrund</string>
-    <string name="notification_style_summary">Zeige oder ändere den Hintergrund des Benachrichtigungsfeldes und der Schnelleinstellungen.</string>
-    <string name="notification_wallpaper_title">Hintergrund Benachrichtigungsfeld</string>
+    <string name="notification_style_title">Hintergrund</string>
+    <string name="notification_style_summary">Hintergrund des Benachrichtigungsfeldes und der Schnelleinstellungen bearbeiten.</string>
+    <string name="notification_wallpaper_title">Hintergrund des Benachrichtigungsfeldes</string>
     <string name="notification_wallpaper_landscape_title">Hintergrund im Querformat</string>
-    <string name="notification_background_color_fill">Füllfarbe</string>
-    <string name="notification_background_custom_image">Eigenes Bild</string>
+    <string name="notification_background_color_fill">Einfarbiger Hintergrund</string>
+    <string name="notification_background_custom_image">Eigener Hintergrund</string>
     <string name="notification_background_default_wallpaper">Standard Hintergrund</string>
     <string name="notification_drawer_custom_background_dialog_title">Farbe auswählen</string>
-    <string name="notif_wallpaper_alpha_title">Transparenz Hintergrund</string>
-    <string name="notif_alpha_title">Transparenz Benachrichtigungszeile</string>
-    <string name="shortcut_image_not_valid">Die gewählte Anwendung öffnete kein gültiges Symbol oder das Zuschneiden von Bildern wird nicht unterstützt. Versuchen Sie es mit einer anderen Anwendung</string>
+    <string name="notif_wallpaper_alpha_title">Transparenz des Hintergrundes</string>
+    <string name="notif_alpha_title">Transparenz der Benachrichtigungszeile</string>
+    <string name="shortcut_image_not_valid">Die gewählte Anwendung öffnete kein gültiges Bild oder das Zuschneiden von Bildern wird nicht unterstützt. Versuchen Sie es mit einer anderen Anwendung.</string>
 
     <!-- TRDS -->
-    <string name="theme_settings_title">Design</string>
-    <string name="theme_auto_mode_title">Dunkles UI</string>
+    <string name="theme_settings_title">Dunkles UI</string>
+    <string name="theme_auto_mode_title">Aussehen ändern</string>
     <string name="theme_auto_mode_off">Manuell</string>
     <string name="theme_auto_mode_lightsensor">Bei Änderung der Lichtverhältnisse</string>
-    <string name="theme_auto_mode_twilight">Tageszeitabhängig</string>
-    <string name="theme_auto_switch_mode_error">Automatischer Änderungsmodus durch Lichtverhältnisse aktiviert. Manuelles Umschalten nicht möglich.</string>
+    <string name="theme_auto_mode_twilight">Nach der Tageszeit</string>
+    <string name="theme_auto_switch_mode_error">Automatische Änderung aktiviert. Manuelles Umschalten nicht möglich.</string>
    
     <!-- TRDS tile -->
     <string name="title_tile_theme">Design wechseln</string>
@@ -163,8 +163,8 @@
     <string name="status_bar_am_pm_info">24h-Uhr ist eingeschaltet</string>
     <string name="enable_clock_weekday">Wochentag</string>
     <string name="enable_clock_weekday_summary">Abkürzung Wochentag vor der Uhrzeit</string>
-    <string name="right_clock">Uhrzeit rechts</string>
-    <string name="center_clock">Uhrzeit zentriert</string>
+    <string name="right_clock">Rechts</string>
+    <string name="center_clock">Mittig</string>
     <string name="dont_show">Nicht anzeigen</string>
     <string name="clock_date_display">Datum</string>
     <string name="clock_date_display_summary">Zeige Datum vor der Uhrzeit</string>
@@ -191,8 +191,8 @@
     <string name="clock_font_normal">Normal</string>
 
     <!-- Volume pane timeout -->
-    <string name="volume_panel_timeout_title">Anzeigedauer</string>
-    <string name="volume_panel_timeout_summary">Anzeigedauer des Lautstärke-Reglers festlegen</string>
+    <string name="volume_panel_timeout_title">Anzeigedauer der Einblendung</string>
+    <string name="volume_panel_timeout_summary">Anzeigedauer des Lautstärkereglers festlegen.</string>
   
     <!-- Lockscreen Notifications -->
     <string name="general">Allgemein</string>
@@ -229,11 +229,11 @@
     <!-- Wakelock blocker -->
     <string name="wakelock_blocker">Wakelock Blocker</string>
     <string name="wakelock_blocker_title">Aktivieren</string>
-    <string name="wakelock_blocker_summary">Blockieren der ausgewählten Wakelocks</string>
+    <string name="wakelock_blocker_summary">Blockieren ausgewählter Wakelocks</string>
     <string name="wakelock_blocker_save">Speichern</string>
-    <string name="wakelock_list_header">Verfügbare Wakelocks</string>
+    <string name="wakelock_list_header">Auflistung der Wakelocks</string>
     <string name="wakelock_blocker_reload">Neu Laden</string>
-    <string name="wakelock_blocker_warning_title">Bitte Vorsicht</string>
+    <string name="wakelock_blocker_warning_title">Vorsicht!</string>
     <string name="wakelock_blocker_warning">Das Blocken von Wakelocks kann zu Instabilität, Abstürzen oder Datenverlust führen.</string>
 
     <!-- Screen recorder -->
@@ -242,7 +242,7 @@
     <string name="screen_recorder_video_dimensions_title">Auflösung</string>
     <string name="screen_recorder_video_bitrate_title">Bitrate</string>
     <string name="screen_recorder_record_audio_title">Ton aufnehmen</string>
-    <string name="screen_recorder_record_audio_summary">Ton über das Mikrofon mit aufnehmen</string>
+    <string name="screen_recorder_record_audio_summary">Ton über das Mikrofon ebenfalls aufnehmen.</string>
 
     <!-- video sizes -->
     <string name="screen_recorder_size_240x400">240x400</string>
@@ -284,18 +284,18 @@
 
     <!-- MediaScanner behavior on boot -->
     <string name="media_scanner_on_boot_title">Medien Scanner Verhalten beim Start</string>
-    <string name="media_scanner_on_boot_enabled">Scanne nach Medien</string>
-    <string name="media_scanner_on_boot_ask">Frage nach Scan (Benachrichtigung)</string>
-    <string name="media_scanner_on_boot_disabled">Scanne nicht nach Medien</string>
+    <string name="media_scanner_on_boot_enabled">Einschalten</string>
+    <string name="media_scanner_on_boot_ask">Nachfragen via Benachrichtigung</string>
+    <string name="media_scanner_on_boot_disabled">Ausschalten</string>
 
     <!-- Notification Reminders -->
-    <string name="noti_reminder_title">Erinnerungsbenachrichtigung</string>
-    <string name="noti_reminder_enable_title">Erinnerungsbenachrichtigung aktivieren</string>
-    <string name="noti_reminder_sound_title">Benachrichtigungston</string>
+    <string name="noti_reminder_title">Erinnerungen</string>
+    <string name="noti_reminder_enable_title">Erinnerungen aktivieren</string>
+    <string name="noti_reminder_sound_title">Ton verwenden</string>
     <string name="noti_reminder_sound_looping">Bis zum Verwerfen</string>
     <string name="noti_reminder_ringtone">Benachrichtigungston</string>
-    <string name="noti_reminder_summary">Geben Sie eine Benachrichtigung ein und lassen Sie sich erinnern</string>
-    <string name="noti_reminder_interval">Flip-Intervall</string>
+    <string name="noti_reminder_summary">Erstellen Sie eine Erinnerung.</string>
+    <string name="noti_reminder_interval">Intervall</string>
     <string name="noti_reminder_interval_1s">1 Sekunde</string>
     <string name="noti_reminder_interval_1dot5s">1,5 Sekunden</string>
     <string name="noti_reminder_interval_2s">2 Sekunden</string>
@@ -305,14 +305,14 @@
     <string name="noti_reminder_interval_4s">4 Sekunden</string>
 
     <!-- Custom notification panel header -->
-    <string name="omni_features_title">Omni Features</string>
+    <string name="omni_features_title">OmniROM Features</string>
     <string name="notification_drawer_category_title">Benachrichtigungsanzeige</string>
-    <string name="custom_statusbar_header_title">Kontextuelle Benachrichtigungsanzeige</string>
-    <string name="custom_statusbar_header_summary">Kopfzeilenhintergrund der Benachrichtigungsanzeige mit einem Bild basierend auf Datum und Zeit</string>   
+    <string name="custom_statusbar_header_title">Kontextuelle Kopfzeile</string>
+    <string name="custom_statusbar_header_summary">Die Kopfzeile der Benachrichtigungsanzeige wird mit einem Bild basierend auf Datum und Zeit versehen.</string>   
 
     <!-- Restart SystemUI -->
     <string name="general_settings_title">Allgemeine Einstellungen</string>
-    <string name="general_settings_style_title">Allgemeine Optionen</string>
+    <string name="general_settings_style_title">Optionen</string>
     <string name="restart_systemui">SystemUI neustarten</string>
 
     <!-- Lockscreen battery ring -->
@@ -325,12 +325,12 @@
 
     <!-- Breathing Notifications -->
     <string name="breathing_notifications_title">Pulsierende Benachrichtigungen</string>
-    <string name="sms_breath_title">Pulsierende SMS</string>
-    <string name="sms_breath_summary">Lässt das SMS-Symbol in der Statusleiste pulsieren</string>
-    <string name="missed_call_breath_title">Pulsierender verpasster Anruf</string>
-    <string name="missed_call_breath_summary">Lässt das Symbol bei einem verpassten Anruf in der Statusleiste pulsieren</string>
-    <string name="voicemail_breath_title">Pulsierende Sprachnachricht</string>
-    <string name="voicemail_breath_summary">Lässt das Sprachnachricht-Symbol in der Statusleiste pulsieren</string>
+    <string name="sms_breath_title">SMS</string>
+    <string name="sms_breath_summary">Lässt das SMS-Symbol in der Statusleiste pulsieren.</string>
+    <string name="missed_call_breath_title">Verpasste Anrufe</string>
+    <string name="missed_call_breath_summary">Lässt das Symbol bei einem verpassten Anruf in der Statusleiste pulsieren.</string>
+    <string name="voicemail_breath_title">Sprachnachricht</string>
+    <string name="voicemail_breath_summary">Lässt das Sprachnachricht-Symbol in der Statusleiste pulsieren.</string>
 
     <!-- Volume Steps -->
     <string name="volume_steps_title">Lautstärkestufen</string>
@@ -351,9 +351,9 @@
     <!-- Sound themes -->
     <string name="sound_packages_title">Sound-Pakete</string>
     <string name="install_sound_pack_title">Sound-Paket installieren</string>
-    <string name="install_sound_pack_summary">Installieren Sie Sound-Pakete welche sich im "SoundPacks" Ordner im internen Speicher befinden</string>
+    <string name="install_sound_pack_summary">Sound-Pakete müssen sich im SoundPacks Ordner im Telefonspeicher befinden.</string>
     <string name="select_sound_pack_title">Sound-Paket auswählen</string>
-    <string name="select_sound_pack_summary">Wählen Sie ein Sound-Paket</string>
+    <string name="select_sound_pack_summary">Wählen Sie ein bereits installiertes Sound-Paket</string>
     <string name="default_sound_pack">Standard (System)</string>
     <string name="error_pack_install">Fehler beim Installieren des Sound-Pakets</string>
 
@@ -374,23 +374,23 @@
     <string name="hide_network_speed_summary">Verstecken der Anzeige wenn kein Netzwerkverkehr stattfindet</string>    
 
     <!-- Status Bar Activity Indicators -->
-    <string name="show_activity_indicators_on_status_bar_title">Netzwerkaktivität</string>
-    <string name="show_activity_indicators_on_status_bar_summary">Darstellung der Netzwerkaktivität im Empfangs- bzw. WLAN-Symbol in der Statusleiste</string>
+    <string name="show_activity_indicators_on_status_bar_title">Netzwerkaktivität darstellen</string>
+    <string name="show_activity_indicators_on_status_bar_summary">Zeigt die Netzwerkaktivität auf dem Empfangs- und WLAN-Symbol in der Statusleiste an.</string>
 
     <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Schlaues Herunterziehen</string>
     <string name="smart_pulldown_summary">Öffnet die Schnelleinstellungen, wenn keine Benachrichtigungen vorliegen: %1$s</string>
     <string name="smart_pulldown_off">Deaktiviert</string>
     <string name="smart_pulldown_dismissable">Verwerfbar</string>
-    <string name="smart_pulldown_persistent">Anhaltend</string>
+    <string name="smart_pulldown_persistent">Immer</string>
 
     <!-- Custom Recent Settings -->
-    <string name="custom_recent_title">Wechseln der "Kürzlich geöffnet"-Anzeige</string>
-    <string name="custom_recent_summary">Wählen für "Slim Recents" oder abwählen für "Stock Recents". WÄHLEN ODER ABWÄHLEN STARTET IHR SYSTEMUI NEU</string>
+    <string name="custom_recent_title">Anwendungsverlauf wechseln</string>
+    <string name="custom_recent_summary">Wählen für SlimROM oder abwählen für Standard. Änderung startet das SystemUI neu.</string>
 
     <!-- Display : Animation options -->
-    <string name="screen_and_animations_title">Display und Animationen</string>
-    <string name="display_category_animation_options_title">Display und Animationen Einstellungen</string>
+    <string name="screen_and_animations_title">Animationen</string>
+    <string name="display_category_animation_options_title">Animationen Einstellen</string>
 
     <!-- ListView animation -->
     <string name="bars_and_menus_category_system_title">System</string>
@@ -418,7 +418,7 @@
     <string name="listview_bounce_interpolator">Hüpfen</string>
  
     <!-- Animation Controls -->  
-    <string name="title_animation_controls">Benutzerdefinierte Animationen</string>  
+    <string name="title_animation_controls">System Animationen</string>  
     <string name="activity_open_title">In-App Aktivität öffnen</string>
     <string name="activity_close_title">In-App Aktivität schliessen</string>
     <string name="task_open_title">Start aus App</string>
@@ -430,8 +430,8 @@
     <string name="wallpaper_intra_open_title">Anwendungsverlauf öffnen</string>
     <string name="wallpaper_intra_close_title">Anwendungsverlauf schliessen</string>
     <string name="animation_duration_title">Animationsdauer</string>
-    <string name="title_animation_no_override">Apps berücksichtigen</string>  
-    <string name="summary_animation_no_override">Apps können Animationsübergänge nicht ändern.</string>  
+    <string name="title_animation_no_override">Apps sperren</string>  
+    <string name="summary_animation_no_override">Hält Apps davon ab Animationsübergänge zu ändern.</string>  
     <string name="animation_duration_default">Standard</string>
     <string name="header_summary_animation">@null</string>
 
@@ -488,37 +488,37 @@
     <string name="background_result_not_successful">Hintergrund nicht geändert</string>
 
     <!-- Identicons -->
-    <string name="identicons_title">Identicons</string>
-    <string name="identicons_enabled_title">Identicons</string>
-    <string name="identicons_enabled_summary">Benutze Identicons als Standard Kontaktbild beim Erstellen eines neuen Kontakts</string>
-    <string name="identicons_style_title">Identicon Aussehen</string>
-    <string name="identicons_style_summary">Wählen Sie wie die genutzten Identicon aussehen sollen</string>
+    <string name="identicons_title">Identicons Einstellungen</string>
+    <string name="identicons_enabled_title">Identicons verwenden</string>
+    <string name="identicons_enabled_summary">Identicons werden als Standard Kontaktbild für neue Kontakte verwendet.</string>
+    <string name="identicons_style_title">Aussehen</string>
+    <string name="identicons_style_summary">Wählen Sie den Stil der Identicons.</string>
     <string name="identicons_create_title">Erstelle Identicons</string>
-    <string name="identicons_create_summary">Erstelle Identicons für existierende Kontakte, die kein Kontaktbild besitzen</string>
-    <string name="identicons_creation_service_running_title">Erstelle Identicons</string>
+    <string name="identicons_create_summary">Erstellt Identicons für existierende Kontakte ohne Kontaktbild.</string>
+    <string name="identicons_creation_service_running_title">Identicons erstellen</string>
     <string name="identicons_creation_service_running_summary"></string>
     <string name="identicons_creation_service_contact_summary">Arbeite %s</string>
     <string name="identicons_creation_service_contact_summary_finishing">Erledige ein paar Dinge...</string>
-    <string name="identicons_remove_title">Entferne Identicons</string>
-    <string name="identicons_remove_summary">Entferne Identicon von Kontakten die ein Identicon nutzen</string>
+    <string name="identicons_remove_title">Identicons entfernen</string>
+    <string name="identicons_remove_summary">Entfernt Identicons von allen Kontakten.</string>
     <string name="identicons_remove_service_running_title">Entferne Identicons</string>
     <string name="identicons_remove_service_running_summary"></string>
     <string name="identicons_remove_service_contact_summary">Arbeite am Bild %1$d/%2$d</string>
     <string name="identicons_remove_service_contact_summary_finishing">Erledige ein paar Dinge...</string>
     <string name="identicons_style_retro">Retro</string>
-    <string name="identicons_style_contemporary">Gegenwärtig</string>
-    <string name="identicons_style_spirograph">Spirograph</string>
-    <string name="identicons_style_dotmatrix">Punktmatrix</string>
+    <string name="identicons_style_contemporary">Gezackt</string>
+    <string name="identicons_style_spirograph">Spirographisch</string>
+    <string name="identicons_style_dotmatrix">Gepunktet</string>
 
     <!-- Gesture Anywhere -->
-    <string name="gesture_anywhere_title">Gesten überall</string>
-    <string name="gesture_anywhere_enabled_title">Gesten überall</string>
-    <string name="gesture_anywhere_enabled_summary">Aktiviere das "Gesten überall" Feature</string>
+    <string name="gesture_anywhere_title">Gesten Steuerung</string>
+    <string name="gesture_anywhere_enabled_title">Aktivieren</string>
+    <string name="gesture_anywhere_enabled_summary">Aktiviert die Steuerung durch Gesten.</string>
     <string name="gesture_anywhere_position_title">Position</string>
     <string name="gesture_anywhere_position_left">Linker Rand</string>
     <string name="gesture_anywhere_position_right">Rechter Rand</string>
-    <string name="gesture_anywhere_gestures_title">Gesten</string>
-    <string name="gesture_anywhere_gestures_summary">Gesten hinzufügen, ändern und bearbeiten</string>
+    <string name="gesture_anywhere_gestures_title">Gesten ändern</string>
+    <string name="gesture_anywhere_gestures_summary">Gesten bearbeiten.</string>
     <!-- Label, button used to add a gesture -->
     <string name="ga_button_add">Geste hinzufügen</string>
     <!-- Label, button used to reload all gestures -->
@@ -555,13 +555,13 @@
     <string name="ga_gestures_rename_label">Name der Geste</string>
     <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures.  CHAR LIMIT=80 -->
     <string name="ga_gestures_error_loading">Konnte %s nicht laden. Stellen Sie sicher, dass genügend Speicher verfügbar ist.</string>
-    <string name="trigger_category">Auslöser Region</string>
+    <string name="trigger_category">Auslöser</string>
     <string name="trigger_width_title">Auslöser Breite</string>
-    <string name="trigger_width_summary">Einstellen der Breite des Auslösers</string>
-    <string name="trigger_top_title">Auslöser Position</string>
-    <string name="trigger_top_summary">Einstellen der senkrechten Postion des Auslösers</string>
-    <string name="trigger_bottom_title">Auslöser Höhe</string>
-    <string name="trigger_bottom_summary">Einstellen der Höhe des Auslösers</string>
+    <string name="trigger_width_summary">Einstellen der Breite des Auslösers.</string>
+    <string name="trigger_top_title">Position</string>
+    <string name="trigger_top_summary">Einstellen der senkrechten Postion des Auslösers.</string>
+    <string name="trigger_bottom_title">Höhe</string>
+    <string name="trigger_bottom_summary">Einstellen der Höhe des Auslösers.</string>
 
     <!-- Advanced, Device specific (DeviceParts) settings  -->
     <string name="advanced_settings_title">Erweitert</string>
@@ -579,8 +579,8 @@
     <string name="show_enter_key_summary">Erzwinge Enter-Taste anzeigen anstelle von Emoticon-Taste</string>
 
     <!-- Toast Animation -->
-    <string name="toast_animation_title">Toast Animationen</string>
-    <string name="toast_none_animation">Keine Funktion</string>
+    <string name="toast_animation_title">Toast Animation</string>
+    <string name="toast_none_animation">Keine</string>
     <string name="toast_default_animation">Standard</string>
     <string name="toast_fade_animation">Überblenden</string>
     <string name="toast_SlideRight_animation">Gleiten (Rechts)</string>
@@ -599,29 +599,29 @@
 
     <!-- Smooth ProgressBar -->
     <string name="progressbar_title">Fortschrittsbalken</string>
-    <string name="progressbar_mirror_title">Gespiegelt</string>
-    <string name="progressbar_reverse_title">Umgedreht</string>
+    <string name="progressbar_mirror_title">Mittig aufeinandertreffen</string>
+    <string name="progressbar_reverse_title">Von Rechts nach Links</string>
     <string name="progressbar_speed_title">Geschwindigkeit</string>
-    <string name="progressbar_width_title">Taktbreite</string>
+    <string name="progressbar_width_title">Höhe</string>
     <string name="progressbar_length_title">Separatorlänge</string>
     <string name="progressbar_count_title">Sektionenanzahl</string>
-    <string name="progressbar_color_1_title">Farbe1</string>
-    <string name="progressbar_color_2_title">Farbe2</string>
-    <string name="progressbar_color_3_title">Farbe3</string>
-    <string name="progressbar_color_4_title">Farbe4</string>
-    <string name="sample_progressbar_text">Fortschrittsbalken : Vorschau</string>
+    <string name="progressbar_color_1_title">1. Farbe</string>
+    <string name="progressbar_color_2_title">2. Farbe</string>
+    <string name="progressbar_color_3_title">3. Farbe</string>
+    <string name="progressbar_color_4_title">4. Farbe</string>
+    <string name="sample_progressbar_text">VORSCHAU</string>
     <string name="progressbar_interpolator">Interpolator</string>
-    <string name="progressbar_none">Keine Funktion</string>
-    <string name="progressbar_acclerate">Beschleunigt</string>
+    <string name="progressbar_none">Keinen Interpolator</string>
+    <string name="progressbar_acclerate">Ausdehnen</string>
     <string name="progressbar_linear">Linear</string>
-    <string name="progressbar_acceleratedecelerate">Beschleunigt und verzögert</string>
-    <string name="progressbar_decelerate">Verzögert</string>
-    <string name="progressbar_reset_message">Fortschrittsbalken auf Standard zurücksetzen?</string>
+    <string name="progressbar_acceleratedecelerate">Ausdehnen und zusammenziehen</string>
+    <string name="progressbar_decelerate">Zusammenziehen</string>
+    <string name="progressbar_reset_message">Fortschrittsbalken wirklich zurücksetzen?</string>
 
     <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
-    <string name="show_cpu_info">Zeige CPU Informationen</string>
+    <string name="show_cpu_info">CPU Informationen anzeigen</string>
     <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
-    <string name="show_cpu_info_summary">Einblendung die aktuelle CPU Informationen zeigt</string>    
+    <string name="show_cpu_info_summary">Blendet aktuelle Prozessor Information ein.</string>    
     
     <!-- Button shorcut actions -->
     <string name="additional_options_title">Zusätzliche Einstellungen</string>
@@ -733,7 +733,7 @@
     <!-- Notification drawer settings  -->
     <string name="notification_drawer_title">Benachrichtigungsleiste</string>
     <string name="notification_shortcuts_settings_title">Verknüpfungen</string>
-    <string name="notification_shortcuts_settings_summary">Zeige Verknüpfungen in der Benachrichtigungsleiste</string>
+    <string name="notification_shortcuts_settings_summary">Verknüpfungen in der Benachrichtigungsleiste bearbeiten.</string>
 
     <!-- Screen-On Notification Light -->
     <string name="screen_on_notification_led_title">LED wenn Bildschirm an</string>
@@ -743,7 +743,7 @@
     <string name="notification_drawer_brightness_slider_title">Helligkeits-Schieber</string>
 
     <!-- Recent panel -->
-    <string name="recent_panel_category">Slim-Recent Anwendungsverlauf</string>
+    <string name="recent_panel_category">SlimROM Anwendungsverlauf</string>
     <string name="recent_panel_scale_title">Größe</string>
     <string name="recent_panel_scale_summary">Größe der Leiste in Prozent</string>
     <string name="recent_panel_100">100% (Standard)</string>
@@ -752,10 +752,17 @@
 
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Am linken Rand anzeigen</string>
-    <string name="recent_panel_lefty_mode_summary">Zeige Leiste kürzlich geöffneter Apps am linken Rand.</string>
+    <string name="recent_panel_lefty_mode_summary">Zeigt den SlimROM Anwendungsverlauf am linken Rand.</string>
 
     <!-- On-The-Go -->
     <string name="power_menu_onthego_title">On-The-Go Modus</string>
     <string name="title_tile_onthego">On-The-Go</string>
+    
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Zeitlimit der Zurücktaste</string>
+    <string name="timeout_2000">2 Sekunden (Standard)</string>
+    <string name="timeout_1500">1,5 Sekunden</string>
+    <string name="timeout_1000">1 Sekunden</string>
+    <string name="timeout_500">0,5 Sekunden</string>
 
 </resources>

@@ -308,7 +308,7 @@
     <string name="omni_features_title">OmniROM Features</string>
     <string name="notification_drawer_category_title">Benachrichtigungsanzeige</string>
     <string name="custom_statusbar_header_title">Kontextuelle Kopfzeile</string>
-    <string name="custom_statusbar_header_summary">Die Kopfzeile der Benachrichtigungsanzeige wird mit einem Bild basierend auf Datum und Zeit versehen.</string>   
+    <string name="custom_statusbar_header_summary">Die Kopfzeile der Benachrichtigungsanzeige wird mit einem Bild, basierend auf Datum und Zeit versehen.</string>   
 
     <!-- Restart SystemUI -->
     <string name="general_settings_title">Allgemeine Einstellungen</string>
@@ -459,22 +459,22 @@
 
     <!-- Telo Radio -->
     <string name="telo_radio_settings_title">Verbindungsmanager</string>
-    <string name="telo_radio_options_category">Einstellungen wenn Bildschirm eingeschaltet</string>
+    <string name="telo_radio_options_category">Mobilfunk bei eingeschaltetem Display</string>
     <string name="telo_radio_lte_title">LTE</string>
     <string name="telo_radio_lte_summary">Benutzen Sie diese Einstellung, wenn Sie LTE (4G) nutzen.</string>
     <string name="telo_radio_2g_wifi_title">2G bei W-LAN</string>
-    <string name="telo_radio_2g_wifi_title_summary">Bei aktiver W-LAN Verbindung wird der Mobilfunk auf 2G gewechselt.</string>
-    <string name="telo_radio_2g_screenoff_category">Einstellungen wenn Bildschirm ausgeschaltet</string>
-    <string name="telo_radio_2g_screenoff_title">2G wenn Bildschirm aus </string>
-    <string name="telo_radio_2g_screenoff_summary">Das Gerät ändert den Mobilfunk zu 2G wenn der Bildschirm aus ist.</string>
-    <string name="telo_radio_2g_screenoff_timeout_title">Zeit um auf 2G zu wechseln</string>
+    <string name="telo_radio_2g_wifi_title_summary">Bei aktiver W-LAN Verbindung wird das Mobilfunknetz automatisch auf 2G geschaltet.</string>
+    <string name="telo_radio_2g_screenoff_category">Mobilfunk bei ausgeschaltetem Display</string>
+    <string name="telo_radio_2g_screenoff_title">2G Schaltung</string>
+    <string name="telo_radio_2g_screenoff_summary">Das Gerät schaltet den Mobilfunk automatisch auf 2G um, wenn das Display ausgeschaltet ist.</string>
+    <string name="telo_radio_2g_screenoff_timeout_title">Zeitlimit zum Umschalten</string>
     <string name="telo_radio_2g_3min">3 Minuten</string>
     <string name="telo_radio_2g_5min">5 Minuten</string>
     <string name="telo_radio_2g_10min">10 Minuten</string>
     <string name="telo_radio_2g_15min">15 Minuten</string>
     <string name="telo_radio_2g_20min">20 Minuten</string>
-    <string name="telo_radio_go_3g_unlock_title">3G Entsperrung</string>
-    <string name="telo_radio_go_3g_unlock_summary">Wenn das Gerät entsperrt wird, wechselt der Mobilfunk wieder auf 3G.</string>
+    <string name="telo_radio_go_3g_unlock_title">3G bei Entsperrung</string>
+    <string name="telo_radio_go_3g_unlock_summary">Wird das Display eingeschaltet und entsperrt, schaltet der Mobilfunk automatisch zurück auf 3G.</string>
 
     <!-- Lockscreen background -->
     <string name="lockscreen_background">Hintergrund</string>

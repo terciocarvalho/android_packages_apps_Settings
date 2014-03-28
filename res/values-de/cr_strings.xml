@@ -98,8 +98,8 @@
     <!-- Color Picker -->
     <string name="dialog_color_picker">Farbauswahl</string>
     <string name="press_color_to_apply">Zum Übernehmen unten auf eine Farbe tippen.</string>
-    <string name="arrow_right">?</string>
-    <string name="arrow_down">?</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
     <string name="hex_hint">#ff000000</string>
     <string name="set">Setzen</string>

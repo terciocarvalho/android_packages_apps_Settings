@@ -731,4 +731,15 @@
     <string name="power_menu_onthego_title">Режим \"На ходу\"</string>
     <string name="title_tile_onthego">\"На ходу\"</string>
 
+    <!-- long press back to kill configurable timeout -->
+    <string name="kill_app_longpress_timeout_title">Задержка долгого нажатия</string>
+    <string name="timeout_2000">2 секунды (по умолчанию)</string>
+    <string name="timeout_1500">1,5 секунды</string>
+    <string name="timeout_1000">1 секунда</string>
+    <string name="timeout_500">0,5 секунды</string>
+
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Отключить рамки виджета</string>
+    <string name="lockscreen_widget_frame_summary">Отключить фоновые рамки виджета</string>
+
 </resources>

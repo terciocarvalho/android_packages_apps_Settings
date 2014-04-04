@@ -765,4 +765,8 @@
     <string name="timeout_1000">1 Sekunde</string>
     <string name="timeout_500">0,5 Sekunden</string>
 
+    <!-- Keyguard widget frame -->
+    <string name="lockscreen_widget_frame_title">Widget-Rahmen deaktivieren</string>
+    <string name="lockscreen_widget_frame_summary">Deaktiviert die Widget-Rahmen auf dem Sperrbildschirm.</string>
+
 </resources>

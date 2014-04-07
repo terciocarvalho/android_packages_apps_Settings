@@ -77,6 +77,10 @@
             android:fragment="com.android.settings.crdroid.LockscreenNotifications"
             android:summary="@string/lockscreen_notifications_summary" />
 
+        <CheckBoxPreference
+            android:key="lockscreen_modlock_enabled"
+            android:title="@string/lockscreen_enable_modlock_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory

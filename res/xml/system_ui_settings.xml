@@ -59,6 +59,12 @@
         android:fragment="com.android.settings.crdroid.AppSidebar"
         android:title="@string/app_sidebar_title"/>
 
+    <PreferenceScreen
+     	android:key="hover_settings"
+        android:title="@string/hover_title"
+        android:summary="@string/hover_summary"
+        android:fragment="com.android.settings.temasek.HoverSettings" />
+
     <PreferenceCategory
             android:key="expanded_desktop_category"
             android:title="@string/power_menu_expanded_desktop" >

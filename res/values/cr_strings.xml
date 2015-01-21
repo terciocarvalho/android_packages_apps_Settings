@@ -228,7 +228,7 @@
     <string name="navigation_bar_size_42_dp">42 dp</string>
     <string name="navigation_bar_size_0_dp">0 dp (off)</string>
 
-     <!-- QuickSettings: Smart Pulldown -->
+    <!-- QuickSettings: Smart Pulldown -->
     <string name="smart_pulldown_title">Smart pulldown</string>
     <string name="smart_pulldown_summary">Open Quick Settings when there are %1$s notifications present</string>
     <string name="smart_pulldown_off">Off</string>
@@ -739,5 +739,9 @@ sword is entered</string>
     <string name="custom_density_dialog_summary">Changing your default LCD density can sometimes cause certain apps to not function properly and/or the playstore to show apps being incompatible with your device"</string>
     <string name="dpi">DPI</string>
     <string name="custom_density_warning">Restart the system and apply selected density?</string>
+
+    <!-- Clock -->
+    <string name="status_bar_clock">Clock</string>
+    <string name="status_bar_clock_title">Clock style</string>
 
 </resources>
